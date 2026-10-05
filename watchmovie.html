@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="px-space-md py-1.5 font-label-lg transition-colors bg-surface-container-high text-on-surface rounded-full" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="#">Wallet</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Header / Back Bar -->
+<div class="w-full px-margin py-space-sm bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<a class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors py-1.5 px-space-sm rounded-lg hover:bg-surface-container" data-path="my-movies" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="font-label-lg text-label-lg font-semibold">Back to Library</span>
+</a>
+<span class="w-1 h-4 rounded-full bg-surface-container-high hidden sm:inline-block"></span>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">Dune</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2021)</span>
+<span class="ml-space-xs px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold tracking-wider">FULL HD • STREAMING</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="theaterModeBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">crop_landscape</span>
+<span class="hidden md:inline">Theater View</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Movie Info" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+</div>
+</div>
+<!-- Main Player Workspace -->
+<div class="w-full px-margin py-space-md">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- Video Screen & Controls Area (Cols 1-9) -->
+<div class="xl:col-span-9 flex flex-col gap-space-md">
+<!-- Cinematic Player Shell (16:9) -->
+<div class="relative group w-full aspect-video bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl flex items-center justify-center select-none cursor-pointer" id="playerFrame">
+<!-- Backdrop Video Still (Dune cinematic desert scene) -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.01]" data-alt="Cinematic still from Dune 2021 depicting Paul Atreides clad in a high-tech desert stillsuit walking along the sweeping sand dunes of Arrakis under an amber twin-sun sky, atmospheric atmospheric cinematic lighting, dark moody teal and burnt amber tones, 4K film still" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGqaV0n-1nwJFhErxV6i5ojKDeF37hHFn-aniyM0G1ZiYEbFnghIn5C0JfyjJOFQZp5JE-dbN-hS88c39SFHzZNxEOj6TksqJC2M26v2pCvDHxdm56X0tijYVahAR49nSwiU_PYmRB5VxVomSWTyYbiMCynM89gHa78viQgkePJEQRv_u5V0JM-pLAdw2qJ4_x1VUh1jjS2vT94IiHI_e_pzt8GAZWqbEqDBpso8nBg5PhfItou0xDmw')"></div>
+<!-- Cinematic Scrims (top and bottom gradient darkening) -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-surface-container-lowest/60 pointer-events-none"></div>
+<!-- Center Play/Pause Pulsing Trigger Overlay -->
+<button class="relative z-10 w-20 h-20 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-xl shadow-primary-container/40 transition-all duration-300 hover:scale-110 active:scale-95 group/play" id="centerPlayBtn" type="button">
+<span class="material-symbols-outlined text-[44px] ml-1 group-hover/play:scale-105 transition-transform" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span class="absolute -inset-2 rounded-full border-2 border-primary/30 animate-ping opacity-40"></span>
+</button>
+<!-- Top-Right Live Stream Badge / Buffering Indicator -->
+<div class="absolute top-space-md right-space-md z-20 flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">1080p • Dolby Atmos</span>
+</div>
+<!-- Bottom Floating Control Bar -->
+<div class="absolute bottom-0 inset-x-0 z-20 p-space-md bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/95 to-transparent flex flex-col gap-space-xs transition-opacity duration-300">
+<!-- Scrub Bar with Buffer & Hover Preview -->
+<div class="relative w-full group/scrub py-2 cursor-pointer flex items-center" id="progressBarContainer">
+<!-- Background Bar Track -->
+<div class="w-full h-1.5 rounded-full bg-surface-bright/50 relative overflow-hidden transition-all group-hover/scrub:h-2.5">
+<!-- Buffer Progress (75%) -->
+<div class="absolute left-0 top-0 bottom-0 w-3/4 bg-on-surface-variant/30 rounded-full"></div>
+<!-- Played Progress (22%) -->
+<div class="absolute left-0 top-0 bottom-0 w-[22%] bg-gradient-to-r from-secondary to-primary rounded-full"></div>
+</div>
+<!-- Current Playhead Thumb -->
+<div class="absolute left-[22%] -ml-2 w-4 h-4 rounded-full bg-primary shadow-md shadow-primary/50 opacity-0 group-hover/scrub:opacity-100 transition-opacity"></div>
+<!-- Floating Timestamp Tooltip On Hover (Static Sample at current frame) -->
+<div class="absolute left-[22%] -top-8 -translate-x-1/2 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-md pointer-events-none opacity-0 group-hover/scrub:opacity-100 transition-opacity">
+                32:15
+              </div>
+</div>
+<!-- Playback Action Controls Row -->
+<div class="flex items-center justify-between gap-space-md pt-1">
+<!-- Left Controls (Play, Skip, Volume, Timestamp) -->
+<div class="flex items-center gap-space-sm sm:gap-space-md">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container transition-colors" title="Play / Pause" type="button">
+<span class="material-symbols-outlined text-[24px]">pause</span>
+</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Replay 10s" type="button">
+<span class="material-symbols-outlined text-[20px]">replay_10</span>
+</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Forward 10s" type="button">
+<span class="material-symbols-outlined text-[20px]">forward_10</span>
+</button>
+<!-- Volume Slider Block -->
+<div class="flex items-center gap-space-xs group/vol ml-space-xs">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Mute" type="button">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+<div class="w-16 sm:w-20 h-1.5 rounded-full bg-surface-bright/50 relative overflow-hidden cursor-pointer">
+<div class="h-full w-4/5 bg-primary rounded-full"></div>
+</div>
+</div>
+<!-- Live Timestamp Display -->
+<div class="font-label-md text-label-md text-on-surface tracking-wider font-mono ml-space-xs">
+<span class="text-primary font-bold">32:15</span>
+<span class="text-outline-variant mx-1">/</span>
+<span class="text-on-surface-variant">2:35:00</span>
+</div>
+</div>
+<!-- Right Controls (Audio, Speed, Quality, Fullscreen) -->
+<div class="flex items-center gap-space-xs sm:gap-space-sm">
+<!-- Audio / Subtitles Dropdown Trigger -->
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm" id="audioSubtitlesBtn" title="Audio &amp; Subtitles" type="button">
+<span class="material-symbols-outlined text-[18px]">subtitles</span>
+<span class="hidden md:inline">ENG [CC]</span>
+</button>
+<!-- Speed Toggle -->
+<button class="px-2 py-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm font-bold tracking-wider" title="Playback Speed" type="button">
+                  1.0x
+                </button>
+<!-- Settings Gear -->
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Settings" type="button">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<!-- Fullscreen Button -->
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container transition-colors ml-space-xs" id="fullscreenToggle" title="Fullscreen" type="button">
+<span class="material-symbols-outlined text-[22px]">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Utility Row (Below Screen): Quick Actions & Social -->
+<div class="flex flex-wrap items-center justify-between gap-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-full bg-primary-container text-on-primary-container hover:bg-secondary-container transition-all font-label-md text-label-md shadow-md shadow-primary-container/20" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Offline Copy</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-tertiary text-[18px]">bookmark_add</span>
+<span>Add to Watchlist</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Share movie" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
+<span>Digital TVOD License • 48h Remaining Rental Window</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Video Quality Selector & Audio Selection (Cols 10-12) -->
+<div class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- Quality Selector Card matching Screen 9 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">hd</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Quality</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-semibold">Auto Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select playback resolution. Lower bitrates save bandwidth on metered mobile plans.</p>
+<!-- Radio Options List -->
+<div class="flex flex-col gap-space-sm" id="qualitySelectorGroup">
+<!-- 480p Option -->
+<label class="group cursor-pointer p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="video_quality" type="radio" value="480p"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">480p</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard Def • 800 MB</span>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-bright text-on-surface-variant font-label-sm text-label-sm">SD</span>
+</label>
+<!-- 720p Option -->
+<label class="group cursor-pointer p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="video_quality" type="radio" value="720p"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">720p</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">High Def • 1.5 GB</span>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-bright text-on-surface-variant font-label-sm text-label-sm">HD</span>
+</label>
+<!-- 1080p Option (Active Selected) -->
+<label class="group cursor-pointer p-space-sm rounded-lg bg-surface-container-high shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="accent-primary w-4 h-4 cursor-pointer" name="video_quality" type="radio" value="1080p"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">1080p</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-primary">Full HD 60fps • 2.5 GB</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">ACTIVE</span>
+</label>
+<!-- 4K Ultra HD (VIP Only) -->
+<div class="p-space-sm rounded-lg bg-surface-container/40 flex items-center justify-between opacity-80">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface-variant">4K Ultra HD</span>
+<span class="font-body-sm text-body-sm text-outline">HDR10+ • 6.8 GB</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed/20 text-secondary font-label-sm text-label-sm font-semibold">VIP Pass</span>
+</div>
+</div>
+<!-- Network Stream Health Visualizer -->
+<div class="pt-space-sm mt-space-xs flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Streaming Bitrate</span>
+<span class="text-tertiary font-mono font-semibold">8.4 Mbps (Steady)</span>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-tertiary w-4/5 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Audio & Subtitles Panel -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">graphic_eq</span>
+<h3 class="font-title-md text-title-md font-bold">Audio &amp; Subtitles</h3>
+</div>
+<div class="flex flex-col gap-space-xs mt-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Audio Track</label>
+<select class="w-full h-10 px-space-sm bg-surface-container text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors cursor-pointer">
+<option selected="">English [Original] (Dolby Digital 5.1)</option>
+<option>Urdu Dubbed (Stereo 2.0)</option>
+<option>Hindi Dubbed (Dolby 5.1)</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs mt-2">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Subtitles</label>
+<select class="w-full h-10 px-space-sm bg-surface-container text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors cursor-pointer">
+<option selected="">English [CC]</option>
+<option>Urdu Subtitles</option>
+<option>Arabic Subtitles</option>
+<option>Off</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Movie Information & Chapter Metadata (Col 1-12) -->
+<div class="mt-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter pt-space-lg">
+<!-- Left Metadata Box (Matching Screen 9 table specs) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">movie</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie Information</h2>
+</div>
+<div class="flex flex-col gap-space-sm font-body-md text-body-md divide-y-0">
+<div class="flex items-start justify-between py-1">
+<span class="text-on-surface-variant">Category</span>
+<span class="font-semibold text-on-surface text-right">Action / Adventure / Sci-Fi</span>
+</div>
+<div class="flex items-start justify-between py-1">
+<span class="text-on-surface-variant">Language</span>
+<span class="font-semibold text-on-surface">English (Dolby 5.1)</span>
+</div>
+<div class="flex items-start justify-between py-1">
+<span class="text-on-surface-variant">Release Year</span>
+<span class="font-semibold text-on-surface">2021</span>
+</div>
+<div class="flex items-start justify-between py-1">
+<span class="text-on-surface-variant">Size</span>
+<span class="font-semibold text-primary">2.5 GB</span>
+</div>
+<div class="flex items-start justify-between py-1">
+<span class="text-on-surface-variant">Director</span>
+<span class="font-semibold text-on-surface">Denis Villeneuve</span>
+</div>
+<div class="flex items-start justify-between py-1">
+<span class="text-on-surface-variant">Cast</span>
+<span class="font-semibold text-on-surface text-right">Timothée Chalamet, Zendaya, Rebecca Ferguson</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs">
+<h4 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Synopsis</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            A hero's journey begins. Paul Atreides, a gifted young man born into a destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.
+          </p>
+</div>
+</div>
+<!-- Right Metadata Box: Chapter Scrubbing Rails & Scene Navigation -->
+<div class="lg:col-span-8 flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">view_timeline</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Jump to Chapter</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Chapters Included</span>
+</div>
+<!-- Chapter Tiles Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<!-- Chapter 1 -->
+<div class="group cursor-pointer rounded-lg overflow-hidden bg-surface-container hover:bg-surface-container-high transition-all flex flex-col">
+<div class="w-full h-24 relative overflow-hidden bg-surface-bright">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic frame from Dune showing the imperial starship fleet departing Caladan against dark oceanic clouds and mist" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSh8_k7R7dJ-z_X_UE-AzszR3et7-p-F1zKssgNXc9CRW3E02P3hWda7gEHU8ni8-HA9lDumJOweuscqYwcvAnl3hfEVqSmYyLZS8JvQCMNHkYeyZXXphbBVGzkjv5SKdRGBOBFtDf8_Z1089552pmzd9v8SG5zcAxVxhmk5vufOLEMQ6MfBpYP5l5iBpOQW7bN5slktg52HdG9OyAE2g3wFPdgRtzgC5UH8sg0vHBvIzI3j1rC9Bz3w')"></div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-mono text-[10px] text-on-surface font-semibold">00:00</span>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">1. Dreams of Caladan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Intro &amp; Revered Mother</span>
+</div>
+</div>
+<!-- Chapter 2 (Currently Playing) -->
+<div class="group cursor-pointer rounded-lg overflow-hidden bg-surface-container-high transition-all flex flex-col ring-1 ring-primary/40">
+<div class="w-full h-24 relative overflow-hidden bg-surface-bright">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic frame from Dune depicting giant ornithopters landing on the scorched orange sands of Arrakeen city palace with dust clouds swirling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeijxbmEZ-ls0BZeB6JVdRaprqORDLl0E0_VUjkzXKEilVFDfaGeDNSoyp9Ui-wCjwIdXHlboj2JohlT26BsRyJ_Q-oIHO0Bssz8Bv0YxSi6gLODymImwYTwqdkHb0QCrRyr4PYGk80l-v0tiWGpX_CXNZ1dyzGhSTy82llRFm-sp_MvCEkPJuyO0fVhtEoT7QOTC3WtYfG8Hp6HrVr8_u25Pf7GfU9SOMEOj-NAHINuZXRkUnmWvEhQ')"></div>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold tracking-tight">NOW PLAYING</span>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-mono text-[10px] text-on-surface font-semibold">15:40</span>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary truncate">2. Arrival on Arrakis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">The Duke takes command</span>
+</div>
+</div>
+<!-- Chapter 3 -->
+<div class="group cursor-pointer rounded-lg overflow-hidden bg-surface-container hover:bg-surface-container-high transition-all flex flex-col">
+<div class="w-full h-24 relative overflow-hidden bg-surface-bright">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic frame from Dune showing a massive spice harvester crawler in the middle of vast desert dunes with a gigantic sandworm sand vortex opening nearby" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpi0XtPxjH2LVoUArENdCoXfkD9wuym4UGxHT0ArU1d5f5gLBkl3eOrrN7gdPDvXMnFTBuX_J65KsIIA7cfxbCeGuifRxCNgU7nmIzhg1qQLcuthdbrhuzWxXqO-mackmJSo6mQ98Bmmudi-EgT8vMuMSZI7Fpxj1FvtHNid5wb1zVZ8y278fkGQ8tCiPFu_vhksJxWg8JD4E6CgQDJ244MiaFS8PpAuucrS_hN6WWUr-4SeHb1shwLw')"></div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-mono text-[10px] text-on-surface font-semibold">45:10</span>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">3. Spice Harvester Rescue</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">First Sandworm breach</span>
+</div>
+</div>
+<!-- Chapter 4 -->
+<div class="group cursor-pointer rounded-lg overflow-hidden bg-surface-container hover:bg-surface-container-high transition-all flex flex-col">
+<div class="w-full h-24 relative overflow-hidden bg-surface-bright">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic frame from Dune depicting dramatic midnight explosion and artillery lasers striking Arrakeen palace in high contrast dark fire" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8fum_WgWsCWmPcVMd9_-BJCy3Eb5sK1yBdqZ7etoOKq8pT0oWdqkHW1h-25S_JyJer97BFGyVFDXv9Uza_KtlcOor1QObzhrrdGbx_ZNt6xo_eZyXvYxdCDZP6dNBWH4_d13ClIyRWsom2B3ygjwFvJGuuZAuoO8JDTiCW5Eb978ezJCn8B9cSp-hk4BOkSpMrhEYL3zvqdeG75VJtW0ffocjDPjr_P3yAKKxrX0BokUClPirWHGsqw')"></div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-mono text-[10px] text-on-surface font-semibold">1:20:00</span>
+</div>
+<div class="p-space-sm flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">4. The Harkonnen Attack</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Night ambush in the storm</span>
+</div>
+</div>
+</div>
+<!-- User Playback Note / Offline storage advisory -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">cloud_sync</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Your playback timestamp is automatically synced across all connected devices.</span>
+</div>
+<a class="font-label-sm text-label-sm font-semibold text-primary hover:underline whitespace-nowrap" data-path="my-movies" href="#">Manage Devices</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive handlers for Player controls
+  const centerPlayBtn = document.getElementById('centerPlayBtn');
+  const playerFrame = document.getElementById('playerFrame');
+  let isPlaying = false;
+
+  if (centerPlayBtn && playerFrame) {
+    centerPlayBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      isPlaying = !isPlaying;
+      const icon = centerPlayBtn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.textContent = isPlaying ? 'pause' : 'play_arrow';
+      }
+    });
+  }
+
+  // Quality radio selector reactivity
+  const qualityRadios = document.querySelectorAll('input[name="video_quality"]');
+  qualityRadios.forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      const parentCards = document.querySelectorAll('#qualitySelectorGroup label');
+      parentCards.forEach(card => card.classList.remove('bg-surface-container-high', 'ring-1', 'ring-primary/40'));
+      const activeCard = e.target.closest('label');
+      if (activeCard) {
+        activeCard.classList.add('bg-surface-container-high');
+      }
+    });
+  });
+
+  // Fullscreen trigger simulation
+  const fsBtn = document.getElementById('fullscreenToggle');
+  if (fsBtn && playerFrame) {
+    fsBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        playerFrame.requestFullscreen?.().catch(() => {});
+      } else {
+        document.exitFullscreen?.().catch(() => {});
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

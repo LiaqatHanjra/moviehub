@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="#">Wallet</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Value Strip Banner: Immediate Trust & Operational Clarity -->
+<div class="w-full bg-surface-container-low/80 backdrop-blur-md px-margin py-3">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-y-2 text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<span>48-Hour Rental Playback Window</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">devices</span>
+<span>Simultaneous Streaming on Any Device</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">cloud_download</span>
+<span>Offline 4K Download Included</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">bolt</span>
+<span class="text-on-surface font-semibold">1-Click Instant Wallet Debit</span>
+</div>
+</div>
+</div>
+<!-- Main Catalog Space -->
+<div class="w-full px-margin py-space-lg max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Header Title & Filter Workspace -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Catalog Vault</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-0.5">Explore All Movies</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Browse hundreds of blockbusters, indie gems, and regional masterworks presented in pristine 4K Ultra HD &amp; Dolby Atmos.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto bg-surface-container-low px-space-md py-2 rounded-full shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="catalog-count-display">Showing 48 of 850 movies</span>
+</div>
+</div>
+<!-- Complex Control Bar -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-md shadow-md">
+<!-- Row 1: Search, Dropdowns -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Live Search Bar -->
+<div class="md:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-all" id="movie-search-input" placeholder="Search by title, director, actor..." type="text"/>
+</div>
+<!-- Genre Filter -->
+<div class="md:col-span-3 relative">
+<select class="w-full h-11 px-3.5 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-high transition-all pr-10" id="genre-select">
+<option value="all">All Genres</option>
+<option value="sci-fi">Sci-Fi</option>
+<option value="action">Action &amp; Adventure</option>
+<option value="thriller">Thriller &amp; Crime</option>
+<option value="drama">Drama &amp; Biography</option>
+<option value="horror">Horror &amp; Mystery</option>
+<option value="comedy">Comedy</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-outline text-[20px]">keyboard_arrow_down</span>
+</div>
+<!-- Region / Origin Filter -->
+<div class="md:col-span-3 relative">
+<select class="w-full h-11 px-3.5 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-high transition-all pr-10" id="region-select">
+<option value="all">All Industries</option>
+<option value="hollywood">Hollywood Premiere</option>
+<option value="bollywood">Bollywood &amp; Hindi</option>
+<option value="south">South Cinema (Pan-India)</option>
+<option value="punjabi">Punjabi Blockbusters</option>
+<option value="international">Cannes &amp; International</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-outline text-[20px]">expand_more</span>
+</div>
+<!-- Sort Filter -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-11 px-3 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-high transition-all pr-9" id="sort-select">
+<option value="popular">Most Popular</option>
+<option value="rated">Highest Rated</option>
+<option value="newest">New Releases</option>
+<option value="price-asc">Price: Low to High</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-3 pointer-events-none text-outline text-[20px]">sort</span>
+</div>
+</div>
+<!-- Row 2: Resolution Filters & Active Pill Tags -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mr-2">Resolution:</span>
+<button class="resolution-btn active px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold transition-all">All</button>
+<button class="resolution-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all">4K UHD</button>
+<button class="resolution-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all">1080p FHD</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container-low rounded-full">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active: <strong class="text-on-surface">Trending All</strong></span>
+<button aria-label="Clear active filter" class="hover:text-primary transition-colors flex items-center">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-secondary-fixed transition-colors underline cursor-pointer" id="reset-filters">
+              Reset Filters
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Release Banner: Dune Part Two -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-low shadow-xl">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-40 scale-105" data-alt="Dune Part Two cinematic still showing vast orange-tinted Arrakis desert dunes under a twin sun sky, intense cinematic composition with glowing blue spice eye highlights and futuristic ornithopter shadows in atmospheric sci-fi lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABnPRt2te76ItI6AlnpkBw9NoE_SvOwS8nR8zp2LUFUvYdLyPnyKbXRvmRaQ3C0-D7mtNCNXHt4wBwoUbyjVIl6oYU3ciN3ZeDT2Mvt8MxBoNrHl82pVk-lu2mZ1OhBVqWbnUkEAAlCgkvNCXOiSxds5UmgAKkkJq59S7fF76tQLbXHqb1XNKkjg7Pzb7A_U2WN3M37jKAqb9MAt7QwmhKRotwWc0s_IWc-H1yDn8NkK8GjGN7CjlRzw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/85 to-transparent"></div>
+<div class="relative z-10 p-space-lg md:p-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Premieres Today</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold">4K HDR10+</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">star</span> IMDb 8.8
+            </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight mt-1">Dune: Part Two (2024)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. A monumental sci-fi spectacle with full IMAX audio.
+          </p>
+</div>
+<div class="flex items-center gap-space-md self-stretch sm:self-auto">
+<div class="flex flex-col items-start sm:items-end">
+<span class="font-label-sm text-label-sm text-outline uppercase">Standard Rental</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rs. 50</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-3 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold hover:scale-105 transition-all shadow-[0_0_20px_rgba(49,152,220,0.4)] flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">bolt</span> Rent Now
+            </button>
+<button class="w-11 h-11 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" title="Add to Watchlist">
+<span class="material-symbols-outlined text-[22px]">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content: Movie Grid (16 Cards) -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span>All Premieres &amp; Rentals</span>
+<span class="font-label-sm text-label-sm font-semibold bg-surface-container-high text-primary px-2.5 py-1 rounded-full">16 per page</span>
+</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Instant 48-hr streaming pass</span>
+</div>
+<!-- 16 Responsive Cards Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter" id="movie-grid">
+<!-- Card 1: Dune: Part Two -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dune Part Two movie theatrical poster showing Paul Atreides and Chani standing side-by-side with crysknives ready against a dramatic double-sun sunset over Arrakis with blue cinematic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjSDZeHU8aqQYB4fHyS1vUewNIShbCpYjWMD6TI5I2ketbdas1K1tARRSoVr6lRkBqJqXSF4Xnh5EfxgA9OsAafCP_k_E2PvGF8YMyr0MghQ09Q8-F1Qmx_MkXkNAT3BawP3pDDUfbOroNQ5mp0ttf_bd1Uh06eNqgcBqCg3sAcX3b_cHa46r-_0wAhmbLwbd3WDjkeP7tKzvgW2dHaoaLfayZ4PAgS8BmYukFOVslgrkZnE26X6AxiA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.8
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Dune: Part Two</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2024 • Sci-Fi / Adventure</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Oppenheimer -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Oppenheimer movie theatrical poster featuring Cillian Murphy wearing a fedora hat looking forward through intense fire embers and atomic shockwave glow in rich amber and obsidian shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy-9EwwSG_sTdmU6WhX4YpkNtiLJNuqZ0o_6UFZ6iLvK4wjyqIaNsMYdEqT2VpM4Q-Zx8WkViARtZ1GKGvNSWAw6O2rUEbAJhV1EjEBZ9i6g__pBC2_-gmXE32hESSTeXLROMgA0XMN1-QcfVM0mw9gJ06_Zqrv5eazaVlD03Euc6auknnSB39CxHmMWJfiuZZIQoDYCywhg88FfiMN96fDJJPOcWwW-tPUmUHEiA6Q_FZrAE1geC_kA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.9
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Oppenheimer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2023 • Biography / Drama</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: John Wick Chapter 4 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="John Wick Chapter 4 film poster portraying Keanu Reeves in a sleek black suit with neon Paris street lights and an hourglass silhouette in moody cyan and magenta hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRDdq6n6KSgR4-i8DwNqCSHPLY4iw7Kbq-M4uCt1ZwQcGGz2t42-1aZLM4vJIqapULP3O9QTt49-aHWZwf1YF7yk_7RyTcwTbqJ_d4qxEzekEh7ah2pQUXOsyr_hgU1am3qIJbvL4-uSv9NDHFEp4Yg0QcgXuUj-KEQ7kbDc6FCIPiBnVlxzGEAH6ySGpPWx0i-GQ85IHCrhCrEMUl2OafQpW8l-Wf4YiQRgD--VfWy0QtlR5QRlUMfQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.2
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">John Wick: Chapter 4</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2023 • Action / Thriller</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: The Batman -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="The Batman 2022 movie poster of Robert Pattinson in heavy cowl and armor in rainy Gotham city night under deep red flare lighting with neon reflections on wet asphalt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7sIU0e99Xu3t-KdCLLxykEkfapioPlvOpcqpOP_J-en7WZz6GAkqgi7ZviB_FfiwCOaxZXspIN-82hLC3lJt5yVTo3csxqatovg9unw4Wi6QxK_TqQOXMTfsPqp3yFs_-YrvgbCZ9chxF8H_0j7O1cWouctuf9cKtwItFPtE1sDFrhPkgAwPxbnPpPn9pbm7FW8lj4zjT3ePQfh-WfJL89E_hBSntedGtjq0SMpcAROIIo646fDVrVA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 7.8
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">The Batman</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2022 • Crime / Mystery</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5: Interstellar -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Interstellar movie poster depicting an astronaut in a white spacesuit on an icy alien world under a massive swirling wormhole galaxy with crystalline frost reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfbCV4snehgL7YGCrqEGB7tJo3pMMzo1_6zBMOv-1WW1vCDeHFKwey2ig-_27H1WkkEasWdZ_3VOdavd_XSWHY2fKnFtznOTvWM6TKDd_18Mrh8r_vcTf-0PPYUPDGsaFVsCwosBF2_YWiBKc6e-jrP-KjXlSHuPyTCYMcGj35vAJWL7hX3WzMxRMQKvE9Ee0-H69EsKBMUfLiNxMwXMp3jZw1c0gO_qzO0yigVDzgPM4BKZUP46Wb8w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.7
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Interstellar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2014 • Sci-Fi / Adventure</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6: Blade Runner 2049 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Blade Runner 2049 poster featuring Ryan Gosling walking toward a futuristic police spinner through deep glowing orange dust storm ruins with neon cyan holographic silhouettes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCds73oRe0G3mdW7D7PLqo0CdCbTrcouVs1oTUYTt1Ct7Ew99r1gvwpCVjTG5ESxSlqKSxQbQ0hDkTRzOIR15ahyveeMwaMc9Rr-k3EHLc873VUKqkaUGVp9bj1oQz6yllbhKqakUIMCQKsStoV1dad3ZnstmcdSoAroFEhRWltXijrF952GmMM8tp8gkduHILef52zixISmcCQtDNUMXS-Y719_xNERwHa18HjsddAdF8EM-7LSYOYAw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.0
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Blade Runner 2049</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2017 • Sci-Fi / Mystery</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 7: Top Gun Maverick -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Top Gun Maverick movie poster showing Tom Cruise wearing aviator sunglasses standing beside a sleek dark fighter jet on a golden hour runway with heat haze." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyRZSdQrmse8ucnWWtNJpmL0MK_hkRgHImiSyLWRcFBIzazDEb-Vs54eCAI4irOnH0nSGEGTX3EL6bZZLhaEjBz7oRhAAzuXUhsglLuDIgPmROp4uakpDzV9h5_hyY8Dlmea12WHkzyIRWqhdw_wKgVvQjyvCbi8RlA07gPLrTBDYF0x6D2X2HWtFvoua5HLIhjKMbCHOu7R9M3iv3J-i9tQJM8aPlXCYTHCbhNgRCT0-_vxSsCrdDwQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.3
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Top Gun: Maverick</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2022 • Action / Drama</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 8: Mission: Impossible - Dead Reckoning -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Mission Impossible Dead Reckoning poster showing Ethan Hunt on a motorcycle leaping off an alpine mountain cliff above a speeding vintage train with cool mountain daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7IWLqt1gsjVKB52akJhVmdIXzOJPqiYwaVlrv9gobHOjzxZY6JeF9vVRId0B71pbA_gIvl9TFrKvIm1_5hdTNgbTUSJokln2Qh15qNAUdT4Chel8xKsJaXN5e90gdxrqXSim8i3vyK317OF4vTC7B8s3PRogCakBlgaFopI3fHOJMZ8cZRLbAZPE_6YWZpA0IXWK9pbsqtZRf7vtki-6YoDYOMUWcLeZkyOsDaL5y-Vpb-GRkUWce7w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 7.7
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-surface-container-highest text-on-surface px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">1080p FHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Mission: Impossible</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2023 • Action / Adventure</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 9: Spider-Man: Across the Spider-Verse -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spider-Man Across the Spider-Verse vibrant poster with Miles Morales falling upside down against a neon geometric multiverse of colorful stylized alternate dimensions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB69vSgBdbJNNehKgpJf1_8RMN-BSheZrQuwzqVBthgt5O6gLEIq_hwQ-0VDZdvRIkP5pNBscbUWeKIRIZc9XxD44FhrFg0Ecpu794jVWWERhvCNSiJ8Yscg3Jd1O3372Fnw9I20M3dRKVzry8oDupM3U887tqy1-dEeU2u4f2u0ShanXKLt9IllrNm0qwL5Rj_ISwhvQSwlQ0Lvs43UIEOlrNRUPx2f-pELWnSbhYkt5eYrEIOcS7MOA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.6
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Across the Spider-Verse</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2023 • Animation / Sci-Fi</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 10: Fast X -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fast X movie poster featuring muscle cars drifting in Rome city street with fiery explosions, smoke trails and high speed cinematic action in warm golden light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOVTDJLr3O0qGc6VZQuXBDUvWSllxlYvr6lMmr7jut8YDaXZtVwE3CaywX2wAYBkE0CG44I8ZAl0p1UXyTMzuVXb78AQk3Uc0tCVF0a9zTOQKiD3o-ovhqmdxQbBr71DX8AEgCcv8nK98CIyR8iNI9j3Nad9pyIItrZVGvV8JojKaJpWW6kvY0DRAoNCCQdjBMAH861D061YI6PwODUnE50BTay-DzJIcefBkvXQiLHj42P0zF67UUuw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 5.8
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-surface-container-highest text-on-surface px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">1080p FHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Fast X</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2023 • Action / Thriller</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 11: Avatar: The Way of Water -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Avatar The Way of Water cinematic poster featuring Jake Sully and Neytiri under luminous turquoise ocean waves alongside bioluminescent Pandora marine creatures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArbmkdcCE4627gTgq0dQzgvQ5O32eYfjBo_o4FIEPYyZ67WcGwCqDGMWEz5LIDDGhp9lcrwLuu74hpRp8AwCjKGF8CDUSphhsXraxVPzGJsvZ0phKiEC67svWOpXL9W_oVCs4aG15b__uQmsBbcdvr1p3stOrPVuJ9RgyMAH6Q1OD_RlI6acuuUxSdfwGuXJ79FaShpEaZohsOBSNzjqdHOORR6LcQOj_XXrRVHg_jhF7L2oxSQE7ljw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 7.6
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Avatar: Way of Water</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2022 • Sci-Fi / Fantasy</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 12: Gladiator II -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gladiator II epic movie poster showing a lone gladiator with dual swords facing an ancient Colosseum sand arena filled with blood-red banners and roaring crowds in dramatic sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDmKVbh5dOx-FJseWlEeiC-Bw6jUzPuJIOr0nUvm9Az2KU2H6iRjgioblwF_Nmflcx_9uSbpNyaBmbT1PMVnjOSW06RZjnNzt3CgI-jzwWlXQbFmvGAbay9qzHJBWq4Aks6I8F8UxxEukKFq5DR2iR9Yy7ehN-O09I4E39DdUzldIwI99ZttWQbX-WcKL8nVyetCY2y-zSPeDblaGhwcisvt7i8Do3LeExV6HdjILY4kQka4gmYQS6TQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 7.5
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Gladiator II</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2024 • Action / History</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 13: Inception -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Inception movie poster featuring a futuristic city street curving up into the sky forming a square gravity-defying architecture with Leonardo DiCaprio standing in the center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB39gDf45v3P26gaNMtwTtukIVbmxEdInBXDd7WtDmtECtIXarHhsmwDxCzmEAcOc_W-JwVslNgnEop7fhq6Ij2B6C4pJ3C35Uy86tAv0yFK1mRI-N3RZKfAGkdcoDpG1AkmLp2UmyUmjLvgDCno6Wc8FQzQmmFa3GXErY9-iLr29sejIta3-fiXk2c8-AziGBiunehzrIYgP2CWIjWf6_DWT3ZV5e7wVGdb8Umrqt1bQuE8nrrgYpA3w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.8
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Inception</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2010 • Sci-Fi / Action</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 14: Tenet -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tenet movie poster with John David Washington running with an oxygen mask split horizontally with inverted red and blue lighting time-reversal visual effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjVYKvWixJ3J93MZgpj_e4UlJ9pODRY43LA7HWgvY8lUOA4zeUadMkWbYbfUeVOa8iYQgL73jY626kPyWxff2bj5cPgpySVh0yT0cAO-72eyGgAGGEjbQBhIsJj4RT0GMb6HZaLZujgyE5Elpj7PvXygsohgBCYTLuW1St-lOwnlK4jaqoHRIlf4o8jmMxZGF-t9nI1sTDtdVQtim1CDG5Ogr8419txUrpngy3LLtppBEHQgr3fEUv6w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 7.3
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Tenet</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2020 • Action / Sci-Fi</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 15: The Dark Knight -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="The Dark Knight poster displaying Batman looking down over Gotham City from high glass skyscrapers with fiery burning bat symbol in the night sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFrOqY5ahkbYCu9Nr3SsIwK6IOwJ1xAKmukvCHT0vN1gkGfEB8sEgvvbu0fa7UufwW_5xw3fwyp-OFLaFGAA7M8qiqfqV0-7PrNNriOOHPyVlEtvqcPZgmovGGsFH-VBDzcmLxpgVjusaKWXQ6B0RuGHywdIloo2oukr4Gf-TACOIKEDnbEvPhApNz4pokqMZAcOs4emQcsMNiIfMueN8r_BstFHLUnHAM7uyiR-qMliWVO9uQVz10rA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 9.0
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">The Dark Knight</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2008 • Action / Crime</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 16: Avengers: Endgame -->
+<div class="group bg-surface-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Avengers Endgame movie theatrical poster showcasing Iron Man, Captain America, and Thor standing ready for the final battle against a purple cosmic space nebula." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCue7ucbmjUMCFFYWsgxTkvN9S4BnXxhgplvwXR2fVlLLTxmYavl7Ue7MUh-ITq8nVIDwrQnVf7DLe_b3Iw3NNqbaeluQP9SmC8dTK_HXujslqzqt02AFJUcGVRCMyFBYvdQlfOyz8-OIzEO_LWQd0TZBWKfJCkmF3y-8o0oG777FLo8jt0oKEhesVNlKSkAGrrwC4Jw8_0yrtr16MoYuoox4CpMCMRSehK0_N4vR0GjaXyouD3srxYQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">star</span> 8.4
+            </div>
+<span class="absolute top-2.5 right-2.5 bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<div class="p-space-md flex flex-col gap-2 -mt-4 relative z-10">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Avengers: Endgame</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2019 • Action / Sci-Fi</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 50</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-high hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors" title="Bookmark">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all">
+                  Rent
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Navigation -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md py-space-md bg-surface-container-low px-space-lg rounded-xl shadow-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">
+        Showing <strong class="text-on-surface">1–16</strong> of <strong class="text-on-surface">850</strong> movies
+      </span>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span>Previous</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-md">
+          1
+        </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+          2
+        </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+          3
+        </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+          4
+        </button>
+<span class="px-2 text-outline font-label-md text-label-md">...</span>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+          54
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1 cursor-pointer">
+<span>Next</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions for interactive filtering pills
+    document.querySelectorAll('.resolution-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.resolution-btn').forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+      });
+    });
+
+    // Reset filters action
+    const resetBtn = document.getElementById('reset-filters');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        const searchInput = document.getElementById('movie-search-input');
+        const genreSelect = document.getElementById('genre-select');
+        const regionSelect = document.getElementById('region-select');
+        const sortSelect = document.getElementById('sort-select');
+
+        if (searchInput) searchInput.value = '';
+        if (genreSelect) genreSelect.value = 'all';
+        if (regionSelect) regionSelect.value = 'all';
+        if (sortSelect) sortSelect.value = 'popular';
+
+        const allResolutionBtn = document.querySelector('.resolution-btn');
+        if (allResolutionBtn) allResolutionBtn.click();
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

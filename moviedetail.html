@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="landingpage.html"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="landingpage.html">Home</a><a aria-current="page" class="px-space-md py-1.5 font-label-lg transition-colors bg-surface-container-high text-on-surface rounded-full" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="subscribeportal.html">Wallet</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Backdrop Layer -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 right-1/4 w-[600px] h-[600px] rounded-full bg-primary-container/10 blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/2 -left-48 w-[500px] h-[500px] rounded-full bg-secondary-container/10 blur-[130px] pointer-events-none"></div>
+<div class="w-full px-margin py-space-lg flex flex-col gap-space-xl relative z-10 max-w-7xl mx-auto">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" data-path="movies" href="#">Movies</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Sci-Fi</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">Dune (Part One)</span>
+</nav>
+<!-- Main Showcase Bento / Dual-Column Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Movie Poster with Tier 2 Surface & Glow -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-md">
+<div class="relative group rounded-xl overflow-hidden bg-surface-container shadow-2xl transition-all duration-300 hover:shadow-[0_12px_36px_rgba(49,152,220,0.25)]">
+<!-- Badges Layer -->
+<div class="absolute top-space-md left-space-md z-20 flex items-center gap-space-xs">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase px-2.5 py-1 rounded-full font-bold flex items-center gap-1 shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+                TVOD Rental
+              </span>
+</div>
+<div class="absolute top-space-md right-space-md z-20 flex flex-col items-end gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm font-extrabold px-2 py-0.5 rounded shadow">4K UHD</span>
+<span class="bg-surface-container-high/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded">HDR10+</span>
+</div>
+<!-- Poster Frame (2:3 Aspect Ratio) -->
+<div class="aspect-[2/3] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Cinematic official poster of Dune movie featuring Paul Atreides and Lady Jessica standing against gigantic Arrakis orange sand dunes with twin suns, high contrast dramatic cinematic lighting, deep teal shadows and golden sunlight, intricate stillsuit armor details, blockbuster cinema visual style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2uYvm5L5Lt286JbqLUX6us2xMrUqLLG_bU2nipaevjWbYLNcwFikLtvNpZ1E95D5LLPpL8yduXkbL5uSIzj4NDoGE1t2ATRaGu9k9J84uBo9-6xHODtcLbS5KF3zdPqGt2gfbz8siDKJ_tsC9sNPNb6taDNKK1kEdwXf4o65Yn0drRHvZTzUHrzGVltHi9Bfx5XOtP9XinurPIqgZsHH1hdpLQlaLbcKtFoIu7z1s5DLPtG92x66rng"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent opacity-80"></div>
+<!-- Poster Bottom Overlay Metadata -->
+<div class="absolute bottom-0 inset-x-0 p-space-md flex items-end justify-between z-20">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">IMDb Score</p>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#f59e0b] text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">8.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/10</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low/80 backdrop-blur-md px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Warner Bros.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Bar under Poster -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="py-2.5 px-space-md rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-space-xs transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Add to Watchlist</span>
+</button>
+<button class="py-2.5 px-space-md rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-space-xs transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share Movie</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Movie Specifications, Pricing & Checkout -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Title & Genre Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="bg-surface-container-high text-secondary font-label-md text-label-md px-3 py-1 rounded-full font-semibold">Action</span>
+<span class="bg-surface-container-high text-secondary font-label-md text-label-md px-3 py-1 rounded-full font-semibold">Adventure</span>
+<span class="bg-surface-container-high text-secondary font-label-md text-label-md px-3 py-1 rounded-full font-semibold">Sci-Fi</span>
+<span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-full font-mono">PG-13</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-xs">
+<h1 class="font-headline-xl text-headline-xl font-extrabold text-on-surface tracking-tight">
+                Dune
+              </h1>
+<span class="font-title-md text-title-md text-outline">Part One • 2021</span>
+</div>
+<p class="font-body-md text-body-md text-primary/80 italic font-semibold">
+              "Beyond fear, destiny awaits."
+            </p>
+</div>
+<!-- Purchase & Checkout Hub (Tier 2 Floating Card) -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl relative overflow-hidden flex flex-col gap-space-md">
+<!-- Decorative Accent line in header -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-secondary to-tertiary"></div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">One-Time Digital Rental (48 Hours)</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-xl text-headline-xl font-extrabold text-tertiary">Rs. 50</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rs. 150</span>
+<span class="bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold ml-space-xs">66% OFF</span>
+</div>
+</div>
+<!-- Instant Pay CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto">
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold px-space-xl py-3 rounded-full flex items-center justify-center gap-space-xs shadow-[0_4px_20px_rgba(49,152,220,0.4)] hover:shadow-[0_6px_24px_rgba(49,152,220,0.6)] transition-all transform hover:-translate-y-0.5" id="buyNowBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span>
+<span>Buy Now</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold px-space-lg py-3 rounded-full flex items-center justify-center gap-space-xs transition-colors" id="trailerBtn" type="button">
+<span class="material-symbols-outlined text-secondary text-[20px]">play_circle</span>
+<span>Trailer</span>
+</button>
+</div>
+</div>
+<!-- Wallet Balance Status Callout -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span>
+<span>Wallet Balance: <strong class="text-on-surface">Rs. 300</strong></span>
+<span class="text-outline">•</span>
+<span class="text-tertiary font-medium">Instant 1-Click TVOD Unlock Eligible</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-semibold flex items-center gap-0.5" data-path="wallet" href="#">
+<span>Top-up Wallet</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Metadata Grid (Key Film Specifications) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-outline mb-space-sm">Technical Specifications &amp; Details</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Language</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">English</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Urdu / Hindi Dubs</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Quality</span>
+<span class="font-title-md text-title-md font-semibold text-secondary">1080p FHD &amp; 4K</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">HEVC / H.265</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Download Size</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">2.5 GB</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Offline ready</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Runtime</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">2h 35m</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">155 minutes</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Audio Track</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Dolby Atmos 5.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Spatial Audio</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Subtitles</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">English, Arabic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Closed Captions</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Director</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Denis Villeneuve</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Legendary Ent.</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline">Release Year</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">2021</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Theatrical Cut</span>
+</div>
+</div>
+</div>
+<!-- Description / Synopsis -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">subject</span>
+<span>Description</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              A hero's journey begins. Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous and desolate planet in the cosmos—Arrakis—to secure the future of his family and noble house.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80 leading-relaxed mt-space-xs">
+              As malevolent forces erupt into conflict over the planet's exclusive supply of the most precious resource in existence—a mind-expanding spice that unlocks humanity's greatest potential—only those who conquer their fears will survive the impending storm.
+            </p>
+</div>
+</div>
+</section>
+<!-- Section: Cinematic Screenshots & Previews Grid -->
+<section class="flex flex-col gap-space-md mt-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">photo_library</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Screenshots &amp; Previews</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">4 High-Definition Stills</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Screenshot 1 -->
+<div class="group relative aspect-video rounded-lg overflow-hidden bg-surface-container cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Dune movie still showing royal ornithopter aircraft flying over colossal golden sand dunes of Arrakis, hazy hot desert atmosphere, hyper-detailed mechanical wings, cinematic wide panoramic perspective, warm amber color tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgysqeBwiMSJv6_8iwgte9ArxBi2clxa-We2QLlowJB__kUmKW9M_BSlNCj_Jho5bGPVfl_Nk9fe_vzmRMP1y-vAeV2TB-YsZGbRm7qBpNkn6sAvX8JnL4TXNtQUND_SMlXipmB0xdNdA4424f4k3XbMzHkfoqbXHugl4GZc3WzjDIWRJndYx8VXW90uMh3eLqQsos9MjPoZkglemnQcflkExnqmyJZNlzauIMNNNIMpI2gMRM71GKgg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                Ornithopter Flight
+              </span>
+</div>
+</div>
+<!-- Screenshot 2 -->
+<div class="group relative aspect-video rounded-lg overflow-hidden bg-surface-container cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Dune movie close-up scene of Paul Atreides wearing black stillsuit with breathing tube in nose, sandstorm winds blowing curly hair, intense focused gaze with spice blue eyes, harsh golden sunlight hitting cheekbone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcRmcJSBRcnxXJLrzXgqkl7pk_K3JppjNyEfQIQ6jTAxhI02jWztFS9ssYL1V_i5yOjHNZXsoVUky1EhFhEKBV2yoV-ge3MltA3SL_NQAFhJ95QKwAMAF6tgfwlanyLb5jTVUXWSPQCc1tqIFBVkZyc7ntfjzMmx87zEkod-L4Q10lmTALXWtGcKxH6EfBfR5xOLisEPwAz4gyR9olvOiK6Pt-Fink8xTBqhhqZnNbq95BZNlfjzZWtw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                Paul in the Deep Desert
+              </span>
+</div>
+</div>
+<!-- Screenshot 3 -->
+<div class="group relative aspect-video rounded-lg overflow-hidden bg-surface-container cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Dune movie battle scene at night in Arrakeen city with fiery orange explosions, laser defense beams cutting through smoky darkness, silhouettes of Sardaukar warriors descending on harness ropes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUxZ8AWtFRLTEm1VyX1uq3z0kn0CSVPEpulW5Qo9xQv8_gjany6Gy7xltSIcdz1KaouwpClYrOaFWdppFmFuK9EOP1J-FqcMlPVD6Cv3u710NZiy7rIAOqoiKLgzhDilxtC-Sp8B6kgx0RE8b_Ny0MlODRve8n_92-UF7psYaWGIqVfna9P1-e8gr-GGCH4uzMbmFEAM0hXrezbYxQWTnvNrrnum2RbC47RsU3W3Z-Mlg5tSdtEyimOQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                Night Siege of Arrakeen
+              </span>
+</div>
+</div>
+<!-- Screenshot 4 -->
+<div class="group relative aspect-video rounded-lg overflow-hidden bg-surface-container cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Dune movie scene inside the imperial stone palace of Caladan with Lady Jessica and Duke Leto standing near monumental dark stone pillars, soft ocean mist daylight entering through giant slit windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoL6nXHsa7xBwCoKOkhD26pe5VkyvJTnH3OSC2zxR4MGA-SwkDWfJiNk35Y0LcREB0sqgki2XVvlO5P_zpYsLOpO--OLZw0YAtW6hfsOkMwgXPWNbrV0xPFpMoYkSa8_9vL01ssJWfc13lYvPUf4uVZzo_4JeGosFdG_7_cD9Y9CJviIBmfshGvPCr_linK7tO2cq_ksK7r6CDqIQEAy4hj1oD-Es3rg3nBRdj7TWFKK9z-5rrU30GEQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                House Atreides Council
+              </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Key Cast & Crew -->
+<section class="flex flex-col gap-space-md">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Top Cast</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-gutter">
+<div class="flex flex-col items-center text-center gap-space-xs group">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of actor Timothée Chalamet against a studio slate backdrop, soft dramatic key lighting, sharp portrait focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9bs4uqggzf2wvFDP88oi2rxqDvMJ1ObkfifGZi8PhHvjM0rOJhDusgvieQuUcxe7MkFe4e6kuGWHEfA8FhyUtV5zhLiA1DCKS0j-SLlW4wU-PfCjPLLyaHUWp5i768jqCT_X7I29blQqQ4S0bVaFNqdqcV-lYVpz-UXBpXtJeHNPq3UrzcbT2_1JMxHssZAZ7jKRHT4Hwe-ptZq1sO0UBXIjNCJ2K1GsdRd8SzgRCWi0L4AXud2IYbw"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Timothée Chalamet</span>
+<span class="font-body-sm text-body-sm text-outline">Paul Atreides</span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-xs group">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of actress Rebecca Ferguson against a dark cinematic grey backdrop, elegant side lighting, high contrast photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq8E9n67mXWvo6HBrpyBxmymRDHSl1S1Jeql-834WJlS_WHoeGp_ZIoKZjoLkMJnRznXeO8_iGuxvL1THF6GHRZlLKSj7F5e_Br6QFDKXjkS2ng6tDAbkidpLiWeXJO--pk0noL4dhNRjJlUySqEg283ygT9krW985KYo-xwl7GWFL0SPUk9X9hJTUf2wlqXd7HcFRIKRo6NHic9lpQuP6w3SsQCynwAAfVhsPzbhfx2irKUSmFeaeWA"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Rebecca Ferguson</span>
+<span class="font-body-sm text-body-sm text-outline">Lady Jessica</span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-xs group">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of actor Oscar Isaac with trimmed dark beard and sleek hair, studio rim lighting, charcoal backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ8_3YJd8YqkqtSBlBJOTU671Ir3l5SE51ksTpCW84hmAa71KlssjqaYl9mwXntxNK967KoSOu5J0NFUVnPD7AAnlHTgviWBI4VBuzyoxC6tpuLpKx5nSo_yKsqq6gyO3rWw5GrVmTgD8urfMEU_GPW037nmYSlDyudK53fDHNhCAgcctL0k8d6X5eTQzbmj0D7lLRAC09uZfiQ_tLuWLBX0ISQUZ3_ZM4xVFrOnliwhVDeAC7hjoJoA"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Oscar Isaac</span>
+<span class="font-body-sm text-body-sm text-outline">Duke Leto</span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-xs group">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of actress Zendaya against minimalist dark studio backdrop, soft cinematic glow, modern editorial headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5I2QRHNxu-_kNnMSXoomXqi4P7Vr_BgPw_qgk9q45OonqeaAwIptDJzw_3thgLV3i0VfJRz9uUZYJg8KE1SmR1L81bYOD12u8887QE1a7aqN3r5rBPuyorkghDDGK4t875m5LxI-eLUOOoDmyVBYjZyyR9d460GR3QeYG7brcYhpuWTc8FOfIeOGaWQiYTeUmimh7PVNwQdf5wc3edPlAVtc5A3030myVHZPITWaqiMP2LFCiBzlzGg"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Zendaya</span>
+<span class="font-body-sm text-body-sm text-outline">Chani</span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-xs group">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of actor Josh Brolin with intense weathered expression, textured studio lighting, dark navy backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaNgbQCRydrgyAFBWMjxLu2TJX9436hjwkaYTDNhLwg9IHKxfmQ0E1sSHRiH-XVuwhBXLx_wcrNc2qagOAvexIybHPrCrTdCjMdRJh1URj20UI9yHVimZX2IPWB6MhfiNBAtgSbDewjuVnhuGwfcHxP36MxsSKTo4r0H98giP7NT4mfp1kffX0noFkKRVMXWoPFYBJWWjIp5mUNwrldtHeo6G5_KNh2I-p8b1gcYTB9Obi3o92YCo2TQ"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Josh Brolin</span>
+<span class="font-body-sm text-body-sm text-outline">Gurney Halleck</span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-xs group">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of actor Jason Momoa with beard and styled dark hair, warm cinematic key lighting, deep shadow background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCcvGNo4lSUcyuRcp78Y0coe4x0EmnCQD_aV9jooRabGRH4M14A8G_XNwPC-FzPjGFy2QqA3sBYEsz1QkA7L8KOrNOitDhb3rCDbJ_rOEIFpLXdt3WI_297sRlHQFZ8pRPsE2xRFZWvWUARsVI5ZuMqo1g2QC-BNG37sEmO_43ilhtLssqTFz-9catwshAYe-YhQNfjLeswVrNsei63b8T6VeWm4m6zoiVm23rb5Qygl2J3AZEzpEXkQ"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Jason Momoa</span>
+<span class="font-body-sm text-body-sm text-outline">Duncan Idaho</span>
+</div>
+</div>
+</section>
+<!-- Section: Recommended Blockbusters / Related Rails -->
+<section class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">auto_awesome</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">You May Also Like</h2>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline font-semibold flex items-center gap-0.5" data-path="movies" href="#">
+<span>View All</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-gutter">
+<!-- Card 1: Blade Runner 2049 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)]">
+<div class="aspect-[2/3] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Movie poster for Blade Runner 2049 showing Ryan Gosling in long coat standing in neon orange dystopian sandstorm with futuristic police spinner car, cyberpunk lighting, deep teal and amber contrasting tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv7EvrBflcfAdVtWUMuYZ-Wl9N7gTHtnW_-8LZjKPnoGoAcG3QznSL4udaN4obtyePDxghUKug2BlU5CsHE41uJn_A4TpUkTMs1zDjZI939KG99nS21Zknh_YP_8hlQldMt5nvfa0dnNrA3QixxPEZol75aHgp4d-IZQOnsyRnHJ5OQmJ97_TD41HH7tpHbiKDixm5mBJo-7OyVKY2OTvFuvhn_VWka5ZZDEuWUsKKF27LjXSrbWKY6Q"/>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">4K</span>
+</div>
+<div class="p-space-sm flex flex-col gap-1 flex-1 justify-between">
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface truncate">Blade Runner 2049</h4>
+<p class="font-body-sm text-body-sm text-outline">Sci-Fi • 2017</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt- space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-semibold transition-colors" type="button">Rent</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Interstellar -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)]">
+<div class="aspect-[2/3] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Movie poster for Interstellar depicting astronaut walking on frozen alien ice planet with massive gargantua black hole glowing in the starry dark space backdrop, cinematic epic sci-fi visual style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwWybt6xxoUCYLIU1ItOCR89hwf9u1iBdWNyytAcrghTTXmlaAnTPgW_yCqjxD_Wq520a2Q9777GC6ekrhqmQ_B1t15gz1QJSex9AYqI_yyq_n2mgMsXAZcgtMO1LCrk2ISMvw4QtLDOvj0kJKM7W1c2AIp7FCo2N2hnTLLon1eq81pO1xDgKaeOi5Mmnj7WhVQi3KgEWz8THHE-6GmuCRFv77H6kmPoamLC7GBMV35fOfYBq9spdBdA"/>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">4K</span>
+</div>
+<div class="p-space-sm flex flex-col gap-1 flex-1 justify-between">
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface truncate">Interstellar</h4>
+<p class="font-body-sm text-body-sm text-outline">Adventure • 2014</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt- space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-semibold transition-colors" type="button">Rent</button>
+</div>
+</div>
+</div>
+<!-- Card 3: The Batman -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)]">
+<div class="aspect-[2/3] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Movie poster for The Batman showing dark cowl silhouette with glowing red flare in heavy Gotham rain, moody noir aesthetic with deep shadows and blood-red reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoFY2tE0xU4m-SIHwo_kR8Iv0z7DpQi0ybyKwH-34NdUIuHdtyAA-ZvGeCgpxUeoVpaUAU-hh3loeQe9pL0Lw3PymTkDxXHhv5AqOZOMfQhRGzEy7Y2_4RaV0wJ-gePKItypvo-pYm9vu-ibFZzsW1JA4fiaplVzx8KeQUOznF9VdwG2lc6Ci1o8WyR3p-kAD45MAKFmeIMZR1_0giHROcGXOs-q1DWdpUr6bC5PJ7Jbok1dewniCViQ"/>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">4K</span>
+</div>
+<div class="p-space-sm flex flex-col gap-1 flex-1 justify-between">
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface truncate">The Batman</h4>
+<p class="font-body-sm text-body-sm text-outline">Action • 2022</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt- space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-semibold transition-colors" type="button">Rent</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Oppenheimer -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)]">
+<div class="aspect-[2/3] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Movie poster for Oppenheimer showing silhouette in fedora hat facing a colossal blinding atomic explosion swirl of orange flame, particulate embers and dark smoke, dramatic tension" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdTLAVEcfFh7tfU-i2RdBM3O56GDVJ_Qjd3Glq4C0xbMwoKxgGTCN0N5zsqi6g3O1QfOe1XOBsqvuYk8OuLgzbf2NF1Jny27kbF1f9GQC4ZWWZ2mzynCqHVXpiLXSmVb8ZT7rOYuBsecBY1zzETfrovo1ZOy18Qkaz6Wtt_QeG8XEC3nSSJSJnri1mGWJRCQU39QEgP15G_-cMXcZTiuqRJoE8xZbqYqScp6eqjZR_RynuPMIxeGrTmQ"/>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">4K</span>
+</div>
+<div class="p-space-sm flex flex-col gap-1 flex-1 justify-between">
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface truncate">Oppenheimer</h4>
+<p class="font-body-sm text-body-sm text-outline">Biography • 2023</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt- space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-semibold transition-colors" type="button">Rent</button>
+</div>
+</div>
+</div>
+<!-- Card 5: John Wick: Chapter 4 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)]">
+<div class="aspect-[2/3] w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Movie poster for John Wick Chapter 4 featuring Keanu Reeves in black tailored suit standing before the illuminated Eiffel Tower at night, vibrant neon violet and amber city reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiawnXXixeCJryIEdWJFA01837UA_IXDH53TVET6RIV-mC2PJs8vTCqu1Ds8mHpe92xh0_j378Z-f6wEp7cSnfgad5rUFj_wkirfQafOqWBSj8zMaLmJNwdc1ANiXBQ6FTjbiQy8CXngnCIDeGPUfpR1C8id47nkD8YVS5OzOa_Qc34OW4pQtwT5eQnveVpIRNMRqRQmXtUCGWD4yhHBSpcQV1FkquMMbyzXaIMtRZluxfRyxW_0ZoMA"/>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">4K</span>
+</div>
+<div class="p-space-sm flex flex-col gap-1 flex-1 justify-between">
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface truncate">John Wick: Chap. 4</h4>
+<p class="font-body-sm text-body-sm text-outline">Action • 2023</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt- space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-semibold transition-colors" type="button">Rent</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Purchase Confirmation Modal (Screen 7 Flow Integration) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-surface-container-lowest/85 backdrop-blur-md hidden opacity-0 transition-opacity duration-200" id="checkoutModal">
+<div class="bg-surface-container rounded-xl max-w-md w-full p-space-lg shadow-2xl relative flex flex-col items-center text-center">
+<button aria-label="Close dialog" class="absolute top-space-md right-space-md text-outline hover:text-on-surface transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Emerald Confirmation Icon -->
+<div class="w-16 h-16 rounded-full bg-tertiary-container/20 flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-extrabold text-on-surface">Confirm TVOD Rental</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Unlock 48-hour streaming license for Dune.</p>
+<!-- Receipt summary card -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-md mt-space-md flex flex-col gap-space-xs text-left">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Movie Rental</span>
+<span class="font-semibold text-on-surface">Dune (2021) 4K</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Price</span>
+<span class="font-semibold text-on-surface">Rs. 50</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Current Balance</span>
+<span class="font-semibold text-on-surface">Rs. 300</span>
+</div>
+<div class="w-full h-px bg-surface-container-highest my-1"></div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-bold">Remaining Balance</span>
+<span class="text-tertiary font-bold">Rs. 250</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full grid grid-cols-2 gap-space-sm mt-space-lg">
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold py-2.5 rounded-full flex items-center justify-center gap-1 shadow-md transition-colors" id="confirmPurchaseBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+<span>Confirm</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold py-2.5 rounded-full transition-colors" id="cancelPurchaseBtn" type="button">
+<span>Cancel</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Trailer Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-surface-container-lowest/90 backdrop-blur-lg hidden opacity-0 transition-opacity duration-200" id="trailerModal">
+<div class="bg-surface-container rounded-xl max-w-4xl w-full p-space-md shadow-2xl relative flex flex-col">
+<div class="flex items-center justify-between mb-space-sm px-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">smart_display</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Dune • Official Main Trailer</h3>
+</div>
+<button aria-label="Close trailer" class="text-outline hover:text-on-surface transition-colors" id="closeTrailerBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Video Player Frame Simulation -->
+<div class="w-full aspect-video rounded-lg overflow-hidden bg-surface-container-lowest relative flex items-center justify-center group">
+<img class="w-full h-full object-cover" data-alt="Dune high production trailer scene showing colossal sandworm erupting from Arrakis desert sand dunes directly in front of Paul and Jessica, hyper realistic particle simulations, epic scale cinematography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxmn42PM_HTFzck64hSlADBjyIXCE8E-VKuk-LYwfZtegA6RYAM8KG8gH9RsIVFreg1MHFLgTwVcU8AxecMHylugJHHkaROOmAk-bTWmBImjd6mX-VtACcvc0PIwme0NranHofmXOCS1MRzJZdJwfbO6BtUDaEp9NOzSzdepl0F4EGlfMYlnpgwlGWZVkCMYnNrVBWEMogMK1vaZIFGh9dzk7ivupjuN5c85dn28-cSuHno_LEBBRxQQ"/>
+<div class="absolute inset-0 bg-surface-container-lowest/50 flex flex-col items-center justify-center gap-space-sm">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-on-primary flex items-center justify-center shadow-[0_0_24px_rgba(49,152,220,0.6)] cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wider uppercase">Click to Stream Trailer (4K HDR)</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function () {
+      const buyBtn = document.getElementById('buyNowBtn');
+      const checkoutModal = document.getElementById('checkoutModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const cancelPurchaseBtn = document.getElementById('cancelPurchaseBtn');
+      const confirmPurchaseBtn = document.getElementById('confirmPurchaseBtn');
+
+      const trailerBtn = document.getElementById('trailerBtn');
+      const trailerModal = document.getElementById('trailerModal');
+      const closeTrailerBtn = document.getElementById('closeTrailerBtn');
+
+      function openModal(modal) {
+        modal.classList.remove('hidden');
+        setTimeout(() => modal.classList.remove('opacity-0'), 10);
+      }
+
+      function closeModal(modal) {
+        modal.classList.add('opacity-0');
+        setTimeout(() => modal.classList.add('hidden'), 200);
+      }
+
+      if (buyBtn && checkoutModal) {
+        buyBtn.addEventListener('click', () => openModal(checkoutModal));
+      }
+
+      if (closeModalBtn) closeModalBtn.addEventListener('click', () => closeModal(checkoutModal));
+      if (cancelPurchaseBtn) cancelPurchaseBtn.addEventListener('click', () => closeModal(checkoutModal));
+
+      if (confirmPurchaseBtn) {
+        confirmPurchaseBtn.addEventListener('click', () => {
+          confirmPurchaseBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Processing...</span>';
+          setTimeout(() => {
+            alert('Rental successful! Dune has been added to My Movies with 48h access.');
+            closeModal(checkoutModal);
+            confirmPurchaseBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">lock_open</span><span>Confirm</span>';
+          }, 800);
+        });
+      }
+
+      if (trailerBtn && trailerModal) {
+        trailerBtn.addEventListener('click', () => openModal(trailerModal));
+      }
+      if (closeTrailerBtn) closeTrailerBtn.addEventListener('click', () => closeModal(trailerModal));
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

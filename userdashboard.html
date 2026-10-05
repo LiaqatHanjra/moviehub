@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a aria-current="page" class="px-space-md py-1.5 font-label-lg transition-colors bg-surface-container-high text-on-surface rounded-full" data-path="wallet" href="#">Wallet</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full px-margin py-space-lg">
+<!-- Breadcrumb & Status Tracker -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Account</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Wallet &amp; Recharge</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-1.5 rounded-full shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Instant TVOD Balance Available</span>
+</div>
+</div>
+<!-- 12-Column Dashboard Shell -->
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- Left Persistent Sidebar Navigation (Cols 1-3) -->
+<aside class="col-span-12 lg:col-span-3 flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-xl shadow-md">
+<!-- User Badge Quick View -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container mb-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-sm text-headline-sm font-bold shadow-sm">
+            AK
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Ali Khan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">ali.khan@stream.pk</span>
+</div>
+</div>
+<nav class="flex flex-col gap-1 font-label-lg text-label-lg">
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">movie</span>
+<span>My Movies</span>
+<span class="ml-auto px-2 py-0.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm">3</span>
+</a>
+<!-- Active Wallet Route -->
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-bold shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+<span>Wallet</span>
+<span class="ml-auto w-2 h-2 rounded-full bg-primary"></span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+<span>Purchase History</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">account_circle</span>
+<span>Profile</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>Settings</span>
+</a>
+<div class="h-px bg-surface-container-high my-space-xs"></div>
+<a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-error hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Logout</span>
+</a>
+</nav>
+<!-- Mini TVOD Perk Banner -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 rounded-full bg-primary/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Fast TVOD Unlock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pre-fund your balance to stream pay-per-view blockbusters with zero 2FA wait.
+          </p>
+</div>
+</aside>
+<!-- Main Workspace (Cols 4-12) -->
+<section class="col-span-12 lg:col-span-9 flex flex-col gap-space-lg">
+<!-- Top Section: Balance Card & Stat Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Primary Balance Showcase Card (Spans 7 cols) -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between relative overflow-hidden shadow-lg">
+<!-- Ambient luminous gradients -->
+<div class="absolute top-0 right-0 w-48 h-48 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant">Available Funds</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">MovieHub Digital Wallet</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Active
+              </span>
+</div>
+<!-- Major Balance Number -->
+<div class="my-space-lg relative z-10 flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Current Balance</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight" id="displayBalance">Rs. 300</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">PKR • Instant Credit</span>
+</div>
+</div>
+<!-- Quick Sub-metrics Strip -->
+<div class="pt-space-md bg-surface-container/60 -mx-space-lg -mb-space-lg px-space-lg pb-space-md flex flex-wrap items-center justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">movie_filter</span>
+<span class="font-body-sm text-body-sm"><strong class="text-on-surface">3 Movies</strong> Purchased</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[18px]">credit_card</span>
+<span class="font-body-sm text-body-sm"><strong class="text-on-surface">Rs. 150</strong> Lifetime Spent</span>
+</div>
+</div>
+</div>
+<!-- Quick Stats & Analytics Card (Spans 5 cols) -->
+<div class="md:col-span-5 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface">Wallet Dynamics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sep 2026</span>
+</div>
+<!-- Spending inline SVG visualization (Sparkline + Distribution) -->
+<div class="my-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Monthly Top-up Inflow</span>
+<span class="text-tertiary font-bold">+Rs. 700</span>
+</div>
+<!-- Mini Sparkline SVG -->
+<div class="w-full h-12 py-1">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 200 48">
+<path class="text-tertiary" d="M 0,38 L 40,32 L 80,42 L 120,20 L 160,28 L 200,6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path class="text-tertiary/10" d="M 0,38 L 40,32 L 80,42 L 120,20 L 160,28 L 200,6 L 200,48 L 0,48 Z" fill="currentColor"></path>
+<circle class="text-tertiary" cx="200" cy="6" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span>Avg. Rental Cost: <strong class="text-on-surface">Rs. 50</strong></span>
+<span class="text-primary font-semibold">6 Rentals Potential</span>
+</div>
+</div>
+<!-- Security Assurance Note -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-2 rounded-lg text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Encrypted 256-bit TVOD Checkout</span>
+</div>
+</div>
+</div>
+<!-- Middle Section: Add Balance Form Workspace -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-lg flex flex-col gap-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Add Balance</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Select an instant reload amount or enter a custom sum to deposit directly to your wallet.</p>
+</div>
+<!-- Denomination Quick-Amount Pills -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Select Amount</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md" id="amountSelector">
+<!-- Rs 100 -->
+<button class="amount-pill group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-on-surface cursor-pointer text-center" data-amount="100" type="button">
+<span class="font-headline-sm text-headline-sm font-bold">Rs. 100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors mt-0.5">2 Rentals</span>
+</button>
+<!-- Rs 200 -->
+<button class="amount-pill group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-on-surface cursor-pointer text-center" data-amount="200" type="button">
+<span class="font-headline-sm text-headline-sm font-bold">Rs. 200</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors mt-0.5">4 Rentals</span>
+</button>
+<!-- Rs 500 (Popular / Pre-Selected) -->
+<button class="amount-pill active group relative flex flex-col items-center justify-center p-space-md rounded-xl bg-primary-container text-on-primary-container font-bold shadow-md cursor-pointer text-center scale-102" data-amount="500" type="button">
+<span class="absolute -top-2 px-space-xs py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm uppercase tracking-wider font-extrabold shadow-sm">Popular</span>
+<span class="font-headline-sm text-headline-sm font-extrabold">Rs. 500</span>
+<span class="font-label-sm text-label-sm opacity-90 mt-0.5">10 Rentals + HD</span>
+</button>
+<!-- Rs 1000 -->
+<button class="amount-pill group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-on-surface cursor-pointer text-center" data-amount="1000" type="button">
+<span class="font-headline-sm text-headline-sm font-bold">Rs. 1000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors mt-0.5">VIP Season Pass</span>
+</button>
+</div>
+</div>
+<!-- Custom Amount Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface-variant" for="customAmount">Or Enter Custom Recharge Amount</label>
+<div class="relative flex items-center max-w-md">
+<span class="absolute left-space-md font-label-lg text-label-lg font-bold text-primary pointer-events-none">Rs.</span>
+<input class="w-full h-11 pl-12 pr-space-md bg-surface-container rounded-lg font-headline-sm text-headline-sm font-bold text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-all" id="customAmount" max="10000" min="50" placeholder="500" type="number" value="500"/>
+<button class="absolute right-3 text-outline hover:text-on-surface transition-colors" id="clearAmount" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Minimum top-up: Rs. 50 • Maximum single recharge: Rs. 10,000</span>
+</div>
+<!-- Payment Channel Selection -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Select Payment Gateway</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md" id="paymentOptions">
+<!-- EasyPaisa -->
+<label class="payment-method-card flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high">
+<input checked="" class="accent-primary w-4 h-4 cursor-pointer" name="paymentMethod" type="radio" value="easypaisa"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+                    EasyPaisa
+                    <span class="material-symbols-outlined text-tertiary text-[16px]">bolt</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mobile Account / OTP</span>
+</div>
+</label>
+<!-- JazzCash -->
+<label class="payment-method-card flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="paymentMethod" type="radio" value="jazzcash"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">JazzCash</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant Direct Debit</span>
+</div>
+</label>
+<!-- Debit / Credit Card -->
+<label class="payment-method-card flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="paymentMethod" type="radio" value="card"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+                    Debit / Card
+                    <span class="material-symbols-outlined text-[16px] text-outline">credit_card</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Visa / Mastercard / PayPak</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Checkout Call to Action Banner -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container/70 p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Recharging to: <strong class="text-tertiary">Ali Khan (0300-***459)</strong></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">No convenience fee applied on wallet top-ups.</span>
+</div>
+</div>
+<!-- Primary Action Pill Button -->
+<button class="w-full sm:w-auto px-space-xl py-3 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold hover:brightness-110 active:scale-95 transition-all shadow-md flex items-center justify-center gap-2" id="proceedPayBtn" type="button">
+<span>Proceed to Pay</span>
+<span class="font-headline-sm text-headline-sm font-extrabold" id="payBtnAmount">Rs. 500</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Bottom Section: Transaction History Feed -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Transaction History</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recent wallet deposits and movie rentals deduction logs</p>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-semibold">All Records</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Deposits</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Rentals</span>
+</div>
+</div>
+<!-- Transaction List -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<!-- Item 1: +Rs. 500 Wallet Recharge -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Wallet Recharge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>EasyPaisa Ref: #EP-90218</span>
+<span>•</span>
+<span>25 Sep 2026, 08:42 PM</span>
+</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm font-extrabold text-tertiary">+ Rs. 500</span>
+<span class="font-label-sm text-label-sm text-tertiary">Completed</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+</div>
+</div>
+<!-- Item 2: -Rs. 50 Movie Purchase (John Wick 4) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container/30 text-error flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Movie Purchase • John Wick: Chapter 4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>4K UltraHD 48h Rental</span>
+<span>•</span>
+<span>20 Sep 2026, 10:15 PM</span>
+</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm font-extrabold text-error">- Rs. 50</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streamed</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+</div>
+<!-- Item 3: +Rs. 200 Wallet Recharge -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Wallet Recharge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>JazzCash Ref: #JC-38102</span>
+<span>•</span>
+<span>15 Sep 2026, 03:10 PM</span>
+</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm font-extrabold text-tertiary">+ Rs. 200</span>
+<span class="font-label-sm text-label-sm text-tertiary">Completed</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+</div>
+</div>
+<!-- Item 4: -Rs. 50 Movie Purchase (Dune) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container/30 text-error flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Movie Purchase • Dune: Part Two</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>1080p Web-DL Rental</span>
+<span>•</span>
+<span>10 Sep 2026, 09:00 PM</span>
+</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm font-extrabold text-error">- Rs. 50</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streamed</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+</div>
+</div>
+<!-- Pagination or History Footer -->
+<div class="flex items-center justify-between pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span>Showing 4 of 28 transactions</span>
+<button class="text-primary hover:underline font-label-md text-label-md flex items-center gap-1" type="button">
+<span>View Full Ledger</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Client Behavior -->
+<script>
+    (function initWalletInteractions() {
+      const pills = document.querySelectorAll('.amount-pill');
+      const customInput = document.getElementById('customAmount');
+      const payBtnAmount = document.getElementById('payBtnAmount');
+      const clearBtn = document.getElementById('clearAmount');
+      const proceedBtn = document.getElementById('proceedPayBtn');
+
+      function updateActiveState(selectedAmount) {
+        pills.forEach(pill => {
+          const pillVal = pill.getAttribute('data-amount');
+          if (pillVal === String(selectedAmount)) {
+            pill.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-md', 'scale-102');
+            pill.classList.remove('bg-surface-container', 'text-on-surface');
+          } else {
+            pill.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-md', 'scale-102');
+            pill.classList.add('bg-surface-container', 'text-on-surface');
+          }
+        });
+        if (payBtnAmount) {
+          payBtnAmount.textContent = 'Rs. ' + (selectedAmount || 0);
+        }
+      }
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const val = pill.getAttribute('data-amount');
+          if (customInput) customInput.value = val;
+          updateActiveState(val);
+        });
+      });
+
+      if (customInput) {
+        customInput.addEventListener('input', (e) => {
+          const numericVal = e.target.value;
+          updateActiveState(numericVal);
+        });
+      }
+
+      if (clearBtn && customInput) {
+        clearBtn.addEventListener('click', () => {
+          customInput.value = '';
+          customInput.focus();
+          updateActiveState('');
+        });
+      }
+
+      if (proceedBtn) {
+        proceedBtn.addEventListener('click', () => {
+          const amt = customInput ? customInput.value : '500';
+          if (!amt || Number(amt) <= 0) {
+            alert('Please select or enter a valid recharge amount.');
+            return;
+          }
+          const prevText = proceedBtn.innerHTML;
+          proceedBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Processing Checkout...';
+          proceedBtn.disabled = true;
+          setTimeout(() => {
+            alert('Recharge order of Rs. ' + amt + ' initialized successfully! Redirecting to secure payment channel.');
+            proceedBtn.innerHTML = prevText;
+            proceedBtn.disabled = false;
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

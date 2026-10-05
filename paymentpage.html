@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="#">Wallet</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-dashboard" href="#">Admin</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><a class="flex items-center gap-space-sm pl-space-xs group" data-path="dashboard" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight group-hover:text-primary transition-colors">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block group-hover:text-on-surface transition-colors">keyboard_arrow_down</span></a></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-lg md:py-space-xl">
+<div class="absolute -top-12 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/3 right-10 w-80 h-80 bg-tertiary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Breadcrumb Hierarchy Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-space-lg relative z-10">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Movies</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Dune (2021)</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">Rental Checkout</span>
+</nav>
+<!-- Main Checkout Stage Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl relative z-10">
+<!-- LEFT COLUMN: Payment Method Selection & Auth (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-wider">Checkout Stage</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span> Instant Unlock
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Complete Rental Order</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Select your payment method to activate 48-hour high-definition digital streaming.</p>
+</div>
+<!-- Payment Method Group -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+              Payment Method
+            </label>
+<span class="text-label-sm font-label-sm text-on-surface-variant">All transactions are encrypted</span>
+</div>
+<!-- Method 1: MovieHub Digital Wallet (Active / Recommended) -->
+<div class="payment-option relative rounded-xl bg-surface-container-high p-space-md shadow-xl transition-all cursor-pointer group" data-method="wallet" onclick="selectPaymentMethod(this, 'wallet')">
+<div class="absolute -top-2.5 right-space-md px-2.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm shadow-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[12px]">verified</span> 1-Click Instant Unlock • Zero Fees
+            </div>
+<div class="flex items-start justify-between gap-space-md mt-1">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform shrink-0">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">MovieHub Digital Wallet</span>
+<span class="px-2 py-0.5 rounded bg-surface-bright text-tertiary font-label-sm text-label-sm">Primary</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Deduct seamlessly from your active pre-loaded entertainment balance.</p>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-label-md text-label-md text-on-surface">Available Balance: <span class="text-tertiary font-bold">Rs. 300</span></span>
+<span class="text-outline text-label-sm">•</span>
+<span class="text-label-sm font-label-sm text-primary">Balance after: <span class="font-bold text-on-surface">Rs. 250</span></span>
+</div>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center shrink-0 check-indicator">
+<span class="material-symbols-outlined text-on-primary text-[16px] font-bold">check</span>
+</div>
+</div>
+</div>
+<!-- Method 2: EasyPaisa -->
+<div class="payment-option relative rounded-xl bg-surface-container p-space-md hover:bg-surface-container-high shadow-md transition-all cursor-pointer group" data-method="easypaisa" onclick="selectPaymentMethod(this, 'easypaisa')">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary group-hover:scale-105 transition-transform shrink-0 font-bold font-headline-sm">
+                  EP
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">EasyPaisa Mobile Account</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Instant OTP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pay via mobile wallet registered to +92 300 ••••419</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center shrink-0 check-indicator">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] opacity-0 check-icon">check</span>
+</div>
+</div>
+<!-- Sub-input for EasyPaisa when activated -->
+<div class="method-extra hidden pt-space-md mt-space-md border-t-0 flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Confirm EasyPaisa Phone Number</label>
+<div class="flex gap-2">
+<input class="bg-surface-container-low px-space-md py-2 rounded-lg font-body-md text-on-surface w-full focus:outline-none focus:bg-surface-bright" placeholder="03XXXXXXXXX" type="text" value="+92 300 8923419"/>
+<button class="px-space-md py-2 rounded-lg bg-surface-bright text-primary font-label-md text-label-md shrink-0" type="button">Send OTP</button>
+</div>
+</div>
+</div>
+<!-- Method 3: JazzCash -->
+<div class="payment-option relative rounded-xl bg-surface-container p-space-md hover:bg-surface-container-high shadow-md transition-all cursor-pointer group" data-method="jazzcash" onclick="selectPaymentMethod(this, 'jazzcash')">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-error group-hover:scale-105 transition-transform shrink-0 font-bold font-headline-sm">
+                  JC
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">JazzCash Digital Wallet</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Direct Debit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Authorize directly from your JazzCash app with MPIN prompt.</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center shrink-0 check-indicator">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] opacity-0 check-icon">check</span>
+</div>
+</div>
+<div class="method-extra hidden pt-space-md mt-space-md flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">JazzCash Account Number</label>
+<input class="bg-surface-container-low px-space-md py-2 rounded-lg font-body-md text-on-surface w-full focus:outline-none focus:bg-surface-bright" placeholder="03001234567" type="text"/>
+</div>
+</div>
+<!-- Method 4: Debit / Credit Card -->
+<div class="payment-option relative rounded-xl bg-surface-container p-space-md hover:bg-surface-container-high shadow-md transition-all cursor-pointer group" data-method="card" onclick="selectPaymentMethod(this, 'card')">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:scale-105 transition-transform shrink-0">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Debit / Credit Card</span>
+<div class="flex gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest">Visa</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest">Mastercard</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest">PayPak</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global cards supported with 3D Secure verification.</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center shrink-0 check-indicator">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] opacity-0 check-icon">check</span>
+</div>
+</div>
+<!-- Card Fields Expanded State -->
+<div class="method-extra hidden pt-space-md mt-space-md flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Card Number</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low px-space-md py-2 rounded-lg font-body-md text-on-surface focus:outline-none focus:bg-surface-bright" placeholder="4214 •••• •••• 9921" type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-outline text-[20px]">lock</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant">Expiration</label>
+<input class="w-full bg-surface-container-low px-space-md py-2 rounded-lg font-body-md text-on-surface focus:outline-none" placeholder="MM/YY" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant">CVV / CVC</label>
+<input class="w-full bg-surface-container-low px-space-md py-2 rounded-lg font-body-md text-on-surface focus:outline-none" maxlength="4" placeholder="123" type="password"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Security & Guarantee Badge Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md shadow-inner">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Encrypted 256-Bit TVOD Checkout</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your transaction is safeguarded by tokenized digital DRM &amp; instant server-side rights assignment.</p>
+</div>
+</div>
+<div class="hidden sm:flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">shield</span> SECURE DRM
+            </span>
+<span class="font-body-sm text-body-sm text-outline">Tier-4 CDN Ready</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Order Summary Bento Card (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Sticky Cart Panel -->
+<div class="sticky top-20 bg-surface-container-high rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">receipt_long</span>
+              Rental Order Summary
+            </h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-bright text-secondary font-label-sm text-label-sm font-semibold">TVOD Digital Stream</span>
+</div>
+<!-- Movie Snapshot Bento -->
+<div class="flex gap-space-md bg-surface-container-lowest p-space-md rounded-xl">
+<div class="w-24 h-36 rounded-lg overflow-hidden shrink-0 shadow-lg relative group">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Dune cinematic poster showing Timothee Chalamet standing on vast golden Arrakis desert dunes under high sci-fi celestial sky, dark dramatic cinematic lighting, cyan and orange grading, 4K film still" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGcm8nhCHmILGE9H7zWMGo96hoJJrPcLEXYXULVt0KjAT9XKJnYIWAqlH5TgpcFx45gRNkNY-JMW-anwgyRF3ToNsGJ25d4XHFPT7f00d8G_haG2ndawKWwRVwkalRPx-0MCqBKak-RCryW5dUXvSC4orAMIkHS-87eYhcW5GKdTt3tXO6VwWqaZjNJxS9t4U1AHWm-mrC_n3O6wnTu5zlYfQ4ds19n3noRtLvaIB7Znf22HQSphzlVw"/>
+<div class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/80 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold">
+                4K UHD
+              </div>
+</div>
+<div class="flex flex-col justify-between py-0.5 flex-1 min-w-0">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-semibold">Sci-Fi / Epic</span>
+<span class="font-label-sm text-label-sm text-outline">2021</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Dune: Part One</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Dir. Denis Villeneuve • 2h 35m</p>
+</div>
+<!-- Media Badges -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">high_quality</span> 4K Ultra HD
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">volume_up</span> Atmos 5.1
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">2.5 GB</span>
+</div>
+</div>
+</div>
+<!-- Digital Rental Policy Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Rental Duration &amp; Access</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Once confirmed, this movie remains unlocked in your library. You have <strong>30 days</strong> to begin playback, and <strong>48 hours</strong> of unlimited streams and offline downloads once started.
+              </p>
+</div>
+</div>
+<!-- Price Calculation List -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Pay-Per-View Rental Fee</span>
+<span class="font-bold text-on-surface">Rs. 50</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface-variant">
+<span class="flex items-center gap-1">
+                Platform Tax &amp; GST (0%)
+                <span class="material-symbols-outlined text-[14px] text-outline cursor-help" title="No additional tax on digital TVOD streaming">info</span>
+</span>
+<span class="text-tertiary font-semibold">Rs. 0</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Instant Digital License</span>
+<span class="text-tertiary font-semibold">Included</span>
+</div>
+<!-- Grand Total Bar -->
+<div class="mt-space-sm pt-space-md bg-surface-container-lowest p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Total Payable Now</span>
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Wallet auto-deduction
+                </span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface text-primary">Rs. 50</span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Buttons -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full py-3.5 px-space-lg rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(49,152,220,0.4)] hover:shadow-[0_0_32px_rgba(49,152,220,0.6)] transition-all cursor-pointer transform active:scale-95" id="confirmPayBtn" onclick="triggerPurchaseFlow()" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Confirm &amp; Pay Rs. 50</span>
+</button>
+<a class="w-full py-2.5 text-center text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="#">
+              Cancel and Return to Movie
+            </a>
+</div>
+<!-- Payment Trust Ticker -->
+<div class="flex items-center justify-center gap-space-lg pt-space-xs text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">flash_on</span> Instant Access</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">cloud_download</span> Offline Mode</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">devices</span> Multi-Device</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Feature Highlights (Bottom Section) -->
+<div class="mt-space-xl pt-space-xl border-t-0 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Frequently Asked Rental Questions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Everything you need to know about MovieHub Pay-Per-View rentals.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">When does 48-hour access start?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The 48-hour timer only begins the moment you press play on the movie player, not immediately after purchasing.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary mb-1">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Can I download to watch offline?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Yes! Once unlocked, you can download Dune in 480p, 720p, or full 1080p for viewing during travel without data.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">How do wallet refunds work?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">If playback fails to start due to network streaming errors, 100% of your Rs. 50 will be auto-credited to your wallet.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- PURCHASE SUCCESS MODAL (Overlay Dialog Matching Screen #7) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-surface-container-lowest/80 backdrop-blur-md hidden transition-opacity duration-300 opacity-0" id="successModal">
+<div class="relative w-full max-w-md bg-surface-container-low rounded-2xl p-space-xl shadow-[0_16px_48px_rgba(0,0,0,0.8)] border border-surface-container-high flex flex-col items-center text-center animate-in fade-in zoom-in-95 duration-200">
+<!-- Close icon button -->
+<button aria-label="Close dialog" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors" onclick="closeSuccessModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<!-- Success Tick Badge with Pulse Ring -->
+<div class="relative w-20 h-20 mb-space-md flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-tertiary/20 animate-ping opacity-75"></div>
+<div class="w-16 h-16 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary shadow-[0_0_32px_rgba(78,222,163,0.5)]">
+<span class="material-symbols-outlined text-[36px] font-bold" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<!-- Main Headline -->
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">Purchase Successful!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xs">Movie has been added to your account library with full 4K streaming rights.</p>
+<!-- Financial Receipt Breakdown Card (Screen #7 exact structure) -->
+<div class="w-full bg-surface-container rounded-xl p-space-md my-space-lg flex flex-col gap-2.5 text-left">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Movie Title</span>
+<span class="text-on-surface font-semibold truncate max-w-[180px]">Dune (2021) 4K UHD</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Movie Price</span>
+<span class="text-on-surface font-bold">Rs. 50</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Previous Balance</span>
+<span class="text-on-surface-variant">Rs. 300</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Amount Deducted</span>
+<span class="text-error font-semibold">- Rs. 50</span>
+</div>
+<div class="pt-2 mt-1 border-t border-surface-container-high/60 flex items-center justify-between font-body-md text-body-md">
+<span class="text-on-surface font-bold">Remaining Balance</span>
+<span class="text-tertiary font-extrabold text-title-md">Rs. 250</span>
+</div>
+</div>
+<!-- Action Buttons (Screen #7 dual layout) -->
+<div class="w-full grid grid-cols-2 gap-space-sm">
+<a class="w-full py-3 px-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-[0_0_16px_rgba(49,152,220,0.35)] transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Watch Online</span>
+</a>
+<a class="w-full py-3 px-space-md rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download</span>
+</a>
+</div>
+<div class="mt-space-md">
+<a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#" onclick="closeSuccessModal()">
+          Go to My Movies Library
+        </a>
+</div>
+</div>
+</div>
+<script>
+    function selectPaymentMethod(element, method) {
+      // Clear active styling from all items
+      document.querySelectorAll('.payment-option').forEach(card => {
+        card.classList.remove('bg-surface-container-high');
+        card.classList.add('bg-surface-container');
+        
+        // Hide nested expandable input containers
+        const extra = card.querySelector('.method-extra');
+        if (extra) extra.classList.add('hidden');
+
+        // Check indicator reset
+        const ind = card.querySelector('.check-indicator');
+        if (ind) {
+          ind.classList.remove('bg-primary');
+          ind.classList.add('bg-surface-variant');
+          const icon = ind.querySelector('.check-icon');
+          if (icon) icon.classList.add('opacity-0');
+        }
+      });
+
+      // Highlight selected
+      element.classList.remove('bg-surface-container');
+      element.classList.add('bg-surface-container-high');
+      
+      const extra = element.querySelector('.method-extra');
+      if (extra) extra.classList.remove('hidden');
+
+      const ind = element.querySelector('.check-indicator');
+      if (ind) {
+        ind.classList.remove('bg-surface-variant');
+        ind.classList.add('bg-primary');
+        const icon = ind.querySelector('.check-icon');
+        if (icon) icon.classList.remove('opacity-0');
+      }
+    }
+
+    function triggerPurchaseFlow() {
+      const btn = document.getElementById('confirmPayBtn');
+      btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Authorizing Transaction...</span>`;
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">lock</span><span>Confirm &amp; Pay Rs. 50</span>`;
+        btn.disabled = false;
+        
+        // Show modal
+        const modal = document.getElementById('successModal');
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+          modal.classList.remove('opacity-0');
+        }, 10);
+      }, 700);
+    }
+
+    function closeSuccessModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

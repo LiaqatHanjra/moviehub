@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="landingpage.html"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a aria-current="page" class="px-space-md py-1.5 font-label-lg transition-colors bg-surface-container-high text-on-surface rounded-full" data-path="home" href="landingpage.html">Home</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="subscribeportal.html">Wallet</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Immersive Cinematic Hero Showcase (Bleeds under shell header) -->
+<section class="relative w-full -mt-16 overflow-hidden bg-surface-container-lowest">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-24 -left-20 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-[500px] h-[500px] rounded-full bg-secondary-container/15 blur-[160px] pointer-events-none"></div>
+<!-- Hero Backdrop Container -->
+<div class="relative w-full min-h-[640px] lg:min-h-[720px] flex items-end">
+<!-- High-Impact Hero Artwork with Scrim Gradient -->
+<div class="absolute inset-0 bg-cover bg-center lg:bg-[center_top]" data-alt="Cinematic close-up portrait of Keanu Reeves as John Wick in rainy nocturnal Paris city atmosphere, intense focused expression, dark tailored suit, subtle neon cyan and cool amber rim lighting, heavy rain droplets, high-contrast dark cinematic aesthetic with obsidian blacks and atmospheric depth, 8k resolution movie still." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDB_5OQQAM2RgTkmURqhfoWTY42u5UZqfUEbj6Fdn1siXL0eYvSqxTuDQEd6qxXECVjYFPxb7bO295fDikkweH4EC3jLlkcg--ygO43MaR6QYxBpKqeVhCK9fQiUl3O8jt9VrTU7l8_zffBnQw0O6tZ9iS5agsomQ37wkLPrCbZ5BKQRSvWXlwKuKCIwuvY-p3kXAv3VwwL0jvp9lEfn0Xc-ZWGobtYcPVSIm5gwXRYvvqhctbQvAP5rw')">
+</div>
+<!-- Scrim Overlays for Pristine Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-surface-container-lowest/30"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<!-- Hero Content Block -->
+<div class="relative z-10 w-full px-margin pt-36 pb-space-xl max-w-5xl flex flex-col gap-space-md">
+<!-- Overline Tagline & Badges -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-sm bg-primary-container/20 text-primary font-label-sm text-label-sm tracking-widest uppercase font-bold backdrop-blur-md">
+            Featured TVOD Premiere
+          </span>
+<span class="px-2.5 py-1 rounded-sm bg-surface-container-high/90 text-on-surface font-label-sm text-label-sm uppercase font-semibold">
+            Ultra HD 4K
+          </span>
+<span class="px-2 py-1 rounded-sm bg-surface-container-high/60 text-tertiary font-label-sm text-label-sm uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span> 8.9 IMDb
+          </span>
+</div>
+<!-- Stylized Cinematic Title -->
+<div class="flex flex-col">
+<h1 class="font-headline-xl text-headline-xl lg:text-[64px] lg:leading-[72px] font-extrabold tracking-tight text-on-surface uppercase drop-shadow-2xl max-w-3xl">
+            John Wick<span class="text-primary">:</span> <span class="text-on-surface-variant font-bold">Chapter 4</span>
+</h1>
+<div class="flex flex-wrap items-center gap-space-sm text-on-surface-variant font-label-lg text-label-lg mt-space-xs">
+<span class="text-on-surface font-medium">Action</span>
+<span>•</span>
+<span class="text-on-surface font-medium">Thriller</span>
+<span>•</span>
+<span class="text-on-surface font-medium">Crime</span>
+<span class="text-outline">|</span>
+<span>2023</span>
+<span class="text-outline">|</span>
+<span>2h 49m</span>
+<span class="text-outline">|</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">HDR10+</span>
+</div>
+</div>
+<!-- Synopsis snippet -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl line-clamp-2 leading-relaxed">
+          With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face a formidable new adversary.
+        </p>
+<!-- Pricing & Action Row -->
+<div class="flex flex-wrap items-center gap-space-lg pt-space-xs">
+<!-- Price Tag Badge with Glow -->
+<div class="flex items-baseline gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high/80 backdrop-blur-md shadow-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Rental</span>
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight">Rs. 50</span>
+</div>
+<!-- Primary CTA Button -->
+<button class="group px-space-xl py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-space-sm shadow-[0_4px_24px_rgba(49,152,220,0.45)] hover:bg-primary hover:shadow-[0_6px_30px_rgba(147,204,255,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all" onclick="handlePurchase('John Wick: Chapter 4', 50)" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-0.5 transition-transform" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Buy Now</span>
+</button>
+<!-- Watch Trailer Secondary -->
+<button class="px-space-lg py-3.5 rounded-full bg-surface-container-high/60 hover:bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold flex items-center gap-space-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">movie</span>
+<span>Trailer</span>
+</button>
+<!-- Add to Watchlist -->
+<button aria-label="Add to Watchlist" class="w-12 h-12 rounded-full bg-surface-container-high/60 hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Workspace -->
+<div class="w-full px-margin flex flex-col gap-space-xl py-space-xl">
+<!-- SECTION 2: Categories / Genres Section (Screen 1 Category Pill Row) -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex items-end justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">Explore Catalog</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Categories</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">8 Curated Genres</span>
+</div>
+<!-- 8 Stylized Category Cards with Vivid Color-coded Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-space-md">
+<!-- 1. Bollywood -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-error-container/40 flex items-center justify-center text-error group-hover:scale-110 group-hover:bg-error-container transition-all mb-space-sm shadow-[0_0_16px_rgba(255,180,171,0.2)]">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Bollywood</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">340+ titles</span>
+</button>
+<!-- 2. Hollywood -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-primary-container/30 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary-container/50 transition-all mb-space-sm shadow-[0_0_16px_rgba(147,204,255,0.2)]">
+<span class="material-symbols-outlined text-[24px]">movie</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Hollywood</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">820+ titles</span>
+</button>
+<!-- 3. South -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary group-hover:scale-110 group-hover:bg-secondary-container/50 transition-all mb-space-sm shadow-[0_0_16px_rgba(123,208,255,0.2)]">
+<span class="material-symbols-outlined text-[24px]">theaters</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">South</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">190+ titles</span>
+</button>
+<!-- 4. Punjabi -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-fixed group-hover:scale-110 group-hover:bg-surface-bright transition-all mb-space-sm shadow-[0_0_16px_rgba(204,229,255,0.15)]">
+<span class="material-symbols-outlined text-[24px]">music_video</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Punjabi</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">75+ titles</span>
+</button>
+<!-- 5. Action -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-primary-container/40 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary-container transition-all mb-space-sm shadow-[0_0_16px_rgba(49,152,220,0.3)]">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Action</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">510+ titles</span>
+</button>
+<!-- 6. Comedy -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/30 flex items-center justify-center text-tertiary group-hover:scale-110 group-hover:bg-tertiary-container/50 transition-all mb-space-sm shadow-[0_0_16px_rgba(78,222,163,0.2)]">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">sentiment_very_satisfied</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Comedy</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">260+ titles</span>
+</button>
+<!-- 7. Thriller -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary group-hover:scale-110 group-hover:bg-secondary-container transition-all mb-space-sm shadow-[0_0_16px_rgba(0,166,224,0.3)]">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Thriller</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">310+ titles</span>
+</button>
+<!-- 8. Horror -->
+<button class="group flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container border-0 hover:-translate-y-1 transition-all shadow-sm" type="button">
+<div class="w-12 h-12 rounded-full bg-error-container/60 flex items-center justify-center text-error group-hover:scale-110 group-hover:bg-error-container transition-all mb-space-sm shadow-[0_0_16px_rgba(255,180,171,0.25)]">
+<span class="material-symbols-outlined text-[24px]">skull</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Horror</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">140+ titles</span>
+</button>
+</div>
+</section>
+
+<!-- SECTION 1: Featured Movies Rail -->
+<section class="flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex items-end justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_8px_#93ccff]"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Pay-Per-View Cinema</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Featured Movies</h2>
+</div>
+<a class="group flex items-center gap-1 font-label-lg text-label-lg font-semibold text-primary hover:text-on-surface transition-colors" href="#">
+<span>View All</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Responsive Grid of 6 Poster Cards matching Screen 1 -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-gutter">
+<!-- CARD 1: John Wick 4 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container hover:-translate-y-1.5 transition-all duration-300 shadow-md hover:shadow-[0_12px_32px_rgba(49,152,220,0.25)]">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Movie poster for John Wick 4 featuring close-up stylized headshot of Keanu Reeves in rain with saturated neon cyan and ruby red lighting, slick assassin look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPxpreFgltT-meiL5RKKzr3UAUaDZjJJJUZeFYUrgq4azbFrFXrvong96-k2aMnkoO82H3XhZL04h8Qe4pfMgeGQwDhaBVUzuXARfd-BI5pApUSv7VdWfyvkwbfnfE2IqpOja-D8xPeFS6UJ-AwasWnMtM1_QxLp1sgSRvH19Wys_KzANI3SpR3VrEVNyvmXK9DHDprNf4yT9MaqI1x9_5VacdajXbKVqMMxqZ_12g-meltJ9JbA3VRQ"/>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-primary font-label-sm text-label-sm font-bold">4K</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">John Wick 4</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Action • Thriller</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" onclick="handlePurchase('John Wick 4', 50)" type="button">
+                Buy Now
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Fast X -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container hover:-translate-y-1.5 transition-all duration-300 shadow-md hover:shadow-[0_12px_32px_rgba(49,152,220,0.25)]">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic theatrical poster for Fast X with muscle cars drifting against glowing twilight skyline, exploding asphalt sparks, vibrant blue and amber neon aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANaBZWgcRNZy-t2d3RzunAjTpuo7Ejm3GAZGfMdmuyUNwBQJnVC9WcqYngdKqZTJTC61hLJ1b8C9IVQjWJRV9RX-t6wEyPsPy1LAs_vqV3iL5Iukv1uW_1Psype4u8YZFUJNdsN5CYt57RRnZW4UgD9vfItssa6ecAwS8HbvehrnWFIZy72sT0mI-hHWv_oDJnqh1tx1uQcuKoM5N6-D_gkjEnnOewheyUUmuGmuClPdRlaYkgUBfnZw"/>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-secondary font-label-sm text-label-sm font-bold">4K</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Fast X</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Action • Racing</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" onclick="handlePurchase('Fast X', 50)" type="button">
+                Buy Now
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Oppenheimer -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container hover:-translate-y-1.5 transition-all duration-300 shadow-md hover:shadow-[0_12px_32px_rgba(49,152,220,0.25)]">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Theatrical portrait poster of Oppenheimer in fedora hat facing glowing fiery atomic particle explosion, intensely cinematic burnt-orange and deep black tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP3fQEVJ024FqUquUbYCEvQAvEvrP943DQU-HUDMgkZLx0LXLC28ZPBq4i75IDBCJMfQvxKeuMqzn057D3rflMFCD4D-d4HJ-F5UgaM3kTMz5DsLKRzTQvxl6DaRkDLi562s_kRTGDVOYeasZR71e9gGGDHSDnv2akNDbiG_QJe0jPPUeOeE48qNpPJBzQUeSM6fz3EKroHK_5OvAF6Arm58zco2sc9lvcguSrgA3NPLTOmCwB_Nm1pQ"/>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-primary font-label-sm text-label-sm font-bold">IMAX</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Oppenheimer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Drama • Biography</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" onclick="handlePurchase('Oppenheimer', 50)" type="button">
+                Buy Now
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 4: The Batman -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container hover:-translate-y-1.5 transition-all duration-300 shadow-md hover:shadow-[0_12px_32px_rgba(49,152,220,0.25)]">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Atmospheric movie poster for The Batman in rain-slicked dark Gotham alley, high contrast crimson red flare illumination and silhouette cowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF4bh6CIibQxcDi5SAHXYK_lGw26iWWWBEsptEfoQ1wdwymzfknaKWWBiWYMLi5RuWdODQzngmv4chxmqDIy8jFl49ls-D65ZNWJCBVbbJB84i6fRAtnMxPigqQ2csBN55tqVEgBkSyNWKahkCpiWjip_RQi5vEbDA6NKFEZ4y9gHrm8C7_vgtQOb9Tur00Tp6oZu_gKK0OOiDU05x2tcifXRIw-Mob-V9UYFSbdnXm8d2BmwffVIp1A"/>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-primary font-label-sm text-label-sm font-bold">4K</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">The Batman</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Action • Crime</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" onclick="handlePurchase('The Batman', 50)" type="button">
+                Buy Now
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Spider-Man -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container hover:-translate-y-1.5 transition-all duration-300 shadow-md hover:shadow-[0_12px_32px_rgba(49,152,220,0.25)]">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stylized animated film poster of Spider-Man falling through neon multiverse vortex portal with vibrant electric magenta and cyan comic halftone textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb1GZbZRXbhUobUyQRj5jqdk8RoBFeRE_SB2xc-ftjWDjCkUT2qDX3y9dHKOiUSfegNqmBeL3QBnK4Mrx9TbTY5XtDI8In5FX_25xJ9fEp6plFeYWJljIEwHjR-GYwVgFD9pJb0986dQlO9edUFxMP3uOCUH8eb8LzpaKq7IFsXVROfmGFkDhTVgOPRVqLESgUh7Szeb6Gx9b4FAWvVCRPR3SKYkFAEqcWGVzBRlIa_kRDfUQXSg6QTA"/>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-secondary font-label-sm text-label-sm font-bold">HDR</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Spider-Man</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Animation • Sci-Fi</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" onclick="handlePurchase('Spider-Man: Across the Spider-Verse', 50)" type="button">
+                Buy Now
+              </button>
+</div>
+</div>
+</div>
+<!-- CARD 6: Dune Part Two -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container hover:-translate-y-1.5 transition-all duration-300 shadow-md hover:shadow-[0_12px_32px_rgba(49,152,220,0.25)]">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Epic sci-fi theatrical poster for Dune featuring Paul Atreides and Chani on vast desert sand dunes under blazing twin suns with warm golden cinematic glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGckYlVlJzgkK8LfhnPj4-Rwuyi_Hg5JQrD_QPdMjOuSiMuZG3cs1RMGFFvgvGxhbkyY7aKuixMnOgXJ5Xpk1qhxM5Io0aaZiXBVtFK5mNHZ8MhjCmwmemXM2D8Aiyq0fjpjDGu-IDNM3v2_JIVfbF3OuWu71iSqqH0auF0awRavbPxKPm0UJvMbG1IMyMM2oj6COMPDcSo44iCogljgdJokTnOYr4yrx4R4NRvrW_bidyu_VstGN2wg"/>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur text-primary font-label-sm text-label-sm font-bold">4K</span>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface truncate group-hover:text-primary transition-colors">Dune: Part Two</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sci-Fi • Adventure</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rs. 50</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" onclick="handlePurchase('Dune: Part Two', 50)" type="button">
+                Buy Now
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 3: Trending Rentals & Live Fast-Check Banner -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch">
+<!-- Top 10 Streaming TVOD Callout (2 Cols) -->
+<div class="lg:col-span-2 p-space-lg rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-md relative overflow-hidden shadow-lg">
+<div class="flex items-center justify-between z-10">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Trending Rentals Today</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Live 24h Rank
+          </span>
+</div>
+<!-- Mini list of trending rentals -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md z-10">
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="font-headline-md text-headline-md font-extrabold text-outline/40 w-6 text-center">01</span>
+<div class="w-12 h-16 rounded-md bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dark moody thumbnail for John Wick 4 movie card" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB118x45sRwou-ys3HGHwl-4XW8gsDcRCVC59ngTWb-rhXnQO1gdT51W99GLW8tGivznLFUeqpRYYMB-uVS5S0-p1n_eQOqbb5e1LWH4Sd-g3nWObeAsc4pxqQ3xt0KUKpuH7DNxJREpUM7IHdQS_3w9U5AlDUSFUvVqK6uRZ1zQ3-eqWVWOIpDTx1yBM7-z-MgBFAa9YVw90vnZCrWaHZ_3PUEc8ugrnP_THunPxypI7AMPN_MfhXpKA"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">John Wick 4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1,420 rentals today</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-primary">Rs. 50</span>
+</div>
+<div class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="font-headline-md text-headline-md font-extrabold text-outline/40 w-6 text-center">02</span>
+<div class="w-12 h-16 rounded-md bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Theatrical portrait of Oppenheimer in fedora with warm nuclear flame background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb3GTLEfV9rNSxR5bFBhMQ1y3TVMc7u4wi3WKbt2pTE3NkJUUVRHsL98D_dHXWD2WbxyNu90LuPoFHIIdMkKlRAwWT1cFu6QFhyNBoD-2aJI0kuMyXNIor7hoXLMJ7U5AbIoI3LScNR8C3SIeNvEFssJaU_-qPEQxXjB98eO9XPMrKTD0bmO0SMEh_K2qne2FC7NqKFzVUY-zQ6sGJmdPcRTokSqlskZ2DZIIKHXPgW76e1wVoxfPLPw"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Oppenheimer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">980 rentals today</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-primary">Rs. 50</span>
+</div>
+</div>
+<!-- Subtext Info -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm z-10">
+<span>Rentals valid for 48 hours once playback commences • Unlimited rewatches</span>
+<a class="text-secondary font-label-md text-label-md font-bold hover:underline" href="#">View Top 50 →</a>
+</div>
+</div>
+<!-- Wallet Quick Top-Up & Promo Card (1 Col) -->
+<div class="p-space-lg rounded-2xl bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-low flex flex-col justify-between gap-space-md shadow-lg">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Fast TVOD Checkout</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Wallet Balance</h3>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-extrabold text-on-surface">Rs. 300</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold flex items-center">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Ready
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sufficient credit to instantly rent up to 6 Ultra HD movies.</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold transition-colors" onclick="topupWallet(100)" type="button">
+            +Rs. 100
+          </button>
+<button class="flex-1 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold transition-colors" onclick="topupWallet(200)" type="button">
+            +Rs. 200
+          </button>
+<button class="flex-1 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold hover:bg-primary transition-colors" onclick="topupWallet(500)" type="button">
+            +Rs. 500
+          </button>
+</div>
+</div>
+</section>
+</div>
+<!-- PURCHASE CONFIRMATION MODAL (Matching Screen 7 in Reference) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-surface-container-lowest/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300" id="purchaseModal">
+<div class="relative w-full max-w-md p-space-xl rounded-2xl bg-surface-container-low shadow-2xl flex flex-col items-center text-center transform scale-95 transition-transform duration-300">
+<!-- Close button -->
+<button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<!-- Emerald Confirmation Icon -->
+<div class="w-16 h-16 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center mb-space-md shadow-[0_0_24px_rgba(78,222,163,0.3)]">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Purchase Successful!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1" id="modalMovieMsg">Movie has been added to your account.</p>
+<!-- Financial Summary Breakdown Container -->
+<div class="w-full my-space-lg p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm text-left">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Movie Title</span>
+<span class="font-bold text-on-surface truncate max-w-[200px]" id="modalMovieName">John Wick 4</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Movie Price</span>
+<span class="font-bold text-on-surface" id="modalPrice">Rs. 50</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Previous Balance</span>
+<span class="text-on-surface" id="modalPrevBalance">Rs. 300</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Amount Deducted</span>
+<span class="text-error font-medium" id="modalDeducted">- Rs. 50</span>
+</div>
+<div class="w-full h-px bg-surface-container-high my-1"></div>
+<div class="flex items-center justify-between font-label-lg text-label-lg">
+<span class="text-on-surface font-semibold">Remaining Balance</span>
+<span class="font-bold text-tertiary" id="modalRemaining">Rs. 250</span>
+</div>
+</div>
+<!-- Action Buttons Row (Watch Online / Download) -->
+<div class="w-full flex items-center gap-space-md">
+<button class="flex-1 py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1.5 shadow-[0_4px_16px_rgba(49,152,220,0.4)] hover:bg-primary transition-all" onclick="startWatching()" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Watch Online</span>
+</button>
+<button class="flex-1 py-3 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" onclick="downloadMovie()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Wallet and Purchase Flow -->
+<script>
+    let currentBalance = 300;
+
+    function handlePurchase(movieTitle, price) {
+      window.location.href = 'moviedetail.html';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('purchaseModal');
+      modal.classList.add('opacity-0');
+      modal.querySelector('div').classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    function topupWallet(amount) {
+      currentBalance += amount;
+      const walletTags = document.querySelectorAll('[data-path="wallet"] span.font-label-md');
+      walletTags.forEach(el => {
+        el.innerText = 'Rs. ' + currentBalance;
+      });
+      alert('Wallet successfully reloaded with Rs. ' + amount + '. New balance: Rs. ' + currentBalance);
+    }
+
+    function startWatching() {
+      closeModal();
+      alert('Redirecting to 4K Ultra HD Player...');
+    }
+
+    function downloadMovie() {
+      closeModal();
+      alert('Generating high-speed encrypted 1080p download package...');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

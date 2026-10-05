@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MovieHub - Cinematic Streaming &amp; PPV</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary-container text-[22px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span></span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface rounded-full"><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-movies" href="#">My Movies</a><a class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="#">Wallet</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search movies, genres..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ali Khan</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Premium TVOD</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden lg:inline-block">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Atmospheric Background Glow Elements -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-80 right-10 w-[420px] h-[420px] bg-secondary/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+<div class="absolute bottom-40 left-10 w-[460px] h-[460px] bg-tertiary/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+<div class="w-full px-margin py-space-xl flex flex-col gap-space-xl">
+<!-- Section 1: Header & Quick Category Search -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-2xl">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-wider uppercase mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Curated Catalog &amp; Genres
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Explore Movie <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">Categories</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+            Find your next favorite film curated by cinematic genre, regional film industries, mood, and premiere collections.
+          </p>
+</div>
+<!-- Filter Input & View Meta -->
+<div class="w-full md:w-80 flex flex-col gap-space-xs">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">filter_list</span>
+<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md rounded-full shadow-md focus:bg-surface-container focus:text-on-surface focus:outline-none transition-all" id="categorySearch" placeholder="Filter categories (e.g. Bollywood, Sci-Fi)..." type="text"/>
+</div>
+<div class="flex items-center justify-between px-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing <strong class="text-primary font-bold" id="itemCount">18</strong> curated shelves</span>
+<span class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-[14px]">bolt</span> Instant TVOD</span>
+</div>
+</div>
+</header>
+<!-- Section 2: Regional Powerhouses (Asymmetric Bento Highlight) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Regional Film Industries</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">5 Worldwide Circuits</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="regionalGrid">
+<!-- Hollywood (Featured Large Bento Card) -->
+<div class="group relative md:col-span-6 lg:col-span-5 h-80 rounded-xl overflow-hidden cursor-pointer shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="hollywood blockbusters 4k uhd action premieres english">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic Hollywood blockbuster movie production set with intense anamorphic lens flare, futuristic glowing cyber city backdrop, dark moody sci-fi ambiance, deep navy and cyan light reflections, 8k hyperrealistic render." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLqW2gG3FXjZG4td-xK6g2uJ32nG4GJGZ3qR3yrALCJdhd_GF8njDoYC_Lc8Bgg1uuPURABHy5WJqb9roNK0Ee-A2sm15p4vLp8Ufia128azPJ6WXeCSKDnd4nSDfoQaHW0MEtK90X-Un7ZqDwKbpKcoVfOLRAnPtK6sU2W3FTISqJ61ddVQUWZlAaN_TZ4SO2HTMKxRjOATgLABTZt1ONemOyDm7-P8QRWWFwbP-CzQ1kID0ERYHRTA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative h-full p-space-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container-highest/80 backdrop-blur-md rounded-full font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie_filter</span> 4K UHD Master
+                </span>
+<span class="w-8 h-8 rounded-full bg-surface-container/80 backdrop-blur-md flex items-center justify-center text-on-surface group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm tracking-widest text-primary uppercase">Global Cinema</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Hollywood Blockbusters</h3>
+<div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">820+ Titles</span>
+<span>•</span>
+<span>Day-and-Date PPV Releases</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bollywood & Hindi Cinema -->
+<div class="group relative md:col-span-6 lg:col-span-4 h-80 rounded-xl overflow-hidden cursor-pointer shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="bollywood hindi cinema drama romance musical blockbuster new release">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Opulent Indian cinematic set with grand palace architecture, cinematic golden and deep cyan mood lighting, silhouetted protagonist standing amidst dynamic royal courtroom drama, 35mm film still." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1AMfRFhwFV3KBbTmmA-YiuyPQpY0djni9pPmbM9PGCvwTvj--ui7bonMQCDejTZ1zVgCRTpJhwvZZltsAkI7zPmFke0ieCmcJfH3cG761-Fbw9nRo2hg_vyeNbz3rY69WYbmvbfvIalqV8AN6DjNtaUMdUSDCVp_c3SDND2fLFFBzZGJT_tnANVjNc085SY5hGHzKgNeWWVB9IMYg-5WJ5qGEirTJ0WlzyrD_Ouy0R1iZn2Lw2ZLq4w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="absolute inset-0 bg-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative h-full p-space-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container-highest/80 backdrop-blur-md rounded-full font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span> Trending
+                </span>
+<span class="w-8 h-8 rounded-full bg-surface-container/80 backdrop-blur-md flex items-center justify-center text-on-surface group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm tracking-widest text-secondary uppercase">Mumbai Industry</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Bollywood &amp; Hindi</h3>
+<div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">340+ Titles</span>
+<span>•</span>
+<span>New Weekly Rentals</span>
+</div>
+</div>
+</div>
+</div>
+<!-- South Cinema (Tollywood / Kollywood) -->
+<div class="group relative md:col-span-12 lg:col-span-3 h-80 rounded-xl overflow-hidden cursor-pointer shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="south cinema tollywood kollywood mollywood action drama high octane">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="High octane South Indian cinema action freeze-frame with intense neon dusk backlighting, stylized debris in slow motion, rugged action hero silhouette, high drama cinematic composition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7_PViaRd8ecBD54rPjv0ySxSCCftJE-EB9YqUAw7CU006WtSvbq_WVrl1sOHncwnWV_VVwDDtsFVDkrSLfWES3Ar6El_PGDdPXnGXzOJN6q__scAwSM5wHzV0ICLSY5HVTphmhyl1bxc-YeuxEhWJ-Sxc8VAWhBSkD9UEamlROMx5ZYYq8zRBwHkeYVd0O-_UjHPfPDThE3oF0b-SqN1CUvri14VZs_rxvynC6T5NK-Ei0svcMq0JlQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="absolute inset-0 bg-tertiary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative h-full p-space-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-surface-container-highest/80 backdrop-blur-md rounded-full font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> Massive Hits
+                </span>
+<span class="w-8 h-8 rounded-full bg-surface-container/80 backdrop-blur-md flex items-center justify-center text-on-surface group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm tracking-widest text-tertiary uppercase">Tollywood / Kollywood</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">South Cinema</h3>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">190+ Titles</span>
+<span>•</span>
+<span>Dolby 5.1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Punjabi Cinema -->
+<div class="group relative md:col-span-6 h-56 rounded-xl overflow-hidden cursor-pointer shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="punjabi cinema comedy romance pollywood vibrant desi">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vibrant Punjabi countryside cinema scene at golden hour dusk with lush mustard fields in deep contrast, warm rim lighting, vintage jeep silhouette, colorful modern cinematic tone." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDG4ok75os6fVcLBfVdPfChiCw3JE4hR_nIWEhvSpgyyza653gDQKNTvF02VKDrkxljcoxbZASCPv6oT0iIIdzXjBuHSgGsh4ujP49bFeo_y0wchFURqWQyXnBZhAowQ6Z93ERjKchRMmIpK1X28_zOL5vtczlg1AwhoVS_tHc3Y4yGB0fM4iCe5ch-avWGNlXMntlXpj0Az8QF1A7mhidan7bTJmIDMUdTNEjBVtZEdsR5xK4OzbObvg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-transparent"></div>
+<div class="relative h-full p-space-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-surface-container-high/80 rounded-full font-label-sm text-label-sm text-on-surface">Regional Spotlight</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">chevron_right</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Punjabi Cinema</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">75+ Titles • Comedy, Romance &amp; Desi Dramas</p>
+</div>
+<div class="px-space-md py-1 bg-surface-container-high rounded-full font-label-md text-label-md text-primary">Rs. 99 avg</div>
+</div>
+</div>
+</div>
+<!-- World & Asian Cinema -->
+<div class="group relative md:col-span-6 h-56 rounded-xl overflow-hidden cursor-pointer shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="world asian cinema korean japanese anime european auteur noir">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Atmospheric neo-noir Asian metropolis with glowing rain-slicked pavement, neon blue and emerald reflections, solitary umbrella figure standing under cinematic streetlights, moody European art-house style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOX-x5ftyULq6vNZdKq29nLT7Kg-20D-DmOecUAQcNKD7UOk2DWy_vQ618GXL9NFMQNWb7AkFCVuCOtQDPMTtKXli2ita8Ms6Q4vVvhuEKK3H5SGPePm_1OZL3VuUzCn-jPhaapWMTrlWGcmZOUHHcaHoQWi2VAZ6ByuGuf8_jhQBpCCPk7rdl3LvPdKY56YYBdTuTXcyiTE_w6W2O6dgWmQZkFCOphoO256ePCYtvQ-ZeYWBLaZrG2w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-transparent"></div>
+<div class="relative h-full p-space-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-surface-container-high/80 rounded-full font-label-sm text-label-sm text-on-surface">Auteur &amp; Festival</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">chevron_right</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">World &amp; Asian Cinema</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">120+ Titles • Korean Thrillers, Japanese Noir, Euro Arthouse</p>
+</div>
+<div class="px-space-md py-1 bg-surface-container-high rounded-full font-label-md text-secondary">Original Audio</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Browse by Mood / Vibe (Interactive Pill Selector) -->
+<section class="flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-xl shadow-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary tracking-wider uppercase">Emotional Spectrum</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Browse by Mood &amp; Vibe</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tap a mood to filter instantaneous recommendations</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm" id="moodFilters">
+<button class="mood-btn px-space-md py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all shadow-md active:scale-95" data-mood="all">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+            All Vibes
+          </button>
+<button class="mood-btn px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all active:scale-95" data-mood="mind-bending">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology</span>
+            Mind-Bending Plots
+          </button>
+<button class="mood-btn px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all active:scale-95" data-mood="adrenaline">
+<span class="material-symbols-outlined text-[16px] text-error">speed</span>
+            Adrenaline Rush
+          </button>
+<button class="mood-btn px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all active:scale-95" data-mood="chills">
+<span class="material-symbols-outlined text-[16px] text-secondary">bedtime</span>
+            Late Night Chills
+          </button>
+<button class="mood-btn px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all active:scale-95" data-mood="feel-good">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sentiment_very_satisfied</span>
+            Feel Good &amp; Warm
+          </button>
+<button class="mood-btn px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all active:scale-95" data-mood="spectacle">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">auto_awesome</span>
+            Epic Visual Spectacle
+          </button>
+<button class="mood-btn px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all active:scale-95" data-mood="gritty">
+<span class="material-symbols-outlined text-[16px] text-outline">shield_with_heart</span>
+            Gritty &amp; Realistic
+          </button>
+</div>
+</section>
+<!-- Section 4: Curated Genre Collections Grid -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Direct Genre Vaults</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curated Genre Collections</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">10 Genres Available</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter" id="genreGrid">
+<!-- 1. Action & Adventure -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="action adventure explosion thrill combat adrenaline">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">rocket_launch</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">510+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">Action &amp; Adventure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Explosions, stealth combat &amp; high stakes</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Explosion</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Thrill</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Combat</span>
+</div>
+</div>
+<!-- 2. Sci-Fi & Cyberpunk -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="sci-fi cyberpunk space time travel dystopia mind-bending spectacle">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">blur_on</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">280+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-secondary transition-colors">Sci-Fi &amp; Cyberpunk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dystopian futures, cosmos &amp; quantum leaps</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Space</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Time Travel</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Dystopia</span>
+</div>
+</div>
+<!-- 3. Psychological Thriller & Mystery -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="psychological thriller mystery crime suspense noir mind-bending">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[22px]">visibility</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">310+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-tertiary transition-colors">Psychological Thriller</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Twisting narratives, suspense &amp; dark secrets</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Crime</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Suspense</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Noir</span>
+</div>
+</div>
+<!-- 4. Horror & Paranormal -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="horror paranormal supernatural slasher psychological chills">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-error/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-error group-hover:bg-error group-hover:text-on-error transition-colors">
+<span class="material-symbols-outlined text-[22px]">dark_mode</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">140+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-error transition-colors">Horror &amp; Paranormal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hauntings, demonic encounters &amp; slashers</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Supernatural</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Slasher</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Psych</span>
+</div>
+</div>
+<!-- 5. Comedy & Satire -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="comedy satire dark comedy standup rom-com feel-good">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">mood</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">260+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">Comedy &amp; Satire</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Laugh-out-loud hits &amp; biting social satires</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Dark Humor</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Standup</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Rom-Com</span>
+</div>
+</div>
+<!-- 6. Drama & Romance -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="drama romance emotional biopic classic feel-good">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">430+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-tertiary transition-colors">Drama &amp; Romance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Intimate relationships, hardships &amp; triumphs</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Emotional</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Biopic</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Classic</span>
+</div>
+</div>
+<!-- 7. Crime & Gangster Sagas -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="crime gangster sagas underworld heist mafia gritty">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">shield</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">210+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-secondary transition-colors">Crime &amp; Gangster</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Underworld empires, master heists &amp; mobsters</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Underworld</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Heist</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Mafia</span>
+</div>
+</div>
+<!-- 8. Animation & Anime -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="animation anime japanese anime 3d cgi family spectacle">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">animation</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">175+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">Animation &amp; Anime</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Shonen masterworks, Studio Ghibli &amp; 3D CGI</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Anime</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">3D CGI</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Family</span>
+</div>
+</div>
+<!-- 9. Historical & Epics -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="historical epics period drama war kingdoms spectacle gritty">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">fort</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">95+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-secondary transition-colors">Historical &amp; Epics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Battlefield chronicles, empires &amp; legends</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Period</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">War</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Dynasties</span>
+</div>
+</div>
+<!-- 10. Documentaries & Real Stories -->
+<div class="genre-card group flex flex-col justify-between p-space-md bg-surface-container rounded-xl shadow-md hover:-translate-y-1.5 transition-all duration-300 cursor-pointer relative overflow-hidden" data-category="documentaries real stories science true crime sports gritty mind-bending">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/10 rounded-full blur-xl group-hover:scale-150 transition-transform"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[22px]">videocam</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">80+ Titles</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-tertiary transition-colors">Documentaries</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Deep dives into true crimes, athletes &amp; nature</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">True Crime</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Science</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Athletics</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Special Collections & Spotlights -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">Premium Hub Programs</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Curated Premiere Spotlights</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Exclusive Collections</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter" id="specialGrid">
+<!-- Spotlight 1: 4K Ultra HD & Dolby Atmos -->
+<div class="group relative h-64 rounded-xl overflow-hidden cursor-pointer shadow-xl flex flex-col justify-end p-space-lg bg-surface-container transition-all duration-300 hover:-translate-y-1" data-category="4k ultra hd dolby atmos master collection bitrate">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Abstract cinematic optical soundwave and light spectrum visualization, luminous cyan laser refraction against obsidian deep black backdrop, modern high-fidelity audio equipment aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9hWbUmFVnZfnKqwHsWCythQ1eTE0QHopFvKyyDwFglA81OadweuUY5N3uviAzab1i0Zs3mi67x-QxlMbtgNHZkDBW6-hyfeFKovR5A_Bov58y_SjcH8HG3WRzb2IHfk2no0EIhE8MmZ6z2MBXbqrdzuqUl_zLd0hTUMX2B4YLFwNPyEO9t_QQaCajhGwD0mMJu5gECRMjyqC_6sPuM0ZA2Y5CZEUcsbt8-r4vsESB6UbfReni-tmvMg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="relative flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm rounded font-bold">4K HDR</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-secondary font-label-sm text-label-sm rounded font-semibold">DOLBY ATMOS</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">4K Ultra HD &amp; Atmos Master</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">250+ Certified uncompressed bitrate theatrical masters for true home theatre setups.</p>
+<div class="mt-space-xs flex items-center text-primary font-label-md text-label-md group-hover:translate-x-1 transition-transform">
+                Explore The Master Collection <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Spotlight 2: Top IMDb Rated 8.5+ -->
+<div class="group relative h-64 rounded-xl overflow-hidden cursor-pointer shadow-xl flex flex-col justify-end p-space-lg bg-surface-container transition-all duration-300 hover:-translate-y-1" data-category="top imdb rated 8.5 highest rated masterpieces critical acclaim">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vintage golden laurels resting on textured dark black slate marble, dramatic cinematic side spotlighting, timeless cinema prestige award festival atmosphere with subtle bokeh dots." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDLer8Cuw35rPjB_HfNA976qViqNnOwSP_6shasjhTFyHkjvk-vMrqKuC4r7ruWxeesCovMD99m6D_ig1Zvr2r2lWHZ9HNqZ4u_hKtQ_BvBmNveTx1xD4mVcNraTUdk_G5pdlZLchyFdRo_qSeZqZUR1ORvwkuCTykgeTdsVdcw3x_uilM31lnnDziPaBzsjIk75TO6RqTJEj1metIlykGEJM9ThzWfnJAsEp7G5q9hEqihTWHZWYqOow')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="relative flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm rounded font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span> 8.5+ IMDb
+                </span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded">Critical Acclaim</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Top IMDb Masterpieces</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The highest rated cinematic triumphs in history, vetted by global critics and film buffs.</p>
+<div class="mt-space-xs flex items-center text-tertiary font-label-md text-label-md group-hover:translate-x-1 transition-transform">
+                Stream Hall of Fame <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Spotlight 3: Under Rs. 50 Flash Rentals -->
+<div class="group relative h-64 rounded-xl overflow-hidden cursor-pointer shadow-xl flex flex-col justify-end p-space-lg bg-surface-container transition-all duration-300 hover:-translate-y-1" data-category="under rs 50 flash rentals budget cheap low price wallet friendly">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="High tech digital neon ticket dispenser with glowing blue and green laser scanlines, dark obsidian theater entrance with shimmering floor reflections, 4k digital render." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_rK1gKqxWgfyMpsnyGfpNZ8Mwjuwv0SmhW7F048AERBh8ne63bPOmEq4o_3-KxgYORxvWClU7QfeY8riiIJf84ykT07gSbSXh80jhJYYbF5de3rqS3VsD5zBUz_Zk8246NkwhyA1nmulE5ZFUAR9X9O8t9YBQoV8S8_Y__ecI3G07SHsR7eVt7Q8SnSf6nwEgeV7Qpmmquqin0JEIaQ8ZMxA1N2QLGTXhve08tWE8md6lm6nOVSAb-Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="relative flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm rounded font-bold">FLASH SALE</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded">From Rs. 29</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Under Rs. 50 TVOD Vault</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Weekly rotating budget hits. Instant 48-hour rental window using your MovieHub wallet.</p>
+<div class="mt-space-xs flex items-center text-secondary font-label-md text-label-md group-hover:translate-x-1 transition-transform">
+                Browse Flash Rentals <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Platform Stream Status Strip -->
+<section class="p-space-lg bg-surface-container rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Instant High-Bitrate Delivery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All categories support adaptive 4K UHD streaming with offline download options on mobile.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="w-full md:w-auto px-space-lg py-2.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-full font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+            Top-up Wallet (Rs. 300)
+          </button>
+<button class="w-full md:w-auto px-space-lg py-2.5 bg-primary hover:bg-primary-container text-on-primary rounded-full font-label-md text-label-md transition-colors shadow-md flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+            Latest Releases
+          </button>
+</div>
+</section>
+</div>
+</div>
+<script>
+    (function() {
+      const searchInput = document.getElementById('categorySearch');
+      const moodButtons = document.querySelectorAll('.mood-btn');
+      const allCards = document.querySelectorAll('[data-category]');
+      const itemCount = document.getElementById('itemCount');
+
+      let currentSearch = '';
+      let activeMood = 'all';
+
+      function updateFiltering() {
+        let visible = 0;
+
+        allCards.forEach(card => {
+          const categoryTags = (card.getAttribute('data-category') || '').toLowerCase();
+          const matchesSearch = !currentSearch || categoryTags.includes(currentSearch);
+          const matchesMood = (activeMood === 'all') || categoryTags.includes(activeMood);
+
+          if (matchesSearch && matchesMood) {
+            card.style.display = '';
+            visible++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (itemCount) {
+          itemCount.textContent = visible;
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          currentSearch = e.target.value.trim().toLowerCase();
+          updateFiltering();
+        });
+      }
+
+      moodButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          moodButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+            b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+
+          btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+
+          activeMood = btn.getAttribute('data-mood') || 'all';
+          updateFiltering();
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[18px]">play_arrow</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Movie<span class="text-primary">Hub</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">Next-generation cinematic streaming and pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Discover</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">New Releases</li><li class="hover:text-on-surface cursor-pointer">Top 10 Rentals</li><li class="hover:text-on-surface cursor-pointer">Action &amp; Thriller</li><li class="hover:text-on-surface cursor-pointer">Sci-Fi Blockbusters</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">My Account</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Active Rentals</li><li class="hover:text-on-surface cursor-pointer">Wallet Top-up</li><li class="hover:text-on-surface cursor-pointer">Watchlist</li><li class="hover:text-on-surface cursor-pointer">Purchase Receipts</li></ul></div><div><h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md uppercase tracking-wider">Platform</h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer">Supported Devices</li><li class="hover:text-on-surface cursor-pointer">4K Streaming Guide</li><li class="hover:text-on-surface cursor-pointer">Terms of Service</li><li class="hover:text-on-surface cursor-pointer">Privacy Policy</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg border-t border-surface-container-high/40 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 MovieHub Entertainment Inc. All rights reserved.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> High-speed CDN Online</span><span>4K UltraHD TVOD</span></div></div></div></footer></body></html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><title>MovieHub</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased min-h-screen relative overflow-x-hidden"><div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(49,152,220,0.15),rgba(10,14,20,0))]"></div><main class="w-full min-h-screen relative z-10 flex flex-col items-center justify-center"><div class="flex flex-col w-full relative min-h-screen items-center justify-center p-space-md sm:p-space-lg select-none overflow-hidden">
+<!-- Ambient Backdrop Poster Mosaic with Deep Cinematic Scrim -->
+<div class="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-30">
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4 -rotate-6 scale-110 -translate-y-12 blur-[1.5px] brightness-75">
+<!-- Row of montage cards -->
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Dark dramatic movie poster featuring action hero silhouette in neon rain city streets with electric blue and teal backlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHcqpZNuJhb8hJ1Wjhp0R_tMeZwU2Ca-zpkLv-yV709dG_llaGhteRVEHXwsh0VbUdW0L546AhdWl320wv62rmJvAKWqwkxa4-i0LnLnKIr4FYZiCTipgdFje0WPjX_C0Y5vV2qhgUVH1igIzZA_v3eulTkJki7F4tAKT4cGWaTKFv_DrLlStL7qBt4EoZoB2gV_t1I5zx7vZlXvdFJFHJAfAU-XKKq3Q525K2__RbihXucGyNE_ZizA"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Futuristic sci-fi film poster with gigantic space dune landscapes and two warriors in tactical gear under dual suns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ISqboPkLGFt2rsPbYecWp8TEdiK_ozfoWZ-ltQb5T95Vq0WDGZBMQIMtLOpBYoeRUjCB2lyUt0wH_ljienXT9t2BWFttCOturVDn9sUQC6mFx7q_iozHZHhz4RjJBlTXG5p68-rdVMISlxm9p5fvUXiTYR99lP-Vuii27G0-c-fVyrrVODnV3Sa_drIu8hOId-j5YVV_3bVhKWepl2To76y8gEBa0ti6Rwqi07Do-DEB98DpyJnxFw"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Neo-noir detective thriller movie poster drenched in obsidian shadows, crimson smoke, and cold ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgU_K5lTpImH45aAx8Si8nq6yriVpuLjhz2sfGBt8HkpcHbKf3bfqVd-gogdi5yIkS6da9Zf7gAxFf7XsVpjD2YQ--vfqCjw9rIjdKKZa8oy5v5jBgJnyRmCE70yK39KnfuIhLlz6jZfWui7wP8l4vzL6cKXFhKC_RKB713l0W3aCjXBIPExspaI2iDKz8B_Fl7TVloXIxg6e1r1HCT2Rmi3Amk0xmmWuuMyDV0EPrXXTxQJlOz2Viyw"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="High octane street racing poster with sleek dark hypercars drifting through night neon tunnels with light streaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxAarBNvdWomeF0QUN9-79XquS9ZbUuN5k_Pp0Z_LwZ6Wg5Ez-TSTJKEhpp5je0f4UZjIeKjWp8dRW6od3YyofkZy2FbZXAxBieF29GqoBj0RUwgAbWtRRToROqhi0hUPkykFm1lqce9nlIPVBO1Tr8VAqY1Svmhxadkhp6XoRT2T6XOSWt-sP6_A-CZmLaY5640oyAdUhJ61qDG6tcY9S3nG_OjIRP78syJ7yqZQGKUPLor7C_o5dVg"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Intense psychological drama poster with split cinematic character portrait bathed in fiery amber and deep ocean blues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWYGuynUpltjagh9FS5qERz6t-aJGnRat7uBnsOzLplU7IyvWA-G63cgVUazLq8JMfhK414XHM0R4Gd2ljRI3ATRiXuZF6KXPpb6murmk8d46bQi0u5KkoLKBnh5PYvdlRh_tyA-x1uPCmnbwF9McfOekTx9Ii0gCMx8TgCn0Fooph1CZW75Z4qEoppRTnk3a6dubqZ7NnYGX89WIV5PORRUaEngjkdtRSufgolHW4Cgo5-vNy8o9kvA"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Cyberpunk underworld thriller poster with hooded operative glancing over shoulder into illuminated futuristic alleyway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSm1O9mIngg6cPtUgDsOF0K3s_sve03IFyH22ajSqoclUkbLFB11S7YNzLlw1TNEpCwaoOQrb9-ZxodRWqM-T6x4voESu2SSljiuBvX3MYvYmn5Nv0fCQyFvaxPzitwuDSWhdYi7CYvD-IyLxUfuOrmIWbSHnvITEosPoLyf7HJCSl0EFrKUJsrfdTTqUOdhOSWtBHY_Zw5oW5_dJU6N8rHadolbnisMp6SVHzVjaWa6lRYA_tZYjDA"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Action franchise poster showing suited hitman aiming handgun with bokeh city lights and shattered stained glass background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT8dzi70LgcunO8Y1cfsmvxolF6CYzPDRbJyZU-3pItlUPJtWcgS0Sp-IjZ-9Pw3oGIY8ATzwdwVIXBPxfha1uxSHzk5QkYLIhtV81S74a5zPD8LK4G5QK-lU8pndJrJV7amEUjVzdsga73ZyINH9pMKFq5kRkobM3uHC7lD-5kxiQcwipYRDGDjqqzhJFVlaRpPlLEYvTXdsKV7E42guipEQrmjGvP30czWBO7iy6s3afTj8vO4kOjQ"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Epic medieval fantasy film poster with crowned warrior staring at monolithic ruined citadel under storm lightning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYyRoPIjSX4d7XemJQV28w9Wcoez39M4U5qNa6U0S4fMX-6jWudxi42M6ZE6FQOb0NyJGHyVGxv7XyKKA1GQQW6AzX190HsV56mZIfWxpWbyUVIxXpGqVrl8CWZ8k1fUtRVh1MpkmAGMZByoTRQk71kX_3Uk73gAArQtkjMVONAa4DyqPgAxF4_lsqXBAjwckz65BaYzb1FgtgDZd7By0nxOgv5Q_onm0YkA-O42h68YwdY4SRvePlA"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Modern supernatural horror poster with misty forest and lone mysterious cabin glowing with electric luminescence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjgnath6tKYfwq3sIDvCVFAIQoZJYArFnrr1Xos47weH_89txVQkdyQB2pbqTuTlwb4ospbiMbYrxEG1FmgQAX4Xde6KxMdhFp2vjU9G7s_5MBGbV3kjrY-gFseko_8O5yWhqciSE_QrdkViykdBtMoLQjoErqfx15q9JbsuEuW8OOnF620KRnUejbGwbgSvxEUzzmEZpjrZxmc19qYNqd-pBkqm-IZIxIqk98-RH4p9Hb4T18HN4yuw"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Interstellar space exploration movie poster with astronaut floating towards an iridescent glowing black hole accretion disk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyly1zNqUSfYsLd_hX9CO4TB4I9XTBLSu25ilFQr1ArkHCuhYUjIKjFY-ENu2wooDkvbIzS1-dbKap1IEnVXnyYnaQazVsUufEB7UCrAKzcu1veNfAmJCIwLFtjHQlT-qnMljS_GYVh8Vucr4xMVX5OtJPnvpgWzA6rnvNIhIi-o5cQ4tyYbD6_MMX35VIJFFS_79FEAqI16rK6j-0cA9FWdTlhumFffoC9C8gnjy3BFQJxA8WnfTToA"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="High stakes military heist film poster with helicopters silhouette flying over desert canyon during twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJNJ1Nv3a6IeGeUc0oDU4xsfCV3IuRFTUCl7ZOIkYLCdN5h6JHK1HuYEMEW6g_8FPTt8uRh_zlsu8Ze0yWEsZsrlo9tUHt9mjIl8lpjl6kr5oOIAPljHDhI2VE-1s4QwnE3EHbGVH63i9svHqgb-E0CLCP9IHyij0d2ynSBvfs98D477vCDMrnUZzkXg-L9egRaJ5tXdHh3_obSE6O-tIsXuH_E6frgSroM0C4k4r_Mb2hTpBgPfgR6w"/>
+</div>
+<div class="h-64 rounded-lg bg-surface-container overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Martial arts action film poster with duelists engaged in mid-air combat above neon lit pagoda rooftops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3jXONKwrfS7t2lucvvwV-O9n4WONvgI6BIwVqsat-0Ff4haTopoJortSBFH6Tgz6KWgWkPp-GHYPsyjyxRyQDtiy59rPIp158UMFfosVeMjD93ilU-OtJ-T6T9IRzTCaX_P4qPcqpACjSGIElfIoGfL8poWkJaqfHThK9Ql0LTXhPxC-yMOGYeckaZ-Qs9rIaR5KsvZyqWdoYaSTj3hrR0Yysc67aU5zoxiRCPzgq5y32iE9BuQhALA"/>
+</div>
+</div>
+</div>
+<!-- Radial Vignette Scrim Layers for Cinematic Depth -->
+<div class="absolute inset-0 pointer-events-none z-[1] bg-surface-container-lowest/80 backdrop-blur-sm"></div>
+<div class="absolute inset-0 pointer-events-none z-[1] bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary-container/20 rounded-full blur-[120px] pointer-events-none z-[1]"></div>
+<!-- Central Authentication Card (Screen #3 Specification) -->
+<div class="relative z-10 w-full max-w-[430px] my-auto">
+<div class="relative rounded-2xl bg-surface-container-low/95 p-6 sm:p-9 shadow-2xl shadow-surface-container-lowest/90 backdrop-blur-2xl transition-all duration-300">
+<!-- Top Brand Header -->
+<div class="flex flex-col items-center text-center mb-7">
+<div class="flex items-center gap-2 mb-4 group cursor-pointer">
+<div class="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-primary-container/30 flex items-center justify-center bg-surface-container">
+  <a href="index.html">
+    <img alt="MovieHub Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Ume1jgzU5cYt4wDDKjKMUyJjqBGsNSDKkshfKTU9NWapDxpaA9r_e9T1pQbdB8Cvc4pjDRypu38HAa1G4uXOUz17wuVFadbgRiFx2PQfl6arN14xGE1mpxgMzEFMoiaKlft8VetEHWlxpZQllcgpF6aVJlS1CmYceGKveHbbjHY_mOpQGblUsmFO3OzOQ9nrafvLy9a_qBkBoqEmu5pmvW8ejYRZiD0G_BnhF_AXqTJotiiNW1_5lokjTC"/>
+</div>
+<span class="font-headline-md text-headline-md tracking-tight text-on-surface">
+            Movie<span class="text-primary font-headline-xl">Hub</span>
+</span>
+  </a>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-1.5 tracking-tight">
+          Welcome Back
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Login to your account
+        </p>
+</div>
+<!-- Login Form Formwork -->
+<form class="flex flex-col gap-4" id="loginForm" onsubmit="event.preventDefault(); return false;">
+<!-- Email / Mobile Input Field -->
+<div class="flex flex-col gap-1.5 text-left">
+<label class="font-label-md text-label-md text-on-surface-variant pl-0.5" for="emailInput">
+            Email / Mobile
+          </label>
+<div class="relative flex items-center rounded-xl bg-surface-container transition-all duration-200 focus-within:bg-surface-container-high focus-within:shadow-[0_0_0_2px_rgba(49,152,220,0.5)]">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[19px]">mail</span>
+</div>
+<input autocomplete="username" class="w-full h-11 pl-10 pr-3.5 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline-variant placeholder:font-body-sm focus:outline-none" id="emailInput" placeholder="Enter your email or mobile number" required="" type="text"/>
+</div>
+</div>
+<!-- Password Input Field -->
+<div class="flex flex-col gap-1.5 text-left">
+<label class="font-label-md text-label-md text-on-surface-variant pl-0.5" for="passwordInput">
+            Password
+          </label>
+<div class="relative flex items-center rounded-xl bg-surface-container transition-all duration-200 focus-within:bg-surface-container-high focus-within:shadow-[0_0_0_2px_rgba(49,152,220,0.5)]">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[19px]">lock</span>
+</div>
+<input autocomplete="current-password" class="w-full h-11 pl-10 pr-11 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline-variant placeholder:font-body-sm focus:outline-none" id="passwordInput" placeholder="Enter your password" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-3.5 flex items-center justify-center text-outline hover:text-on-surface transition-colors focus:outline-none" id="togglePasswordBtn" type="button">
+<span class="material-symbols-outlined text-[19px]" id="pwdEyeIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Options: Remember Me & Forgot Password -->
+<div class="flex items-center justify-between pt-0.5 pb-1">
+<label class="flex items-center gap-2 cursor-pointer select-none group">
+<div class="relative flex items-center">
+<input class="peer sr-only" id="rememberMe" type="checkbox"/>
+<div class="w-4 h-4 rounded bg-surface-container peer-checked:bg-primary-container peer-focus-visible:ring-2 peer-focus-visible:ring-primary transition-all flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-[14px] opacity-0 peer-checked:opacity-100 transition-opacity font-bold">check</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">
+              Remember Me
+            </span>
+</label>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-fixed transition-colors underline-offset-4 hover:underline" href="#">
+            Forgot Password?
+          </a>
+</div>
+<!-- Primary Action Button -->
+<button class="relative overflow-hidden w-full h-12 mt-1 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_8px_20px_-4px_rgba(49,152,220,0.45)] hover:shadow-[0_12px_24px_-2px_rgba(49,152,220,0.6)] hover:brightness-110 active:scale-[0.98]" id="loginSubmitBtn" type="submit">
+
+  <a class="font-headline-sm text-headline-sm text-on-primary" id="btnText" href="landingpage.html">
+    Login
+  </a>
+<span class="hidden material-symbols-outlined text-[20px] animate-spin" id="btnSpinner">progress_activity</span>
+</button>
+</form>
+<!-- Switch to Register Link -->
+<div class="text-center mt-7 pt-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Don't have an account? 
+          <a class="font-label-lg text-label-lg text-primary hover:text-secondary-fixed transition-colors ml-1 font-semibold underline-offset-4 hover:underline" href="register.html">
+            Register
+          </a>
+</p>
+</div>
+</div>
+<!-- Quick Footer Badges / Trust Markers -->
+<div class="flex items-center justify-center gap-6 mt-6 text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>Secure Stream TVOD</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-surface-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">hd</span>
+<span>Ultra 4K Atmos</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-surface-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Instant Access</span>
+</div>
+</div>
+</div>
+<script>
+    (function initLoginInteractions() {
+      const toggleBtn = document.getElementById('togglePasswordBtn');
+      const pwdInput = document.getElementById('passwordInput');
+      const eyeIcon = document.getElementById('pwdEyeIcon');
+      const form = document.getElementById('loginForm');
+      const submitBtn = document.getElementById('loginSubmitBtn');
+      const btnText = document.getElementById('btnText');
+      const btnSpinner = document.getElementById('btnSpinner');
+
+      if (toggleBtn && pwdInput && eyeIcon) {
+        toggleBtn.addEventListener('click', () => {
+          const isPassword = pwdInput.type === 'password';
+          pwdInput.type = isPassword ? 'text' : 'password';
+          eyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+        });
+      }
+
+      if (form && submitBtn) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (btnText && btnSpinner) {
+            btnText.textContent = 'Verifying...';
+            btnSpinner.classList.remove('hidden');
+            submitBtn.setAttribute('disabled', 'true');
+            
+            setTimeout(() => {
+              btnText.textContent = 'Redirecting...';
+              setTimeout(() => {
+                btnText.textContent = 'Login';
+                btnSpinner.classList.add('hidden');
+                submitBtn.removeAttribute('disabled');
+              }, 1000);
+            }, 1200);
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></body></html>
