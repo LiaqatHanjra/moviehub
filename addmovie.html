@@ -1,354 +1,543 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_admin" name="shell-type"/><title>MovieHub - Admin Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#353940", "on-tertiary": "#003824", "on-secondary": "#00354a", "surface-container-low": "#181c22", "outline-variant": "#3f4850", "on-secondary-fixed": "#001e2c", "secondary": "#7bd0ff", "error-container": "#93000a", "on-background": "#dfe2eb", "on-primary-container": "#002c47", "surface-container": "#1c2026", "on-surface-variant": "#bfc7d2", "secondary-fixed": "#c4e7ff", "on-secondary-fixed-variant": "#004c69", "inverse-surface": "#dfe2eb", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004b73", "surface-tint": "#93ccff", "on-tertiary-fixed-variant": "#005236", "surface": "#10141a", "on-tertiary-fixed": "#002113", "tertiary": "#4edea3", "error": "#ffb4ab", "surface-variant": "#31353c", "surface-container-highest": "#31353c", "primary-fixed": "#cce5ff", "on-tertiary-container": "#00311f", "inverse-on-surface": "#2d3137", "surface-dim": "#10141a", "primary": "#93ccff", "on-primary-fixed": "#001d31", "primary-fixed-dim": "#93ccff", "inverse-primary": "#006398", "tertiary-fixed-dim": "#4edea3", "outline": "#89929b", "primary-container": "#3198dc", "secondary-container": "#00a6e0", "secondary-fixed-dim": "#7bd0ff", "tertiary-container": "#00a572", "on-secondary-container": "#00374d", "surface-container-lowest": "#0a0e14", "tertiary-fixed": "#6ffbbe", "on-primary": "#003351", "surface-container-high": "#262a31", "on-surface": "#dfe2eb", "background": "#10141a", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "gutter": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="admin-dashboard" href="#"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-[0_0_16px_rgba(147,204,255,0.4)] group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-on-primary text-[22px]">shield</span></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span class="text-primary">Hub</span> <span class="text-xs uppercase tracking-widest text-primary-container px-2 py-0.5 bg-surface-container rounded ml-1 font-bold">Admin</span></span></a></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all" placeholder="Search users, movies, transactions..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button aria-label="Notifications" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">admin_panel_settings</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Super Admin</span><span class="font-label-sm text-label-sm text-primary leading-tight">Full Clearance</span></div></div></div></div></header><div class="fixed top-16 left-0 bottom-0 w-64 bg-surface border-r border-surface-container-high z-40 hidden md:flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Management</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-dashboard" href="#">Dashboard</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-users" href="#">Users</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-movies" href="#">Movies</a><a aria-current="page" class="px-space-md py-2.5 transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="admin-add-movie" href="#">Add Movie</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-categories" href="#">Categories</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-purchases" href="#">Purchases</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-wallet-transactions" href="#">Wallet Transactions</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-payments" href="#">Payments</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-reports" href="#">Reports</a><a class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admin-settings" href="#">Settings</a></nav></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-surface-container-high/60"><a class="px-space-md py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center justify-between" data-path="home" href="#"><span>Exit to Storefront</span><span class="material-symbols-outlined text-[18px]">store</span></a></div></div><main class="w-full pt-16 md:pl-64 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
-<!-- Top Context Header with Fluid Mesh Glow -->
-<div class="relative w-full overflow-hidden bg-surface-container-low px-margin py-space-lg shadow-sm">
-<div class="absolute -top-24 -right-16 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
-<div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
-<div class="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-space-md max-w-7xl mx-auto">
-<div class="flex flex-col gap-space-xs">
-<div class="flex items-center gap-space-xs">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Catalog Management</span>
-<span class="text-outline-variant font-label-sm">•</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Screen #12 VOD Ingestion</span>
-</div>
-<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Add New Movie</h1>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-          Publish a new title to the MovieHub catalog for digital pay-per-view rentals, streaming authorization, and multi-format delivery.
-        </p>
-</div>
-<!-- Quick Status Badges -->
-<div class="flex items-center gap-space-sm self-start md:self-auto">
-<div class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md">
-<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
-<span>CDN Ingest Ready</span>
-</div>
-<div class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px] text-primary">local_activity</span>
-<span>Standard License: Rs. 50</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Main Content Space -->
-<div class="w-full max-w-7xl mx-auto px-margin py-space-xl">
-<form class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start" id="addMovieForm" onsubmit="event.preventDefault();">
-<!-- Primary Left Column: Core Metadata & Storyline (8 cols) -->
-<div class="lg:col-span-8 flex flex-col gap-space-lg">
-<!-- Section 1: Basic Information -->
-<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
-<div class="flex items-center justify-between pb-space-xs">
-<div class="flex items-center gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[18px]">movie</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Title &amp; Overview</h2>
-</div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Step 1 of 3</span>
-</div>
-<!-- Movie Name -->
-<div class="flex flex-col gap-space-xs">
-<div class="flex items-center justify-between">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="movieName">Movie Title <span class="text-error">*</span></label>
-<span class="font-body-sm text-body-sm text-outline">Max 120 chars</span>
-</div>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">theaters</span>
-<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" id="movieName" name="movieName" placeholder="Enter movie title (e.g. Dune: Part Two)" type="text" value="Dune: Part Two"/>
-</div>
-</div>
-<!-- Synopsis / Description -->
-<div class="flex flex-col gap-space-xs">
-<div class="flex items-center justify-between">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="movieDescription">Synopsis &amp; Storyline <span class="text-error">*</span></label>
-<span class="font-body-sm text-body-sm text-outline">Markdown supported</span>
-</div>
-<textarea class="w-full p-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors resize-y" id="movieDescription" placeholder="Enter movie storyline, themes, background details, and digital rental notes..." rows="4">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.</textarea>
-</div>
-<!-- Cast & Crew -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="castCrew">Cast &amp; Crew Credits</label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">group</span>
-<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" id="castCrew" placeholder="Timothée Chalamet, Zendaya, Denis Villeneuve..." type="text" value="Timothée Chalamet, Zendaya, Rebecca Ferguson, Denis Villeneuve"/>
-</div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Separate primary names with commas for instant automated actor tags.</span>
-</div>
-</div>
-<!-- Section 2: Format, Distribution & Pricing -->
-<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
-<div class="flex items-center justify-between pb-space-xs">
-<div class="flex items-center gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined text-[18px]">sell</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Licensing &amp; Specifications</h2>
-</div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Step 2 of 3</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
-<!-- Category Dropdown -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="categorySelect">Genre / Category <span class="text-error">*</span></label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">category</span>
-<select class="w-full h-11 pl-11 pr-10 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest appearance-none cursor-pointer" id="categorySelect">
-<option selected="" value="Sci-Fi">Sci-Fi / Space Opera</option>
-<option value="Action">Action &amp; Adventure</option>
-<option value="Hollywood">Hollywood Blockbuster</option>
-<option value="Bollywood">Bollywood Premiere</option>
-<option value="Thriller">Thriller &amp; Mystery</option>
-<option value="Comedy">Comedy</option>
-<option value="Horror">Horror &amp; Supernatural</option>
-</select>
-<span class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
-</div>
-</div>
-<!-- Primary Language -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="languageSelect">Audio Language <span class="text-error">*</span></label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">translate</span>
-<select class="w-full h-11 pl-11 pr-10 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest appearance-none cursor-pointer" id="languageSelect">
-<option selected="" value="English">English (Dolby Atmos 5.1)</option>
-<option value="Urdu">Urdu (Original Dub)</option>
-<option value="Hindi">Hindi (Multi-Audio)</option>
-<option value="Punjabi">Punjabi (Regional)</option>
-</select>
-<span class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
-</div>
-</div>
-<!-- Release Year -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="releaseYear">Release Year <span class="text-error">*</span></label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">calendar_today</span>
-<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest" id="releaseYear" max="2099" min="1900" placeholder="2024" type="number" value="2024"/>
-</div>
-</div>
-<!-- Rental Price -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="rentalPrice">Rental Price (PKR / Rs.) <span class="text-error">*</span></label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-tertiary pointer-events-none text-[20px]">payments</span>
-<input class="w-full h-11 pl-11 pr-24 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md font-bold focus:outline-none focus:bg-surface-container-highest" id="rentalPrice" min="0" placeholder="50" step="5" type="number" value="50"/>
-<span class="absolute right-space-md font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">PPV Flat</span>
-</div>
-</div>
-<!-- Duration -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="duration">Runtime / Duration</label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">schedule</span>
-<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest" id="duration" placeholder="e.g. 166 mins" type="text" value="166 mins"/>
-</div>
-</div>
-<!-- Maturity / Age Rating -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface font-semibold" for="ratingSelect">Age Certification</label>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">verified_user</span>
-<select class="w-full h-11 pl-11 pr-10 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest appearance-none cursor-pointer" id="ratingSelect">
-<option selected="" value="PG-13">PG-13 (Parents Strongly Cautioned)</option>
-<option value="R">R (Restricted)</option>
-<option value="U">U (Universal / All Ages)</option>
-<option value="18+">18+ (Adults Only)</option>
-</select>
-<span class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Section 3: Master File Upload with Live Status Simulator -->
-<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
-<div class="flex items-center justify-between pb-space-xs">
-<div class="flex items-center gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined text-[18px]">video_file</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Video Master File Delivery</h2>
-</div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Step 3 of 3</span>
-</div>
-<!-- Video Drop Zone -->
-<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center group cursor-pointer transition-colors hover:bg-surface-container-high/60">
-<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-[28px]">cloud_upload</span>
-</div>
-<p class="font-title-md text-title-md text-on-surface font-semibold">Upload H.264/H.265 Master MP4/MKV</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
-              Drag &amp; drop the ultra-high bitrate 4K/1080p source video container here, or click to open system finder. (Max file size: 8.00 GB)
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_admin" name="shell-type" />
+  <title>MovieHub - Admin Portal</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="./assets/custom-styles.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/custom-tailwind-classes.js"></script>
+</head>
+
+<body class="bg-surface-container-lowest font-body-md text-on-surface antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high">
+    <div class="h-16 w-full px-margin flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group"
+          data-path="admin-dashboard" href="admindashboard.html">
+          <div
+            class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-[0_0_16px_rgba(147,204,255,0.4)] group-hover:scale-105 transition-transform">
+            <span class="material-symbols-outlined text-on-primary text-[22px]">shield</span></div><span
+            class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Movie<span
+              class="text-primary">Hub</span> <span
+              class="text-xs uppercase tracking-widest text-primary-container px-2 py-0.5 bg-surface-container rounded ml-1 font-bold">Admin</span></span>
+        </a></div>
+      <div class="flex-1 max-w-md hidden md:block">
+        <div class="relative flex items-center"><span
+            class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input
+            class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all"
+            placeholder="Search users, movies, transactions..." type="text" /></div>
+      </div>
+      <div class="flex items-center gap-space-md"><a
+          class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors"
+          data-path="wallet" href="userdashboard.html"><span
+            class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span
+            class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button
+          aria-label="Notifications"
+          class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative"
+          type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span
+            class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button>
+        <div class="flex items-center gap-space-sm pl-space-xs">
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+              class="material-symbols-outlined text-on-primary text-[18px]">admin_panel_settings</span></div>
+          <div class="hidden lg:flex flex-col text-left"><span
+              class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Super Admin</span><span
+              class="font-label-sm text-label-sm text-primary leading-tight">Full Clearance</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    class="fixed top-16 left-0 bottom-0 w-64 bg-surface border-r border-surface-container-high z-40 hidden md:flex flex-col justify-between p-space-md">
+    <div class="flex flex-col gap-space-md">
+      <div class="px-space-sm py-space-xs"><span
+          class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Management</span></div>
+      <nav class="flex flex-col gap-space-xs"
+        data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-dashboard" href="admindashboard.html">Dashboard</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-users" href="admindashboard.html">Users</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-movies" href="admindashboard.html">Movies</a><a aria-current="page"
+          class="px-space-md py-2.5 transition-colors bg-surface-container-high text-primary font-semibold rounded-lg"
+          data-path="admin-add-movie" href="addmovie.html">Add Movie</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-categories" href="admindashboard.html">Categories</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-purchases" href="admindashboard.html">Purchases</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-wallet-transactions" href="admindashboard.html">Wallet Transactions</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-payments" href="admindashboard.html">Payments</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-reports" href="admindashboard.html">Reports</a><a
+          class="px-space-md py-2.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg"
+          data-path="admin-settings" href="admindashboard.html">Settings</a></nav>
+    </div>
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-surface-container-high/60"><a
+        class="px-space-md py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center justify-between"
+        data-path="home" href="landingpage.html"><span>Exit to Storefront</span><span
+          class="material-symbols-outlined text-[18px]">store</span></a></div>
+  </div>
+  <main class="w-full pt-16 md:pl-64 bg-surface-container-lowest min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- Top Context Header with Fluid Mesh Glow -->
+      <div class="relative w-full overflow-hidden bg-surface-container-low px-margin py-space-lg shadow-sm">
+        <div class="absolute -top-24 -right-16 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+        <div
+          class="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-space-md max-w-7xl mx-auto">
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center gap-space-xs">
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Catalog
+                Management</span>
+              <span class="text-outline-variant font-label-sm">•</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Screen #12 VOD Ingestion</span>
+            </div>
+            <h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Add New Movie</h1>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              Publish a new title to the MovieHub catalog for digital pay-per-view rentals, streaming authorization, and
+              multi-format delivery.
             </p>
-<div class="flex items-center gap-space-sm mt-space-md">
-<button class="px-space-md py-2 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
-                Browse Master Video
-              </button>
-<span class="font-label-sm text-label-sm text-outline">Supports: .mp4, .mkv, .mov</span>
-</div>
-</div>
-<!-- Upload Progress Simulator Block -->
-<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-space-sm min-w-0">
-<span class="material-symbols-outlined text-primary text-[22px]">play_circle</span>
-<div class="flex flex-col min-w-0">
-<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">dune_part_two_master_2160p_hdr.mkv</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">6.42 GB of 7.20 GB • 28 MB/s (Encoding Transmux)</span>
-</div>
-</div>
-<span class="font-label-md text-label-md font-bold text-primary">89%</span>
-</div>
-<!-- Progress Bar -->
-<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
-<div class="h-full bg-gradient-to-r from-primary to-tertiary rounded-full transition-all duration-300" style="width: 89%;"></div>
-</div>
-<div class="flex items-center justify-between pt-1">
-<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[14px]">check_circle</span>
-<span>Automatic 480p, 720p, 1080p, 4K multi-bitrate profiles queued</span>
-</div>
-<button class="text-error font-label-sm text-label-sm hover:underline" type="button">Cancel Upload</button>
-</div>
-</div>
-</div>
-</div>
-<!-- Secondary Right Column: Live Poster Preview, Upload Box & Publication (4 cols) -->
-<div class="lg:col-span-4 flex flex-col gap-space-lg">
-<!-- Poster Upload Card -->
-<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
-<div class="flex items-center justify-between pb-space-xs">
-<div class="flex items-center gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[18px]">image</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Movie Artwork</h2>
-</div>
-<span class="font-label-sm text-label-sm text-outline">2:3 Aspect</span>
-</div>
-<!-- Poster Live Preview Box -->
-<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container-low shadow-lg group">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Official high-resolution cinema movie poster for Dune Part Two featuring Paul Atreides and desert warriors standing atop majestic golden sand dunes beneath twin moons, cinematic blue shadows, intense orange glow, 4K hyper-detailed digital art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz6EeaBzggioL5IUlgSRZqlV2tdGvnMj8H3G9GdQ_ChI77V-QOUKdtRJ1dpuvA5hh0hyT0mF8UWyB-xwz4H00Tnr7_5N0nZSXpBpCefuMsOJ8FoZmB0e5BZ-58q8tcTvUug6v6rhlNuu_5bjj_9QeRykzcqZdUxMyoxEr7_EDfxj7SPzhNaS4tUgj6yBNQUSiiTpWeJZa9bc4SyAgRaqUBgbgQXvzyo2mK4eXfoKOWAadJyoGsdVGiDw"/>
-<!-- Quality & Scrim Overlays -->
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/40"></div>
-<div class="absolute top-3 right-3 flex items-center gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">4K Ultra HD</span>
-<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">Dolby</span>
-</div>
-<!-- Preview Data on Scrim -->
-<div class="absolute bottom-3 left-3 right-3 flex flex-col gap-1">
-<span class="font-title-md text-title-md text-on-surface font-bold truncate">Dune: Part Two</span>
-<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
-<span>2024 • Sci-Fi</span>
-<span class="font-bold text-tertiary">Rs. 50</span>
-</div>
-</div>
-</div>
-<!-- Drop Box Actions -->
-<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center">
-<span class="material-symbols-outlined text-outline text-[24px] mb-1">add_photo_alternate</span>
-<p class="font-label-md text-label-md text-on-surface font-semibold">Change Key Art Poster</p>
-<p class="font-body-sm text-body-sm text-outline mt-0.5">JPG, PNG or WEBP (Max 10MB)</p>
-<button class="mt-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
-              Browse Poster File
-            </button>
-</div>
-</div>
-<!-- Publication Summary & Operations -->
-<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
-<div class="flex items-center gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined text-[18px]">publish</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Publish Actions</h2>
-</div>
-<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
-<div class="flex items-center justify-between">
-<span class="font-body-md text-body-md text-on-surface-variant">Storefront Status</span>
-<span class="font-label-md text-label-md font-bold text-tertiary flex items-center gap-1">
-<span class="w-2 h-2 rounded-full bg-tertiary"></span> Ready to Launch
-              </span>
-</div>
-<div class="flex items-center justify-between">
-<span class="font-body-md text-body-md text-on-surface-variant">Rental Fee</span>
-<span class="font-label-md text-label-md font-bold text-on-surface">Rs. 50 (Instant Debit)</span>
-</div>
-<div class="flex items-center justify-between">
-<span class="font-body-md text-body-md text-on-surface-variant">Access Window</span>
-<span class="font-label-md text-label-md text-on-surface">48 Hours Post-Unlock</span>
-</div>
-</div>
-<!-- Feature Flags Switch -->
-<div class="flex items-center justify-between py-1">
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Featured Showcase</span>
-<span class="font-body-sm text-body-sm text-outline">Pin to top hero billboard carousel</span>
-</div>
-<label class="relative inline-flex items-center cursor-pointer">
-<input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
-</label>
-</div>
-<div class="flex items-center justify-between py-1">
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Allow Downloads</span>
-<span class="font-body-sm text-body-sm text-outline">Enable offline encrypted cache</span>
-</div>
-<label class="relative inline-flex items-center cursor-pointer">
-<input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
-</label>
-</div>
-<!-- Action Buttons -->
-<div class="flex flex-col gap-space-xs pt-space-sm">
-<button class="w-full py-3 px-space-lg rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-[0_4px_16px_rgba(147,204,255,0.35)] transition-all hover:scale-[1.01]" onclick="showPublishAlert()" type="button">
-<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
-<span>Publish Movie</span>
-</button>
-<button class="w-full py-2.5 px-space-lg rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs transition-colors" type="button">
-<span class="material-symbols-outlined text-[18px]">save</span>
-<span>Save as Draft</span>
-</button>
-<button class="w-full py-2 text-outline hover:text-on-surface font-label-md text-label-md transition-colors text-center" type="reset">
-              Discard Changes
-            </button>
-</div>
-</div>
-<!-- Live Ingestion Help Card -->
-<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
-<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0">info</span>
-<div class="flex flex-col gap-0.5">
-<span class="font-label-md text-label-md text-on-surface font-semibold">Automated Encoding</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Once published, our cloud transcoding farm auto-generates adaptive HLS streams and thumbnail scrubbers within 4-7 minutes.
-            </p>
-</div>
-</div>
-</div>
-</form>
-</div>
-<!-- Notification Toast (Hidden by default, triggered by JS) -->
-<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
-<div class="flex items-center gap-space-sm px-space-lg py-space-md bg-surface-container-high rounded-xl shadow-xl border-0">
-<div class="w-8 h-8 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary">
-<span class="material-symbols-outlined text-[18px]">check</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-lg text-label-lg font-bold text-on-surface">Title Published!</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Dune: Part Two is now streaming in storefront.</span>
-</div>
-</div>
-</div>
-</div>
-<script>
-  function showPublishAlert() {
-    const toast = document.getElementById('toastNotification');
-    if (!toast) return;
-    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
-    toast.classList.add('translate-y-0', 'opacity-100');
-    setTimeout(() => {
-      toast.classList.remove('translate-y-0', 'opacity-100');
-      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
-    }, 4000);
-  }
-</script></main></body></html>
+          </div>
+          <!-- Quick Status Badges -->
+          <div class="flex items-center gap-space-sm self-start md:self-auto">
+            <div
+              class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md">
+              <span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+              <span>CDN Ingest Ready</span>
+            </div>
+            <div
+              class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md">
+              <span class="material-symbols-outlined text-[18px] text-primary">local_activity</span>
+              <span>Standard License: Rs. 50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content Space -->
+      <div class="w-full max-w-7xl mx-auto px-margin py-space-xl">
+        <form class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start" id="addMovieForm"
+          onsubmit="event.preventDefault();">
+          <!-- Primary Left Column: Core Metadata & Storyline (8 cols) -->
+          <div class="lg:col-span-8 flex flex-col gap-space-lg">
+            <!-- Section 1: Basic Information -->
+            <div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+              <div class="flex items-center justify-between pb-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[18px]">movie</span>
+                  </div>
+                  <h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Title &amp; Overview</h2>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Step 1 of 3</span>
+              </div>
+              <!-- Movie Name -->
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="movieName">Movie Title
+                    <span class="text-error">*</span></label>
+                  <span class="font-body-sm text-body-sm text-outline">Max 120 chars</span>
+                </div>
+                <div class="relative flex items-center">
+                  <span
+                    class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">theaters</span>
+                  <input
+                    class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors"
+                    id="movieName" name="movieName" placeholder="Enter movie title (e.g. Dune: Part Two)" type="text"
+                    value="Dune: Part Two" />
+                </div>
+              </div>
+              <!-- Synopsis / Description -->
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold"
+                    for="movieDescription">Synopsis &amp; Storyline <span class="text-error">*</span></label>
+                  <span class="font-body-sm text-body-sm text-outline">Markdown supported</span>
+                </div>
+                <textarea
+                  class="w-full p-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors resize-y"
+                  id="movieDescription"
+                  placeholder="Enter movie storyline, themes, background details, and digital rental notes..."
+                  rows="4">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.</textarea>
+              </div>
+              <!-- Cast & Crew -->
+              <div class="flex flex-col gap-space-xs">
+                <label class="font-label-md text-label-md text-on-surface font-semibold" for="castCrew">Cast &amp; Crew
+                  Credits</label>
+                <div class="relative flex items-center">
+                  <span
+                    class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">group</span>
+                  <input
+                    class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors"
+                    id="castCrew" placeholder="Timothée Chalamet, Zendaya, Denis Villeneuve..." type="text"
+                    value="Timothée Chalamet, Zendaya, Rebecca Ferguson, Denis Villeneuve" />
+                </div>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Separate primary names with commas for
+                  instant automated actor tags.</span>
+              </div>
+            </div>
+            <!-- Section 2: Format, Distribution & Pricing -->
+            <div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+              <div class="flex items-center justify-between pb-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary">
+                    <span class="material-symbols-outlined text-[18px]">sell</span>
+                  </div>
+                  <h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Licensing &amp;
+                    Specifications</h2>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Step 2 of 3</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                <!-- Category Dropdown -->
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="categorySelect">Genre /
+                    Category <span class="text-error">*</span></label>
+                  <div class="relative flex items-center">
+                    <span
+                      class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">category</span>
+                    <select
+                      class="w-full h-11 pl-11 pr-10 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest appearance-none cursor-pointer"
+                      id="categorySelect">
+                      <option selected="" value="Sci-Fi">Sci-Fi / Space Opera</option>
+                      <option value="Action">Action &amp; Adventure</option>
+                      <option value="Hollywood">Hollywood Blockbuster</option>
+                      <option value="Bollywood">Bollywood Premiere</option>
+                      <option value="Thriller">Thriller &amp; Mystery</option>
+                      <option value="Comedy">Comedy</option>
+                      <option value="Horror">Horror &amp; Supernatural</option>
+                    </select>
+                    <span
+                      class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
+                  </div>
+                </div>
+                <!-- Primary Language -->
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="languageSelect">Audio
+                    Language <span class="text-error">*</span></label>
+                  <div class="relative flex items-center">
+                    <span
+                      class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">translate</span>
+                    <select
+                      class="w-full h-11 pl-11 pr-10 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest appearance-none cursor-pointer"
+                      id="languageSelect">
+                      <option selected="" value="English">English (Dolby Atmos 5.1)</option>
+                      <option value="Urdu">Urdu (Original Dub)</option>
+                      <option value="Hindi">Hindi (Multi-Audio)</option>
+                      <option value="Punjabi">Punjabi (Regional)</option>
+                    </select>
+                    <span
+                      class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
+                  </div>
+                </div>
+                <!-- Release Year -->
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="releaseYear">Release
+                    Year <span class="text-error">*</span></label>
+                  <div class="relative flex items-center">
+                    <span
+                      class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">calendar_today</span>
+                    <input
+                      class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest"
+                      id="releaseYear" max="2099" min="1900" placeholder="2024" type="number" value="2024" />
+                  </div>
+                </div>
+                <!-- Rental Price -->
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="rentalPrice">Rental
+                    Price (PKR / Rs.) <span class="text-error">*</span></label>
+                  <div class="relative flex items-center">
+                    <span
+                      class="material-symbols-outlined absolute left-space-md text-tertiary pointer-events-none text-[20px]">payments</span>
+                    <input
+                      class="w-full h-11 pl-11 pr-24 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md font-bold focus:outline-none focus:bg-surface-container-highest"
+                      id="rentalPrice" min="0" placeholder="50" step="5" type="number" value="50" />
+                    <span
+                      class="absolute right-space-md font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">PPV
+                      Flat</span>
+                  </div>
+                </div>
+                <!-- Duration -->
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="duration">Runtime /
+                    Duration</label>
+                  <div class="relative flex items-center">
+                    <span
+                      class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">schedule</span>
+                    <input
+                      class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest"
+                      id="duration" placeholder="e.g. 166 mins" type="text" value="166 mins" />
+                  </div>
+                </div>
+                <!-- Maturity / Age Rating -->
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-md text-label-md text-on-surface font-semibold" for="ratingSelect">Age
+                    Certification</label>
+                  <div class="relative flex items-center">
+                    <span
+                      class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">verified_user</span>
+                    <select
+                      class="w-full h-11 pl-11 pr-10 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest appearance-none cursor-pointer"
+                      id="ratingSelect">
+                      <option selected="" value="PG-13">PG-13 (Parents Strongly Cautioned)</option>
+                      <option value="R">R (Restricted)</option>
+                      <option value="U">U (Universal / All Ages)</option>
+                      <option value="18+">18+ (Adults Only)</option>
+                    </select>
+                    <span
+                      class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 3: Master File Upload with Live Status Simulator -->
+            <div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+              <div class="flex items-center justify-between pb-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <div
+                    class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+                    <span class="material-symbols-outlined text-[18px]">video_file</span>
+                  </div>
+                  <h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Video Master File Delivery
+                  </h2>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Step 3 of 3</span>
+              </div>
+              <!-- Video Drop Zone -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center group cursor-pointer transition-colors hover:bg-surface-container-high/60">
+                <div
+                  class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-primary text-[28px]">cloud_upload</span>
+                </div>
+                <p class="font-title-md text-title-md text-on-surface font-semibold">Upload H.264/H.265 Master MP4/MKV
+                </p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
+                  Drag &amp; drop the ultra-high bitrate 4K/1080p source video container here, or click to open system
+                  finder. (Max file size: 8.00 GB)
+                </p>
+                <div class="flex items-center gap-space-sm mt-space-md">
+                  <button
+                    class="px-space-md py-2 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors"
+                    type="button">
+                    Browse Master Video
+                  </button>
+                  <span class="font-label-sm text-label-sm text-outline">Supports: .mp4, .mkv, .mov</span>
+                </div>
+              </div>
+              <!-- Upload Progress Simulator Block -->
+              <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm min-w-0">
+                    <span class="material-symbols-outlined text-primary text-[22px]">play_circle</span>
+                    <div class="flex flex-col min-w-0">
+                      <span
+                        class="font-label-lg text-label-lg font-semibold text-on-surface truncate">dune_part_two_master_2160p_hdr.mkv</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant">6.42 GB of 7.20 GB • 28 MB/s
+                        (Encoding Transmux)</span>
+                    </div>
+                  </div>
+                  <span class="font-label-md text-label-md font-bold text-primary">89%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-primary to-tertiary rounded-full transition-all duration-300"
+                    style="width: 89%;"></div>
+                </div>
+                <div class="flex items-center justify-between pt-1">
+                  <div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+                    <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    <span>Automatic 480p, 720p, 1080p, 4K multi-bitrate profiles queued</span>
+                  </div>
+                  <button class="text-error font-label-sm text-label-sm hover:underline" type="button">Cancel
+                    Upload</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Secondary Right Column: Live Poster Preview, Upload Box & Publication (4 cols) -->
+          <div class="lg:col-span-4 flex flex-col gap-space-lg">
+            <!-- Poster Upload Card -->
+            <div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+              <div class="flex items-center justify-between pb-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[18px]">image</span>
+                  </div>
+                  <h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Movie Artwork</h2>
+                </div>
+                <span class="font-label-sm text-label-sm text-outline">2:3 Aspect</span>
+              </div>
+              <!-- Poster Live Preview Box -->
+              <div
+                class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container-low shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="Official high-resolution cinema movie poster for Dune Part Two featuring Paul Atreides and desert warriors standing atop majestic golden sand dunes beneath twin moons, cinematic blue shadows, intense orange glow, 4K hyper-detailed digital art."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz6EeaBzggioL5IUlgSRZqlV2tdGvnMj8H3G9GdQ_ChI77V-QOUKdtRJ1dpuvA5hh0hyT0mF8UWyB-xwz4H00Tnr7_5N0nZSXpBpCefuMsOJ8FoZmB0e5BZ-58q8tcTvUug6v6rhlNuu_5bjj_9QeRykzcqZdUxMyoxEr7_EDfxj7SPzhNaS4tUgj6yBNQUSiiTpWeJZa9bc4SyAgRaqUBgbgQXvzyo2mK4eXfoKOWAadJyoGsdVGiDw" />
+                <!-- Quality & Scrim Overlays -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/40">
+                </div>
+                <div class="absolute top-3 right-3 flex items-center gap-1.5">
+                  <span
+                    class="px-2 py-0.5 rounded bg-surface/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">4K
+                    Ultra HD</span>
+                  <span
+                    class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">Dolby</span>
+                </div>
+                <!-- Preview Data on Scrim -->
+                <div class="absolute bottom-3 left-3 right-3 flex flex-col gap-1">
+                  <span class="font-title-md text-title-md text-on-surface font-bold truncate">Dune: Part Two</span>
+                  <div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+                    <span>2024 • Sci-Fi</span>
+                    <span class="font-bold text-tertiary">Rs. 50</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Drop Box Actions -->
+              <div
+                class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center">
+                <span class="material-symbols-outlined text-outline text-[24px] mb-1">add_photo_alternate</span>
+                <p class="font-label-md text-label-md text-on-surface font-semibold">Change Key Art Poster</p>
+                <p class="font-body-sm text-body-sm text-outline mt-0.5">JPG, PNG or WEBP (Max 10MB)</p>
+                <button
+                  class="mt-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors"
+                  type="button">
+                  Browse Poster File
+                </button>
+              </div>
+            </div>
+            <!-- Publication Summary & Operations -->
+            <div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+              <div class="flex items-center gap-space-sm">
+                <div class="w-8 h-8 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary">
+                  <span class="material-symbols-outlined text-[18px]">publish</span>
+                </div>
+                <h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Publish Actions</h2>
+              </div>
+              <div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+                <div class="flex items-center justify-between">
+                  <span class="font-body-md text-body-md text-on-surface-variant">Storefront Status</span>
+                  <span class="font-label-md text-label-md font-bold text-tertiary flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-tertiary"></span> Ready to Launch
+                  </span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-body-md text-body-md text-on-surface-variant">Rental Fee</span>
+                  <span class="font-label-md text-label-md font-bold text-on-surface">Rs. 50 (Instant Debit)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-body-md text-body-md text-on-surface-variant">Access Window</span>
+                  <span class="font-label-md text-label-md text-on-surface">48 Hours Post-Unlock</span>
+                </div>
+              </div>
+              <!-- Feature Flags Switch -->
+              <div class="flex items-center justify-between py-1">
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Featured Showcase</span>
+                  <span class="font-body-sm text-body-sm text-outline">Pin to top hero billboard carousel</span>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input checked="" class="sr-only peer" type="checkbox" />
+                  <div
+                    class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container">
+                  </div>
+                </label>
+              </div>
+              <div class="flex items-center justify-between py-1">
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Allow Downloads</span>
+                  <span class="font-body-sm text-body-sm text-outline">Enable offline encrypted cache</span>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input checked="" class="sr-only peer" type="checkbox" />
+                  <div
+                    class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container">
+                  </div>
+                </label>
+              </div>
+              <!-- Action Buttons -->
+              <div class="flex flex-col gap-space-xs pt-space-sm">
+                <button
+                  class="w-full py-3 px-space-lg rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-[0_4px_16px_rgba(147,204,255,0.35)] transition-all hover:scale-[1.01]"
+                  onclick="showPublishAlert()" type="button">
+                  <span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+                  <span>Publish Movie</span>
+                </button>
+                <button
+                  class="w-full py-2.5 px-space-lg rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs transition-colors"
+                  type="button">
+                  <span class="material-symbols-outlined text-[18px]">save</span>
+                  <span>Save as Draft</span>
+                </button>
+                <button
+                  class="w-full py-2 text-outline hover:text-on-surface font-label-md text-label-md transition-colors text-center"
+                  type="reset">
+                  Discard Changes
+                </button>
+              </div>
+            </div>
+            <!-- Live Ingestion Help Card -->
+            <div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0">info</span>
+              <div class="flex flex-col gap-0.5">
+                <span class="font-label-md text-label-md text-on-surface font-semibold">Automated Encoding</span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Once published, our cloud transcoding farm auto-generates adaptive HLS streams and thumbnail scrubbers
+                  within 4-7 minutes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Notification Toast (Hidden by default, triggered by JS) -->
+      <div
+        class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none"
+        id="toastNotification">
+        <div
+          class="flex items-center gap-space-sm px-space-lg py-space-md bg-surface-container-high rounded-xl shadow-xl border-0">
+          <div class="w-8 h-8 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary">
+            <span class="material-symbols-outlined text-[18px]">check</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-label-lg text-label-lg font-bold text-on-surface">Title Published!</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Dune: Part Two is now streaming in
+              storefront.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showPublishAlert() {
+        const toast = document.getElementById('toastNotification');
+        if (!toast) return;
+        toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        }, 4000);
+      }
+    </script>
+  </main>
+</body>
+
+</html>
