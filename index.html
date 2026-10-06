@@ -16,18 +16,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link href="./assets/custom-styles.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./assets/custom-tailwind-classes.js"></script>
 </head>
 
 <body
-  class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+  class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-white-container">
   <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-16 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md">
       <div class="flex items-center gap-space-lg shrink-0"><a
           class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="index.html"><span
-          class="material-symbols-outlined flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-on-primary-container">play_arrow</span><span
+            class="material-symbols-outlined flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-white-container">play_arrow</span><span
             class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">MovieHub</span></a>
         <nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-primary font-bold">
 
@@ -37,143 +38,493 @@
       <div class="flex items-center gap-space-sm shrink-0"><a
           class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
           data-path="login" href="login.html">Login</a><a
-          class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-full font-label-md text-label-md text-on-primary-container bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container shadow-[0_4px_14px_rgba(49,152,220,0.35)] transition-all"
+          class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-full font-label-md text-label-md text-white-container bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container shadow-[0_4px_14px_rgba(49,152,220,0.35)] transition-all"
           data-path="register" href="register.html">Get Started</a>
 
       </div>
     </div>
   </header>
+
   <main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]">
     <div class="flex flex-col w-full">
       <!-- 1. FEATURED HERO CAROUSEL BANNER -->
-      <section class="relative w-full overflow-hidden -mt-16 pt-16">
-        <!-- Background Cinematic Scrim & Graphic -->
-        <div class="absolute inset-0 z-0">
-          <div class="w-full h-full bg-cover bg-center transition-all duration-700 scale-105"
-            data-alt="Cinematic widescreen shot of Keanu Reeves in John Wick Chapter 4 in Tokyo neon night rain, intense moody expression, soaked black tactical suit, reflection of high-contrast electric blue and amber neon signage, ultra-sharp 8k resolution, atmospheric mist."
-            id="hero-bg"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxCUkIsuAzH4g0g_8FhghoS5YWv-nN-1j48b0uN8Q0OOVNLfL6EoFJyO6Q8qwxR8l12_sG8l-o0wy8KXBR5NSLG0Udxgd8iy3DbeF5T185vGvh-FQDpBWwrIFwfi-cT5nW-RQ6UD1AvJwoe-yLCzYJbbjevL52tNMg0kt0WrwDm-2aTjzIh8AQMHTA5oguu2tIqCS1RpLn4YNvPAhaGj7iNKRjSS6NXmbFcY8v8kBh-q3Cb_7AA73e7g')">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/75 to-surface/40"></div>
-          <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent max-w-4xl"></div>
-          <div
-            class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none">
-          </div>
-        </div>
-        <div
-          class="relative z-10 w-full px-margin-mobile md:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[720px]">
-          <!-- Metadata Tagging -->
-          <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
-            <span
-              class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md shadow-sm">
-              <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              Featured Premiere
-            </span>
-            <span
-              class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-wide">
-              ULTRA HD 4K
-            </span>
-            <span
-              class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
-              <span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
-              8.9 IMDb
-            </span>
-          </div>
-          <!-- Hero Title -->
-          <h1
-            class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
-            JOHN WICK: CHAPTER 4
-          </h1>
-          <!-- Technical Specifications & Subline -->
-          <div
-            class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-title-md text-title-md text-on-surface-variant mb-space-md">
-            <span class="text-primary font-bold">Action • Thriller • Crime</span>
-            <span class="text-outline">•</span>
-            <span>2023</span>
-            <span class="text-outline">•</span>
-            <span>2h 49m</span>
-            <span class="text-outline">•</span>
-            <span
-              class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">HDR10+</span>
-            <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Dolby
-              Atmos</span>
-          </div>
-          <!-- Logline Synopsis -->
-          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl line-clamp-3">
-            With the price on his head ever increasing, legendary hitman John Wick takes his fight against the High
-            Table global, seeking out the most powerful players in the underworld from New York to Paris, Osaka, and
-            Berlin.
-          </p>
-          <!-- Action Controls -->
-          <div class="flex flex-wrap items-center gap-space-md">
-            <button
-              class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-[0_4px_20px_rgba(49,152,220,0.45)] hover:bg-secondary-container hover:shadow-[0_4px_28px_rgba(0,166,224,0.6)] transition-all transform hover:-translate-y-0.5">
-              <span class="material-symbols-outlined text-[20px]"
-                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-              Rent for Rs. 50
-            </button>
-            <button
-              class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all">
-              <span class="material-symbols-outlined text-[20px]">play_circle</span>
-              Watch Trailer
-            </button>
-            <button aria-label="Add to Watchlist"
-              class="w-12 h-12 rounded-full bg-surface-container/70 backdrop-blur-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high flex items-center justify-center transition-all">
-              <span class="material-symbols-outlined text-[20px]">bookmark_add</span>
-            </button>
-          </div>
-          <!-- Carousel Preview Navigator Slider -->
-          <div class="mt-space-xl pt-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
-            <div class="flex items-center gap-space-sm">
-              <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest mr-2">Now Trending</span>
-              <div class="flex items-center gap-2">
-                <button class="w-8 h-1.5 rounded-full bg-primary transition-all"></button>
-                <button class="w-3 h-1.5 rounded-full bg-surface-variant hover:bg-outline transition-all"></button>
-                <button class="w-3 h-1.5 rounded-full bg-surface-variant hover:bg-outline transition-all"></button>
-                <button class="w-3 h-1.5 rounded-full bg-surface-variant hover:bg-outline transition-all"></button>
+      <section class="relative w-full -mt-16 pt-16">
+        <div class="hero-slider">
+
+          <!-- ==================== SLIDE 1 ==================== -->
+          <article class="hero-slide relative w-full overflow-hidden">
+
+            <!-- Background -->
+            <div class="absolute inset-0 z-0">
+              <div class="w-full h-full bg-cover bg-center transition-all duration-700 scale-105" style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxCUkIsuAzH4g0g_8FhghoS5YWv-nN-1j48b0uN8Q0OOVNLfL6EoFJyO6Q8qwxR8l12_sG8l-o0wy8KXBR5NSLG0Udxgd8iy3DbeF5T185vGvh-FQDpBWwrIFwfi-cT5nW-RQ6UD1AvJwoe-yLCzYJbbjevL52tNMg0kt0WrwDm-2aTjzIh8AQMHTA5oguu2tIqCS1RpLn4YNvPAhaGj7iNKRjSS6NXmbFcY8v8kBh-q3Cb_7AA73e7g');
+          "></div>
+
+              <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/75 to-surface/40"></div>
+
+              <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent max-w-4xl"></div>
+
+              <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none">
               </div>
             </div>
-            <!-- Thumbnail Quick Switchers -->
-            <div class="hidden lg:flex items-center gap-space-md">
+
+            <!-- Content -->
+            <div
+              class="relative z-10 w-full px-margin-mobile md:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
+
+              <!-- Metadata -->
+              <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+
+                <span
+                  class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Featured Premiere
+                </span>
+
+                <span
+                  class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-wide">
+                  ULTRA HD 4K
+                </span>
+
+                <span
+                  class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+                  <span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">
+                    star
+                  </span>
+                  8.9 IMDb
+                </span>
+
+              </div>
+
+              <!-- Title -->
+              <h1
+                class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
+                JOHN WICK: CHAPTER 4
+              </h1>
+
+              <!-- Info -->
               <div
-                class="flex items-center gap-space-sm px-space-md py-1.5 rounded-xl bg-surface-container-low/90 backdrop-blur-md cursor-pointer hover:bg-surface-container-high transition-all">
-                <div class="w-10 h-10 rounded-lg overflow-hidden shrink-0">
-                  <img class="w-full h-full object-cover"
-                    data-alt="Dune Part Two cinematic portrait poster of Timothée Chalamet as Paul Atreides surrounded by fiery orange desert sands with deep blue tactical combat goggles."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv8TrQrxI7aKKCtAaqVkvvzWMYt-dwQEoOErnnWnA0WMvRY-Jkyb8oobhs--avGHymi6YwSmzQqyFoCpxrfcLt8Gk9GAQkEap70T0oe7HrKSw5D1ebRxMQeMjTHKPxaWaKMiN6gcNvlcQT3Z6aCG6KPai4PIQ2wtxQpWMEyzjExWPYlHHb77XrGvjsZlV6jjzx9ETsmMUdGoXf2-iZTwjq9tFFlUmLtI6CniBbhMIcdUQr4tuV0wPM3g" />
-                </div>
-                <div>
-                  <p class="font-label-md text-label-md text-on-surface font-bold">Dune: Part Two</p>
-                  <p class="font-label-sm text-label-sm text-outline">Sci-Fi • Rs. 50</p>
-                </div>
+                class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-title-md text-title-md text-on-surface-variant mb-space-md">
+                <span class="text-primary font-bold">
+                  Action • Thriller • Crime
+                </span>
+
+                <span class="text-outline">•</span>
+
+                <span>2023</span>
+
+                <span class="text-outline">•</span>
+
+                <span>2h 49m</span>
+
+                <span class="text-outline">•</span>
+
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  HDR10+
+                </span>
+
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Dolby Atmos
+                </span>
               </div>
+
+              <!-- Description -->
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl line-clamp-3">
+                With the price on his head ever increasing, legendary hitman John
+                Wick takes his fight against the High Table global, seeking out the
+                most powerful players in the underworld from New York to Paris,
+                Osaka, and Berlin.
+              </p>
+
+              <!-- Buttons -->
+              <div class="flex flex-wrap items-center gap-space-md">
+
+                <a href="moviedetail.html"
+                  class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-primary-container text-white-container font-label-lg text-label-lg shadow-[0_4px_20px_rgba(49,152,220,0.45)] hover:bg-secondary-container hover:shadow-[0_4px_28px_rgba(0,166,224,0.6)] transition-all transform hover:-translate-y-0.5">
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">
+                    play_arrow
+                  </span>
+
+                  Rent for Rs. 50
+                </a>
+
+                <button type="button"
+                  class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all">
+                  <span class="material-symbols-outlined text-[20px]">
+                    play_circle
+                  </span>
+
+                  Watch Trailer
+                </button>
+
+                <button type="button" aria-label="Add to Watchlist"
+                  class="w-12 h-12 rounded-full bg-surface-container/70 backdrop-blur-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high flex items-center justify-center transition-all">
+                  <span class="material-symbols-outlined text-[20px]">
+                    bookmark_add
+                  </span>
+                </button>
+
+              </div>
+
+
+            </div>
+          </article>
+
+
+          <!-- ==================== SLIDE 2 ==================== -->
+          <article class="hero-slide relative w-full overflow-hidden">
+
+            <div class="absolute inset-0 z-0">
+
+              <div class="w-full h-full bg-cover bg-center scale-105"
+                style="background-image: url('assets/images/banner-2.jpg');"></div>
+
+              <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/75 to-surface/40"></div>
+
+              <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent max-w-4xl"></div>
+
+            </div>
+
+            <div
+              class="relative z-10 w-full px-margin-mobile md:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
+
+              <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+
+                <span
+                  class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Now Streaming
+                </span>
+
+                <span
+                  class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                  ULTRA HD 4K
+                </span>
+
+                <span
+                  class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+                  <span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">
+                    star
+                  </span>
+                  8.5 IMDb
+                </span>
+
+              </div>
+
+              <h1
+                class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
+                DUNE: PART TWO
+              </h1>
+
               <div
-                class="flex items-center gap-space-sm px-space-md py-1.5 rounded-xl bg-surface-container-low/90 backdrop-blur-md cursor-pointer hover:bg-surface-container-high transition-all opacity-80 hover:opacity-100">
-                <div class="w-10 h-10 rounded-lg overflow-hidden shrink-0">
-                  <img class="w-full h-full object-cover"
-                    data-alt="Oppenheimer movie poster close up portrait of Cillian Murphy in a fedora with atomic fire explosion illuminating amber light against shadows."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrxB82K72aK2tLfJn-awX5cKdZMNGeLGJmqgszIZlJ-XOsNfTJ_t1cTNotc8-iCuGDPhypn9exKy141m8YAaDxUFo-h1FtzfbyORDt8rgPpBSHWF4ws8HsEMTjlkVNfEtUvW2Nm5z2jRC8bZaFhwJWIqCaKThxebPDEJjP1P8CHIdYhjPGERyN_1Sv2weICiB_PlkyaRDf1FjGCpl4U5fNf0zu90lHQAQoKVAgc5q4QCobcLF2kUwTrA" />
-                </div>
-                <div>
-                  <p class="font-label-md text-label-md text-on-surface font-bold">Oppenheimer</p>
-                  <p class="font-label-sm text-label-sm text-outline">Drama • Rs. 50</p>
-                </div>
+                class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-title-md text-title-md text-on-surface-variant mb-space-md">
+                <span class="text-primary font-bold">
+                  Sci-Fi • Adventure • Drama
+                </span>
+
+                <span class="text-outline">•</span>
+
+                <span>2024</span>
+
+                <span class="text-outline">•</span>
+
+                <span>2h 46m</span>
+
+                <span class="text-outline">•</span>
+
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  IMAX
+                </span>
+
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Dolby Atmos
+                </span>
               </div>
-              <div class="flex items-center gap-2 pl-2">
-                <button
-                  class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface hover:bg-primary-container hover:text-on-primary-container flex items-center justify-center transition-colors">
-                  <span class="material-symbols-outlined text-[18px]">chevron_left</span>
+
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl line-clamp-3">
+                Paul Atreides unites with Chani and the Fremen while seeking revenge
+                against the conspirators who destroyed his family.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-space-md">
+
+                <a href="moviedetail.html"
+                  class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-primary-container text-white-container font-label-lg text-label-lg shadow-[0_4px_20px_rgba(49,152,220,0.45)] hover:bg-secondary-container transition-all">
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">
+                    play_arrow
+                  </span>
+
+                  Rent for Rs. 50
+                </a>
+
+                <button type="button"
+                  class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all">
+                  <span class="material-symbols-outlined text-[20px]">
+                    play_circle
+                  </span>
+
+                  Watch Trailer
                 </button>
-                <button
-                  class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface hover:bg-primary-container hover:text-on-primary-container flex items-center justify-center transition-colors">
-                  <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+
+                <button type="button" aria-label="Add to Watchlist"
+                  class="w-12 h-12 rounded-full bg-surface-container/70 backdrop-blur-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high flex items-center justify-center transition-all">
+                  <span class="material-symbols-outlined text-[20px]">
+                    bookmark_add
+                  </span>
                 </button>
+
+
               </div>
+
+
+
+
+            </div>
+          </article>
+
+
+          <!-- ==================== SLIDE 3 ==================== -->
+          <article class="hero-slide relative w-full overflow-hidden">
+
+            <div class="absolute inset-0 z-0">
+
+              <div class="w-full h-full bg-cover bg-center scale-105"
+                style="background-image: url('assets/images/banner-1.jpg');"></div>
+
+              <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/75 to-surface/40"></div>
+
+              <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent max-w-4xl"></div>
+
+            </div>
+
+            <div
+              class="relative z-10 w-full px-margin-mobile md:px-margin
+               pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
+
+              <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+
+                <span
+                  class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Award-Winning Drama
+                </span>
+
+                <span
+                  class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                  4K UHD
+                </span>
+
+                <span
+                  class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+                  <span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">
+                    star
+                  </span>
+                  8.3 IMDb
+                </span>
+
+              </div>
+
+              <h1
+                class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
+                OPPENHEIMER
+              </h1>
+
+              <div
+                class="flex flex-wrap items-center gap-x-space-md gap-y-1 font-title-md text-title-md text-on-surface-variant mb-space-md">
+                <span class="text-primary font-bold">
+                  Drama • Biography • History
+                </span>
+
+                <span class="text-outline">•</span>
+
+                <span>2023</span>
+
+                <span class="text-outline">•</span>
+
+                <span>3h 00m</span>
+
+                <span class="text-outline">•</span>
+
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  4K UHD
+                </span>
+
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Dolby Atmos
+                </span>
+              </div>
+
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl line-clamp-3">
+                The story of J. Robert Oppenheimer and the choices that shaped the
+                development of the atomic bomb.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-space-md">
+
+                <a href="moviedetail.html"
+                  class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-primary-container text-white-container font-label-lg text-label-lg shadow-[0_4px_20px_rgba(49,152,220,0.45)] hover:bg-secondary-container transition-all">
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">
+                    play_arrow
+                  </span>
+
+                  Rent for Rs. 50
+                </a>
+
+                <button type="button"
+                  class="inline-flex items-center gap-space-sm px-6 py-3.5 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all">
+                  <span class="material-symbols-outlined text-[20px]">
+                    play_circle
+                  </span>
+
+                  Watch Trailer
+                </button>
+
+                <button type="button" aria-label="Add to Watchlist"
+                  class="w-12 h-12 rounded-full bg-surface-container/70 backdrop-blur-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high flex items-center justify-center transition-all">
+                  <span class="material-symbols-outlined text-[20px]">
+                    bookmark_add
+                  </span>
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+        <div class="hero-slider-controls absolute inset-x-0 bottom-6 z-20 px-margin-mobile md:px-margin">
+          <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-sm">
+              <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Now Trending</span>
+              <div class="hero-slider-dots"></div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button type="button" data-hero-prev aria-label="Previous banner"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-surface-container-high text-on-surface transition-colors hover:bg-primary-container hover:text-white-container">
+                <span class="material-symbols-outlined text-[18px]">chevron_left</span>
+              </button>
+              <button type="button" data-hero-next aria-label="Next banner"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-surface-container-high text-on-surface transition-colors hover:bg-primary-container hover:text-white-container">
+                <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <!-- 2. TRENDING & FEATURED MOVIES ROW -->
+
+      <!-- 2. EXPLORE CATEGORIES GRID -->
+      <section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+            <div>
+              <div
+                class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-wider mb-1">
+                <span class="material-symbols-outlined text-[16px]">grid_view</span>
+                Curation Engine
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">EXPLORE BY CATEGORY</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2 md:mt-0">
+              Browse thousands of titles across your favorite regional &amp; global genres
+            </p>
+          </div>
+          <!-- 8-Category Pill/Card Bento -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-space-sm md:gap-space-md">
+            <!-- Bollywood -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(255,100,100,0.25)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-600/30 to-rose-400/20 text-rose-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">hotel_class</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Bollywood</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">340+ titles</span>
+            </a>
+            <!-- Hollywood -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(2,132,197,0.3)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary-container/30 to-secondary/20 text-primary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">movie</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Hollywood</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">820+ titles</span>
+            </a>
+            <!-- South Indian -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(245,158,11,0.25)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-600/30 to-yellow-400/20 text-amber-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">theaters</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">South</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">190+ titles</span>
+            </a>
+            <!-- Punjabi -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(249,115,22,0.25)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-600/30 to-amber-500/20 text-orange-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Punjabi</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">75+ titles</span>
+            </a>
+            <!-- Action -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(2,132,197,0.3)] hover:-translate-y-1"
+              href="#">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary/30 to-primary-container/20 text-primary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Action</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">510+ titles</span>
+            </a>
+            <!-- Comedy -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(78,222,163,0.25)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-tertiary/30 to-tertiary-container/20 text-tertiary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">sentiment_very_satisfied</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Comedy</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">260+ titles</span>
+            </a>
+            <!-- Thriller -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(168,85,247,0.25)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-600/30 to-indigo-400/20 text-purple-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">visibility</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Thriller</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">310+ titles</span>
+            </a>
+            <!-- Horror -->
+            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(239,68,68,0.25)] hover:-translate-y-1"
+              href="login.html">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-red-600/30 to-rose-500/20 text-error flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[24px]">skull</span>
+              </div>
+              <span
+                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Horror</span>
+              <span class="font-label-sm text-label-sm text-outline mt-0.5">140+ titles</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TRENDING & FEATURED MOVIES ROW -->
       <section class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto">
         <div class="flex items-end justify-between mb-space-lg">
           <div>
@@ -218,11 +569,11 @@
               </div>
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
-                <button
-                  class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
-                  onclick="window.location.href='moviedetail.html'" type="button">
+                <a href="login.html"
+                  class="px-3 py-1.5 rounded-full bg-primary-container  font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
+                   type="button">
                   Buy Now
-                </button>
+              </a>
               </div>
             </div>
           </div>
@@ -253,11 +604,11 @@
               </div>
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
-                <button
-                  class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
-                  onclick="window.location.href='moviedetail.html'" type="button">
+                <a href="login.html"
+                  class="px-3 py-1.5 rounded-full bg-primary-container  font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
+                   type="button">
                   Buy Now
-                </button>
+              </a>
               </div>
             </div>
           </div>
@@ -287,11 +638,11 @@
               </div>
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
-                <button
-                  class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
-                  onclick="window.location.href='moviedetail.html'" type="button">
+                <a href="login.html"
+                  class="px-3 py-1.5 rounded-full bg-primary-container  font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
+                   type="button">
                   Buy Now
-                </button>
+              </a>
               </div>
             </div>
           </div>
@@ -322,11 +673,11 @@
               </div>
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
-                <button
-                  class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
-                  onclick="window.location.href='moviedetail.html'" type="button">
+                <a href="login.html"
+                  class="px-3 py-1.5 rounded-full bg-primary-container  font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
+                   type="button">
                   Buy Now
-                </button>
+              </a>
               </div>
             </div>
           </div>
@@ -356,11 +707,11 @@
               </div>
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
-                <button
-                  class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
-                  onclick="window.location.href='moviedetail.html'" type="button">
+                <a href="login.html"
+                  class="px-3 py-1.5 rounded-full bg-primary-container  font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
+                   type="button">
                   Buy Now
-                </button>
+              </a>
               </div>
             </div>
           </div>
@@ -391,125 +742,17 @@
               </div>
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
-                <button
-                  class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
-                  onclick="window.location.href='moviedetail.html'" type="button">
+                <a href="login.html"
+                  class="px-3 py-1.5 rounded-full bg-primary-container  font-label-md text-label-md font-bold hover:bg-secondary-container transition-colors shadow-sm"
+                   type="button">
                   Buy Now
-                </button>
+              </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- 3. EXPLORE CATEGORIES GRID -->
-      <section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest">
-        <div class="max-w-7xl mx-auto">
-          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
-            <div>
-              <div
-                class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-wider mb-1">
-                <span class="material-symbols-outlined text-[16px]">grid_view</span>
-                Curation Engine
-              </div>
-              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">EXPLORE BY CATEGORY</h2>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant mt-2 md:mt-0">
-              Browse thousands of titles across your favorite regional &amp; global genres
-            </p>
-          </div>
-          <!-- 8-Category Pill/Card Bento -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-space-sm md:gap-space-md">
-            <!-- Bollywood -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(255,100,100,0.25)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-600/30 to-rose-400/20 text-rose-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">hotel_class</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Bollywood</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">340+ titles</span>
-            </a>
-            <!-- Hollywood -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(2,132,197,0.3)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary-container/30 to-secondary/20 text-primary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">movie</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Hollywood</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">820+ titles</span>
-            </a>
-            <!-- South Indian -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(245,158,11,0.25)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-600/30 to-yellow-400/20 text-amber-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">theaters</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">South</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">190+ titles</span>
-            </a>
-            <!-- Punjabi -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(249,115,22,0.25)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-600/30 to-amber-500/20 text-orange-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">graphic_eq</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Punjabi</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">75+ titles</span>
-            </a>
-            <!-- Action -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(2,132,197,0.3)] hover:-translate-y-1"
-              href="#">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary/30 to-primary-container/20 text-primary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">local_fire_department</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Action</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">510+ titles</span>
-            </a>
-            <!-- Comedy -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(78,222,163,0.25)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-tertiary/30 to-tertiary-container/20 text-tertiary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">sentiment_very_satisfied</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Comedy</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">260+ titles</span>
-            </a>
-            <!-- Thriller -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(168,85,247,0.25)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-600/30 to-indigo-400/20 text-purple-400 flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">visibility</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Thriller</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">310+ titles</span>
-            </a>
-            <!-- Horror -->
-            <a class="group flex flex-col items-center text-center p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-sm hover:shadow-[0_4px_16px_rgba(239,68,68,0.25)] hover:-translate-y-1"
-              href="categories.html">
-              <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-tr from-red-600/30 to-rose-500/20 text-error flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-[24px]">skull</span>
-              </div>
-              <span
-                class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Horror</span>
-              <span class="font-label-sm text-label-sm text-outline mt-0.5">140+ titles</span>
-            </a>
-          </div>
-        </div>
-      </section>
+
       <!-- 4. POPULAR & TOP RATED MOVIES ROW -->
       <section class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-lg">
@@ -524,7 +767,7 @@
           <!-- Quick Filter Pills -->
           <div class="flex items-center gap-space-xs overflow-x-auto pb-1">
             <button
-              class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold shrink-0">
+              class="px-space-md py-1.5 rounded-full bg-primary-container text-white-container font-label-md text-label-md font-semibold shrink-0">
               All
             </button>
             <button
@@ -571,7 +814,7 @@
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
                 <button
-                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-colors">
+                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-colors">
                   Rent
                 </button>
               </div>
@@ -605,7 +848,7 @@
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
                 <button
-                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-colors">
+                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-colors">
                   Rent
                 </button>
               </div>
@@ -639,7 +882,7 @@
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
                 <button
-                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-colors">
+                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-colors">
                   Rent
                 </button>
               </div>
@@ -673,7 +916,7 @@
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
                 <button
-                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-colors">
+                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-colors">
                   Rent
                 </button>
               </div>
@@ -707,7 +950,7 @@
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
                 <button
-                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-colors">
+                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-colors">
                   Rent
                 </button>
               </div>
@@ -741,7 +984,7 @@
               <div class="mt-space-md pt-space-xs flex items-center justify-between gap-1">
                 <span class="font-title-md text-title-md text-on-surface font-extrabold">Rs. 50</span>
                 <button
-                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-colors">
+                  class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-colors">
                   Rent
                 </button>
               </div>
@@ -795,7 +1038,7 @@
                 </div>
                 <div class="mt-space-md pt-space-xs">
                   <button
-                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
+                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
                     Explore Series
                   </button>
                 </div>
@@ -827,7 +1070,7 @@
                 </div>
                 <div class="mt-space-md pt-space-xs">
                   <button
-                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
+                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
                     Explore Series
                   </button>
                 </div>
@@ -859,7 +1102,7 @@
                 </div>
                 <div class="mt-space-md pt-space-xs">
                   <button
-                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
+                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
                     Explore Series
                   </button>
                 </div>
@@ -891,7 +1134,7 @@
                 </div>
                 <div class="mt-space-md pt-space-xs">
                   <button
-                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
+                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
                     Explore Series
                   </button>
                 </div>
@@ -923,7 +1166,7 @@
                 </div>
                 <div class="mt-space-md pt-space-xs">
                   <button
-                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
+                    class="w-full py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-white-container text-on-surface font-label-md text-label-md font-bold transition-all text-center">
                     Explore Series
                   </button>
                 </div>
@@ -1002,7 +1245,7 @@
             class="mt-space-xl p-space-md rounded-xl bg-surface-container-high flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
             <div class="flex items-center gap-space-md">
               <div
-                class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+                class="w-10 h-10 rounded-full bg-primary-container text-white-container flex items-center justify-center shrink-0">
                 <span class="material-symbols-outlined text-[22px]">card_giftcard</span>
               </div>
               <div>
@@ -1011,7 +1254,7 @@
                   Rs. 50 bonus wallet credit.</p>
               </div>
             </div>
-            <a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-all shadow-[0_4px_14px_rgba(49,152,220,0.35)] shrink-0"
+            <a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary-container text-white-container font-label-md text-label-md font-bold hover:bg-secondary-container transition-all shadow-[0_4px_14px_rgba(49,152,220,0.35)] shrink-0"
               href="moviedetail.html">
               Claim Free Movie
             </a>
@@ -1025,7 +1268,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl">
         <div class="lg:col-span-2 space-y-space-md pr-0 lg:pr-space-xl">
           <div class="flex items-center gap-space-sm"><span
-              class="material-symbols-outlined flex h-7 w-7 items-center justify-center rounded-lg bg-primary-container text-on-primary-container">play_arrow</span><span
+              class="material-symbols-outlined flex h-7 w-7 items-center justify-center rounded-lg bg-primary-container text-white-container">play_arrow</span><span
               class="font-headline-sm text-headline-sm text-on-surface tracking-tight">MovieHub</span></div>
           <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Next-generation cinematic streaming and
             pay-per-view rentals in 4K HDR. Stream instantly or download offline.</p>
@@ -1050,11 +1293,12 @@
                 data-path="tv-series" href="movies.html">TV Series</a></li>
             <li role="none"><a
                 class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors block"
-                data-path="categories" href="categories.html">Sci-Fi Blockbusters</a></li>
+                data-path="categories" href="login.html">Sci-Fi Blockbusters</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-md" id="quick-links">Quick Links</h4>
+          <h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-md"
+            id="quick-links">Quick Links</h4>
           <ul class="space-y-space-sm">
             <li role="none"><a
                 class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors block"
@@ -1071,7 +1315,8 @@
           </ul>
         </div>
         <div>
-          <h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-md" id="legal">Legal</h4>
+          <h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-md"
+            id="legal">Legal</h4>
           <ul class="space-y-space-sm">
             <li role="none"><a
                 class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors block"
@@ -1099,6 +1344,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./assets/banner-slider.js"></script>
 </body>
 
 </html>
