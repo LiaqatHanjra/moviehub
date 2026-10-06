@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en">
+<html class="dark overflow-x-hidden lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -22,10 +22,10 @@
   <script src="./assets/custom-tailwind-classes.js"></script>
 </head>
 
-<body class="bg-surface-container-lowest font-body-md text-on-surface antialiased">
+<body class="overflow-x-hidden bg-surface-container-lowest font-body-md text-on-surface antialiased">
   <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high">
-    <div class="h-16 w-full px-margin flex items-center justify-between gap-space-md">
-      <div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home"
+    <div class="h-16 w-full px-margin-mobile sm:px-margin flex items-center justify-between gap-space-xs sm:gap-space-md">
+      <div class="flex items-center gap-space-xs sm:gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home"
           href="landingpage.html">
           <div
             class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform">
@@ -46,22 +46,22 @@
             class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
             data-path="wallet" href="userdashboard.html">Wallet</a></nav>
       </div>
-      <div class="flex-1 max-w-md hidden md:block">
+      <div class="flex-1 max-w-md hidden 2xl:block">
         <div class="relative flex items-center"><span
             class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input
             class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all"
             placeholder="Search movies, genres..." type="text" /></div>
       </div>
-      <div class="flex items-center gap-space-md"><a
-          class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors"
+      <div class="flex items-center gap-1 sm:gap-space-md"><a
+          class="flex items-center gap-space-xs px-space-xs sm:px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors"
           data-path="wallet" href="userdashboard.html"><span
             class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span
-            class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button
+            class="hidden sm:inline-block font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button
           aria-label="Notifications"
           class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative"
           type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span
             class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button>
-        <div class="flex items-center gap-space-sm pl-space-xs">
+        <div class="flex items-center gap-space-xs sm:gap-space-sm pl-space-xs">
           <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
               class="material-symbols-outlined text-white text-[18px]">person</span></div>
           <div class="hidden lg:flex flex-col text-left"><span
@@ -71,13 +71,19 @@
         </div>
       </div>
     </div>
-  </header>
-  <main class="w-full pt-16 bg-surface-container-lowest min-h-screen">
+      <nav aria-label="Main navigation" class="flex xl:hidden items-center gap-space-xs overflow-x-auto px-margin-mobile sm:px-margin pb-space-sm">
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="landingpage.html">Home</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="movies.html">Movies</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="categories.html">Categories</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="mymovies.html">My Movies</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="userdashboard.html">Wallet</a>
+    </nav></header>
+  <main class="w-full pt-28 xl:pt-16 bg-surface-container-lowest min-h-screen">
     <div class="flex flex-col w-full">
       <!-- Sub-Header / Back Bar -->
       <div
-        class="w-full px-margin py-space-sm bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-between">
-        <div class="flex items-center gap-space-md">
+        class="w-full px-margin-mobile sm:px-margin py-space-sm bg-surface-container-lowest/80 backdrop-blur-md flex flex-wrap items-center justify-between gap-space-sm">
+        <div class="flex min-w-0 flex-wrap items-center gap-space-sm sm:gap-space-md">
           <a class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors py-1.5 px-space-sm rounded-lg hover:bg-surface-container"
             data-path="my-movies" href="mymovies.html">
             <span class="material-symbols-outlined text-[20px]">arrow_back</span>
@@ -107,8 +113,8 @@
         </div>
       </div>
       <!-- Main Player Workspace -->
-      <div class="w-full px-margin py-space-md">
-        <div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+      <div class="w-full px-margin-mobile sm:px-margin py-space-md">
+        <div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-mobile sm:gap-gutter items-start">
           <!-- Video Screen & Controls Area (Cols 1-9) -->
           <div class="xl:col-span-9 flex flex-col gap-space-md">
             <!-- Cinematic Player Shell (16:9) -->
@@ -380,7 +386,7 @@
           </div>
         </div>
         <!-- Bottom Section: Movie Information & Chapter Metadata (Col 1-12) -->
-        <div class="mt-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter pt-space-lg">
+        <div class="mt-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter-mobile sm:gap-gutter pt-space-lg">
           <!-- Left Metadata Box (Matching Screen 9 table specs) -->
           <div
             class="lg:col-span-4 flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
@@ -569,8 +575,8 @@
     </script>
   </main>
   <footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl">
-    <div class="w-full px-margin">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl">
+    <div class="w-full px-margin-mobile sm:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-mobile sm:gap-gutter mb-space-xl">
         <div class="flex flex-col gap-space-sm">
           <div class="flex items-center gap-space-sm">
             <div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span

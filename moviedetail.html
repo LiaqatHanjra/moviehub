@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en">
+<html class="dark overflow-x-hidden lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -22,10 +22,10 @@
   <script src="./assets/custom-tailwind-classes.js"></script>
 </head>
 
-<body class="bg-surface-container-lowest font-body-md text-on-surface antialiased">
+<body class="overflow-x-hidden bg-surface-container-lowest font-body-md text-on-surface antialiased">
   <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high">
-    <div class="h-16 w-full px-margin flex items-center justify-between gap-space-md">
-      <div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home"
+    <div class="h-16 w-full px-margin-mobile sm:px-margin flex items-center justify-between gap-space-xs sm:gap-space-md">
+      <div class="flex items-center gap-space-xs sm:gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="home"
           href="landingpage.html">
           <div
             class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(49,152,220,0.35)] group-hover:scale-105 transition-transform">
@@ -46,22 +46,22 @@
             class="px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
             data-path="wallet" href="userdashboard.html">Wallet</a></nav>
       </div>
-      <div class="flex-1 max-w-md hidden md:block">
+      <div class="flex-1 max-w-md hidden 2xl:block">
         <div class="relative flex items-center"><span
             class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[20px]">search</span><input
             class="w-full h-10 pl-10 pr-space-md bg-surface-container-low border border-surface-container-high rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:bg-surface-container transition-all"
             placeholder="Search movies, genres..." type="text" /></div>
       </div>
-      <div class="flex items-center gap-space-md"><a
-          class="flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors"
+      <div class="flex items-center gap-1 sm:gap-space-md"><a
+          class="flex items-center gap-space-xs px-space-xs sm:px-space-md py-1.5 bg-surface-container-low border border-surface-container-high rounded-full hover:border-tertiary/40 transition-colors"
           data-path="wallet" href="userdashboard.html"><span
             class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span><span
-            class="font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button
+            class="hidden sm:inline-block font-label-md text-label-md font-semibold text-on-surface">Rs. 300</span></a><button
           aria-label="Notifications"
           class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative"
           type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span
             class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button>
-        <div class="flex items-center gap-space-sm pl-space-xs">
+        <div class="flex items-center gap-space-xs sm:gap-space-sm pl-space-xs">
           <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
               class="material-symbols-outlined text-white text-[18px]">person</span></div>
           <div class="hidden lg:flex flex-col text-left"><span
@@ -71,8 +71,14 @@
         </div>
       </div>
     </div>
-  </header>
-  <main class="w-full pt-16 bg-surface-container-lowest min-h-screen">
+      <nav aria-label="Main navigation" class="flex xl:hidden items-center gap-space-xs overflow-x-auto px-margin-mobile sm:px-margin pb-space-sm">
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="landingpage.html">Home</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="movies.html">Movies</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="categories.html">Categories</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="mymovies.html">My Movies</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="userdashboard.html">Wallet</a>
+    </nav></header>
+  <main class="w-full pt-28 xl:pt-16 bg-surface-container-lowest min-h-screen">
     <div class="flex flex-col w-full">
       <!-- Subtle Ambient Glow Backdrop Layer -->
       <div class="relative w-full overflow-hidden">
@@ -82,7 +88,7 @@
         <div
           class="absolute top-1/2 -left-48 w-[500px] h-[500px] rounded-full bg-secondary-container/10 blur-[130px] pointer-events-none">
         </div>
-        <div class="w-full px-margin py-space-lg flex flex-col gap-space-xl relative z-10 max-w-7xl mx-auto">
+        <div class="w-full px-margin-mobile sm:px-margin py-space-lg flex flex-col gap-space-xl relative z-10 max-w-7xl mx-auto">
           <!-- Breadcrumb Navigation -->
           <nav aria-label="Breadcrumb"
             class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
@@ -178,7 +184,7 @@
                     class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-full font-mono">PG-13</span>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-xs">
-                  <h1 class="font-headline-xl text-headline-xl font-extrabold text-on-surface tracking-tight">
+                  <h1 class="font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl font-extrabold text-on-surface tracking-tight">
                     Dune
                   </h1>
                   <span class="font-title-md text-title-md text-outline">Part One • 2021</span>
@@ -200,7 +206,7 @@
                       class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">One-Time
                       Digital Rental (48 Hours)</span>
                     <div class="flex items-baseline gap-space-xs mt-1">
-                      <span class="font-headline-xl text-headline-xl font-extrabold text-tertiary">Rs. 50</span>
+                      <span class="font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl font-extrabold text-tertiary">Rs. 50</span>
                       <span class="font-body-sm text-body-sm text-outline line-through">Rs. 150</span>
                       <span
                         class="bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold ml-space-xs">66%
@@ -314,7 +320,7 @@
               </div>
               <span class="font-label-md text-label-md text-outline">4 High-Definition Stills</span>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-mobile sm:gap-gutter">
               <!-- Screenshot 1 -->
               <div
                 class="group relative aspect-video rounded-lg overflow-hidden bg-surface-container cursor-pointer shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -376,7 +382,7 @@
           <!-- Section: Key Cast & Crew -->
           <section class="flex flex-col gap-space-md">
             <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Top Cast</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-gutter">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-gutter-mobile sm:gap-gutter">
               <div class="flex flex-col items-center text-center gap-space-xs group">
                 <div
                   class="w-20 h-20 rounded-full overflow-hidden bg-surface-container shadow-md group-hover:ring-2 group-hover:ring-primary transition-all">
@@ -452,7 +458,7 @@
                 <span class="material-symbols-outlined text-[16px]">chevron_right</span>
               </a>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-gutter">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-gutter-mobile sm:gap-gutter">
               <!-- Card 1: Blade Runner 2049 -->
               <div
                 class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)]">
@@ -711,8 +717,8 @@
     </div>
   </main>
   <footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/60 py-space-xl">
-    <div class="w-full px-margin">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl">
+    <div class="w-full px-margin-mobile sm:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-mobile sm:gap-gutter mb-space-xl">
         <div class="flex flex-col gap-space-sm">
           <div class="flex items-center gap-space-sm">
             <div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span

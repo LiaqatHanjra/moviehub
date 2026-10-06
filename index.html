@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en">
+<html class="dark overflow-x-hidden lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -25,7 +25,7 @@
 <body
   class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-white-container">
   <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-    <div class="h-16 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md">
+    <div class="h-16 w-full px-margin-mobile md:px-margin-mobile sm:px-margin flex items-center justify-between gap-space-md">
       <div class="flex items-center gap-space-lg shrink-0"><a
           class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="index.html"><span
             class="material-symbols-outlined flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-white-container">play_arrow</span><span
@@ -43,12 +43,18 @@
 
       </div>
     </div>
-  </header>
+      <nav aria-label="Main navigation" class="flex xl:hidden items-center gap-space-xs overflow-x-auto px-margin-mobile sm:px-margin pb-space-sm">
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="landingpage.html">Home</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="movies.html">Movies</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="categories.html">Categories</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="mymovies.html">My Movies</a>
+      <a class="shrink-0 px-space-md py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="userdashboard.html">Wallet</a>
+    </nav></header>
 
-  <main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]">
+  <main class="w-full pt-28 xl:pt-16 bg-surface min-h-[calc(100vh-16rem)]">
     <div class="flex flex-col w-full">
       <!-- 1. FEATURED HERO CAROUSEL BANNER -->
-      <section class="relative w-full -mt-16 pt-16">
+      <section class="relative w-full -mt-16 pt-28 xl:pt-16">
         <div class="hero-slider">
 
           <!-- ==================== SLIDE 1 ==================== -->
@@ -71,7 +77,7 @@
 
             <!-- Content -->
             <div
-              class="relative z-10 w-full px-margin-mobile md:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
+              class="relative z-10 w-full px-margin-mobile md:px-margin-mobile sm:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
 
               <!-- Metadata -->
               <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
@@ -99,7 +105,7 @@
 
               <!-- Title -->
               <h1
-                class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
+                class="font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
                 JOHN WICK: CHAPTER 4
               </h1>
 
@@ -187,7 +193,7 @@
             </div>
 
             <div
-              class="relative z-10 w-full px-margin-mobile md:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
+              class="relative z-10 w-full px-margin-mobile md:px-margin-mobile sm:px-margin pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
 
               <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
 
@@ -213,7 +219,7 @@
               </div>
 
               <h1
-                class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
+                class="font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
                 DUNE: PART TWO
               </h1>
 
@@ -299,7 +305,7 @@
             </div>
 
             <div
-              class="relative z-10 w-full px-margin-mobile md:px-margin
+              class="relative z-10 w-full px-margin-mobile md:px-margin-mobile sm:px-margin
                pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto flex flex-col justify-end min-h-[620px]">
 
               <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
@@ -326,7 +332,7 @@
               </div>
 
               <h1
-                class="font-headline-xl text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
+                class="font-headline-xl-mobile sm:font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-on-surface tracking-tight max-w-3xl drop-shadow-md mb-space-sm">
                 OPPENHEIMER
               </h1>
 
@@ -393,7 +399,7 @@
           </article>
 
         </div>
-        <div class="hero-slider-controls absolute inset-x-0 bottom-6 z-20 px-margin-mobile md:px-margin">
+        <div class="hero-slider-controls absolute inset-x-0 bottom-6 z-20 px-margin-mobile md:px-margin-mobile sm:px-margin">
           <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-space-md">
             <div class="flex items-center gap-space-sm">
               <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Now Trending</span>
@@ -415,7 +421,7 @@
       </section>
 
       <!-- 2. EXPLORE CATEGORIES GRID -->
-      <section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest">
+      <section class="w-full px-margin-mobile md:px-margin-mobile sm:px-margin py-space-xl bg-surface-container-lowest">
         <div class="max-w-7xl mx-auto">
           <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
             <div>
@@ -424,7 +430,7 @@
                 <span class="material-symbols-outlined text-[16px]">grid_view</span>
                 Curation Engine
               </div>
-              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">EXPLORE BY CATEGORY</h2>
+              <h2 class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface tracking-tight">EXPLORE BY CATEGORY</h2>
             </div>
             <p class="font-body-md text-body-md text-on-surface-variant mt-2 md:mt-0">
               Browse thousands of titles across your favorite regional &amp; global genres
@@ -525,7 +531,7 @@
       </section>
 
       <!-- 3. TRENDING & FEATURED MOVIES ROW -->
-      <section class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto">
+      <section class="w-full px-margin-mobile md:px-margin-mobile sm:px-margin py-space-xl max-w-7xl mx-auto">
         <div class="flex items-end justify-between mb-space-lg">
           <div>
             <div
@@ -533,7 +539,7 @@
               <span class="material-symbols-outlined text-[16px]">local_fire_department</span>
               Top TVOD Rentals
             </div>
-            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">FEATURED MOVIES</h2>
+            <h2 class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface tracking-tight">FEATURED MOVIES</h2>
           </div>
           <a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:text-secondary transition-colors"
             href="movies.html">
@@ -541,7 +547,7 @@
           </a>
         </div>
         <!-- 6-Card Responsive Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-gutter-mobile md:gap-gutter">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-gutter-mobile md:gap-gutter-mobile sm:gap-gutter">
           <!-- Card 1: John Wick 4 -->
           <div
             class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-md hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)] transition-all duration-300 hover:-translate-y-1">
@@ -754,7 +760,7 @@
       </section>
 
       <!-- 4. POPULAR & TOP RATED MOVIES ROW -->
-      <section class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto">
+      <section class="w-full px-margin-mobile md:px-margin-mobile sm:px-margin py-space-xl max-w-7xl mx-auto">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-lg">
           <div>
             <div
@@ -762,7 +768,7 @@
               <span class="material-symbols-outlined text-[16px]">stars</span>
               Critically Acclaimed
             </div>
-            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">POPULAR BLOCKBUSTERS</h2>
+            <h2 class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface tracking-tight">POPULAR BLOCKBUSTERS</h2>
           </div>
           <!-- Quick Filter Pills -->
           <div class="flex items-center gap-space-xs overflow-x-auto pb-1">
@@ -785,7 +791,7 @@
           </div>
         </div>
         <!-- 6 Movie Cards Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-gutter-mobile md:gap-gutter">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-gutter-mobile md:gap-gutter-mobile sm:gap-gutter">
           <!-- Card 1: Interstellar -->
           <div
             class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-md hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)] transition-all duration-300 hover:-translate-y-1">
@@ -993,7 +999,7 @@
         </div>
       </section>
       <!-- 5. BINGE-WORTHY TV SERIES ROW -->
-      <section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest">
+      <section class="w-full px-margin-mobile md:px-margin-mobile sm:px-margin py-space-xl bg-surface-container-lowest">
         <div class="max-w-7xl mx-auto">
           <div class="flex items-end justify-between mb-space-lg">
             <div>
@@ -1002,7 +1008,7 @@
                 <span class="material-symbols-outlined text-[16px]">tv</span>
                 Complete Season Bundles
               </div>
-              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">BINGE-WORTHY TV SERIES</h2>
+              <h2 class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface tracking-tight">BINGE-WORTHY TV SERIES</h2>
             </div>
             <span
               class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-outline">
@@ -1011,7 +1017,7 @@
             </span>
           </div>
           <!-- 5-Card Wide Series Display -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter-mobile sm:gap-gutter">
             <!-- Series 1: House of the Dragon -->
             <div
               class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-md hover:shadow-[0_8px_24px_rgba(2,132,197,0.3)] transition-all duration-300 hover:-translate-y-1">
@@ -1176,7 +1182,7 @@
         </div>
       </section>
       <!-- 6. WHY MOVIEHUB / FAST PAY-PER-VIEW PERKS -->
-      <section class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto">
+      <section class="w-full px-margin-mobile md:px-margin-mobile sm:px-margin py-space-xl max-w-7xl mx-auto">
         <div class="p-space-lg md:p-space-xl rounded-2xl bg-surface-container relative overflow-hidden shadow-xl">
           <!-- Glow ambient backdrop -->
           <div
@@ -1185,7 +1191,7 @@
           <div class="max-w-2xl mb-space-xl">
             <span class="text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">The Better Way to
               Watch</span>
-            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+            <h2 class="font-headline-lg-mobile sm:font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface tracking-tight mt-1">
               Zero Monthly Commitments. Only Pay for What You Stream.
             </h2>
             <p class="font-body-md text-body-md text-on-surface-variant mt-2">
@@ -1264,7 +1270,7 @@
     </div>
   </main>
   <footer class="w-full bg-surface-container-lowest mt-space-xl">
-    <div class="w-full px-margin-mobile md:px-margin pt-space-xl pb-space-lg">
+    <div class="w-full px-margin-mobile md:px-margin-mobile sm:px-margin pt-space-xl pb-space-lg">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl">
         <div class="lg:col-span-2 space-y-space-md pr-0 lg:pr-space-xl">
           <div class="flex items-center gap-space-sm"><span
